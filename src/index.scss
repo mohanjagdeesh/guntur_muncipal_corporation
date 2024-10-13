@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  .nav-slide-in {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 250px;
+    z-index: 50;
+
+    &.nav-menu-slide-in {
+        animation: navMenuSlideIn 400ms forwards;
+    }
+    
+    // Keyframe for Mega Menu Slide In
+    @keyframes navMenuSlideIn {
+        from {
+            transform: translateX(100%);  // Start off-screen to the right
+        }
+        to {
+            transform: translateX(0);  // End at the default position
+        }
+    }
+
+    &.nav-menu-slide-out {
+        animation: navMenuSlideOut 700ms forwards;
+    }
+
+    // Keyframe for Mega Menu Slide Out
+    @keyframes navMenuSlideOut {
+        from {
+            transform: translateX(0);  // Start at the default position
+        }
+        to {
+            transform: translateX(100%);  // Move off-screen to the right
+        }
+    }
+}
+
