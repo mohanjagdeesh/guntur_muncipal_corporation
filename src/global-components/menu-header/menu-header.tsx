@@ -47,7 +47,7 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                             onMouseEnter={() => handleMouseEnter(mainIndex)}
                             onMouseLeave={handleMouseLeave}
                         >
-                            <h1 className="text-white text-[1rem] font-semibold">{mainMenu.linkHeader}</h1>
+                            <h1 className="text-white text-[0.9rem] font-semibold">{mainMenu.linkHeader}</h1>
                             {mainMenu?.subLinks?.length && (
                                 <span className='ml-2'>
                                     <FontAwesomeIcon
@@ -65,11 +65,11 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                                         {mainMenu.subLinks.map((subLink, subIndex) => (
                                             <li
                                                 key={subIndex}
-                                                className='relative py-1 px-2 text-violet leading-none font-semibold'
+                                                className='relative py-1 px-2 text-violet leading-none font-semibold text-[0.9rem]'
                                                 onMouseEnter={() => handleSubMenuEnter(subIndex)}
                                                 onMouseLeave={handleSubMenuLeave}
                                             >
-                                                <a href={subLink.subLinkTo} className='text-violet'>
+                                                <a href={subLink.subLinkTo} className='text-violet hover:text-white'>
                                                     {subLink.subLinkHeader}
                                                     {subLink?.associatedSubLinks?.length && (
                                                     <span className='ml-2'>
@@ -86,8 +86,8 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                                                     <div className='absolute top-0 left-full ml-2 bg-orange-peel shadow-lg p-2 rounded-md z-10'>
                                                         <ul>
                                                             {subLink.associatedSubLinks.map((subSubLink, subSubIndex) => (
-                                                                <li key={subSubIndex} className='py-1 px-2 text-black'>
-                                                                    <a href={subSubLink.associatedSublinkTo} className='text-black no-underline'>
+                                                                <li key={subSubIndex} className='py-1 px-2 text-black text-[0.9rem]'>
+                                                                    <a href={subSubLink.associatedSublinkTo} className='text-black no-underline hover:text-white'>
                                                                         {subSubLink.associatedSubLinkHeader}
                                                                     </a>
                                                                 </li>
@@ -104,7 +104,7 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                     ))}
                 </div>
                 <div className='cursor-pointer' onClick={openNavigationDrawer}>
-                    <h1 className='text-white font-semibold text-xl'>
+                    <h1 className='text-white font-semibold text-[1rem]'>
                         <span><FontAwesomeIcon icon={faBars} size='xl' /></span> More
                     </h1>
                 </div>

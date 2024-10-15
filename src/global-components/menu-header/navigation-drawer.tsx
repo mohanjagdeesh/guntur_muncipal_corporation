@@ -41,12 +41,12 @@ const NavigationDrawer:React.FC<INavigationDrawer> = ({navOptionsCount,setNavDra
                         onClick={() => handleTogglingMobileMenu(menuIndex)}
                         className="flex items-center justify-between py-2 px-4 cursor-pointer"
                     >
-                        <a href={menu.linkTo} className="text-white text-lg font-semibold">{menu.linkHeader}</a>
+                        <a href={menu.linkTo} className="text-white text-[0.9rem] font-semibold">{menu.linkHeader}</a>
                         {menu?.subLinks?.length && (
                             <FontAwesomeIcon
                                 className={`text-orange-peel transition-transform duration-300 ${subMenuOpen && subMenuIndex === menuIndex ? 'rotate-45' : ''}`}
                                 icon={faPlusCircle}
-                                size="xl"
+                                size="lg"
                             />
                         )}
                     </div>
@@ -61,10 +61,10 @@ const NavigationDrawer:React.FC<INavigationDrawer> = ({navOptionsCount,setNavDra
                                         onClick={() => handleToggleMobileSubmenu(sublinkIndex)}
                                         className="flex items-center justify-between py-2 px-4 bg-orange-peel cursor-pointer"
                                     >
-                                        <a href={sublink.subLinkTo} className="text-black text-lg font-semibold">{sublink.subLinkHeader}</a>
+                                        <a href={sublink.subLinkTo} className="text-black text-[0.9rem] font-semibold">{sublink.subLinkHeader}</a>
                                         {sublink?.associatedSubLinks?.length && (
                                             <FontAwesomeIcon className={`text-black transition-all transform duration-300 ${associatedSubMenuOpen && associatedMenuIndex === sublinkIndex ? 'rotate-45' : ''}`}
-                                                icon={faPlusCircle} size="xl" />
+                                                icon={faPlusCircle} size="lg" />
                                         )}
                                     </div>
 
@@ -73,7 +73,7 @@ const NavigationDrawer:React.FC<INavigationDrawer> = ({navOptionsCount,setNavDra
                                         <ul className="transition-all duration-300 ease-in-out overflow-hidden">
                                             {sublink.associatedSubLinks.map((asLink, asLinkIndex) => (
                                                 <li key={asLinkIndex} className="flex items-center justify-between py-2 px-4 bg-white cursor-pointer">
-                                                    <a href={asLink.associatedSublinkTo} className="text-violet text-lg font-semibold">{asLink.associatedSubLinkHeader}</a>
+                                                    <a href={asLink.associatedSublinkTo} className="text-violet text-[0.9rem] font-semibold">{asLink.associatedSubLinkHeader}</a>
                                                 </li>
                                             ))}
                                         </ul>

@@ -16,7 +16,7 @@ module.exports = {
       },
       padding: {
         DEFAULT: "16px",
-        sm: "30px",
+        sm: "20px",
         md: "40px",
         lg: "60px",
         xl: "90px",
@@ -33,6 +33,7 @@ module.exports = {
         "white": '#ffffff',
         'violet': '#15093A',
         'orange-peel': '#fa9e00',
+        'boulder':'#7a7979',
       },
     },
   },

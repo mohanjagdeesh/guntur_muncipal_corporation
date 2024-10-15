@@ -10,12 +10,13 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
     <>
-      {/* <div className=' bg-white flex items-center justify-between'>
-        <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
-        <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white'>GOVERNMENT OF ANDHRAPRADESH</h1>
+    <div className='container'> 
+      <div className=' bg-white flex items-center justify-between md:flex-col'>
+        <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-lg font-bold mb-0 md:mb-2' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
+        <h1 className='text-center leading-none w-1/2 hover:bg-black hover:text-white text-lg font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
       </div>
       <hr className=' border-[1px] border-slate-400 mt-2' />
-      <div className=' flex items-center justify-between p-2'>
+      <div className=' flex items-center justify-between p-2 md:justify-around mb-4'>
         <h1 className='hidden md:block'>SKIP TO MAIN CONTENT</h1>
         <FontAwesomeIcon className='md:hidden' title='Skip To Main Content' icon={faRetweet} size="xl" />
         <FontAwesomeIcon title='Font Size' icon={faFont} size="xl" />
@@ -26,7 +27,8 @@ const Header = () => {
           <option value="English">English</option>
           <option value="Hindi">Hindi</option>
         </select>
-      </div> */}
+      </div>
+      </div>
       <div className=' container'>
         <div className='flex flex-col items-center gap-4 md:gap-0 md:flex-row md:justify-between'>
         <div className=' flex flex-col items-center md:flex-row gap-4'>

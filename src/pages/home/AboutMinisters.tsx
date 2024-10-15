@@ -4,12 +4,12 @@ import ImageRank from '../../global-components/image-rank/image-rank.tsx';
 
 const ministersDetails:IImageRank[]=[
     {
-        image:'assets/chief_minister.jpeg',
+        image:'assets/chief_minister_CBN.jpg',
         name:'Nara Chandrababu Naidu',
         rank:'Honble Chief Minister',
     },
     {
-        image:'assets/ponguru_narayan.jpeg',
+        image:'assets/Minister_Narayana.jpg',
         name:'Ponguru Narayana',
         rank:'Honble Minister for Muncipal Administration & Urban Development',
     },

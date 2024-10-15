@@ -2,9 +2,9 @@ import React from 'react'
 import { Carousel } from "flowbite-react";
 import {ICarouselItems } from '../../interfaces/ICarousel';
 
-const CarouselComponent:React.FC<ICarouselItems> = ({items}) => {
+const CarouselComponent:React.FC<ICarouselItems> = ({items,className}) => {
     return (
-        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+        <div className={className}>
         <Carousel>
           {items.map((item)=>{
             return <img key={item.alt} src={item.image} alt={item.alt} />

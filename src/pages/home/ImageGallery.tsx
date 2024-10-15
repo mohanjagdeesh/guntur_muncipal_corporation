@@ -2,8 +2,9 @@ import React from 'react'
 
 const LatestNews = () => {
   return (
+    <div className='bg-violet'>
     <div className='container'>
-        <div className='bg-violet p-4 grid grid-cols-1 lg:grid-cols-2 gap-4 items-center'>
+        <div className='py-4 grid grid-cols-1 lg:grid-cols-2 gap-4 items-center'>
             <div>
                 <h1 className=' text-white font-bold text-[1.5rem] mb-4'>Image & Video Gallery</h1>
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-4'>
@@ -16,14 +17,16 @@ const LatestNews = () => {
             </div>
             <div>
             <iframe
-            className=' h-[300px] lg:h-[250px] xl:h-[300px] w-full '
-            src="https://www.youtube.com/embed/-dHDgmrGpqU"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-        />
+                className="h-[300px] lg:h-[250px] xl:h-[300px] w-full"
+                src="https://www.youtube.com/embed/5c_ZYCNOcAA?start=659"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            />
+
             </div>
         </div>
+    </div>
     </div>
   )
 }

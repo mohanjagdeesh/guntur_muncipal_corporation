@@ -25,7 +25,7 @@ const carouselItems:ICarouselItems = {
 
 const HomeBannerCarousels = () => {
   return (
-    <CarouselComponent items={carouselItems.items} />
+    <CarouselComponent items={carouselItems.items} className='h-56 sm:h-64 xl:h-80 2xl:h-96 my-4' />
   )
 }
 
