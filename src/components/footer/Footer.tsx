@@ -3,7 +3,7 @@ import GlobalUlElements from '../../global-components/global-ul-elements/global-
 import { FOOTER_COMPANY_LIST_ITEMS, FOOTER_CONTACT_LIST_ITEMS, FOOTER_SERVICES_LIST_ITEMS } from '../../mock-data/footer-mock-data.ts';
 const Footer = () => {
   return (
-    <div className=' bg-violet h-fit'>
+    <div className=' bg-violet h-fit py-4'>
       <div className=" container">
         <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           <ul>

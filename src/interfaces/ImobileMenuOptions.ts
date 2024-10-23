@@ -1,6 +1,6 @@
 interface IMobileSublinks {
     subLinkHeader: string;
-    subLinkTo: string;
+    subLinkTo?: string;
     associatedSubLinks?: {
         associatedSubLinkHeader: string;
         associatedSublinkTo: string;
@@ -9,6 +9,7 @@ interface IMobileSublinks {
 
 export interface IMobleOptions {
     linkHeader: string;
-    linkTo: string;
+    linkTo?: string;
+    linkIcon?:string;
     subLinks?: IMobileSublinks[] | undefined;
 }

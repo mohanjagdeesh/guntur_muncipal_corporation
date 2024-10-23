@@ -7,7 +7,7 @@ export const HOME_RELATED_LINKS:IHomeRelatedLinks[] = [
     },
     {
         image:'assets/ap_govt_logo.png',
-        imageLink:'https://www.ap.gov.in/'
+        imageLink:'https://cdma.ap.gov.in/'
     },
     {
         image:'assets/swatch_bharath_logo.png',

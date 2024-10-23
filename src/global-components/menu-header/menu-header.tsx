@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { MOBILE_MENU_OPTIONS } from '../../mock-data/header-mock-data.ts';
 import NavigationDrawer from './navigation-drawer.tsx';
 import DrawerNavigation from './drawer-navigation.tsx';
+import * as FaIcons from '@fortawesome/free-solid-svg-icons';
 
 export interface IHeaderItems {
     headerItemsCount: number;
@@ -47,13 +48,15 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                             onMouseEnter={() => handleMouseEnter(mainIndex)}
                             onMouseLeave={handleMouseLeave}
                         >
-                            <h1 className="text-white text-[0.9rem] font-semibold">{mainMenu.linkHeader}</h1>
+                            {mainMenu.linkIcon && <FontAwesomeIcon icon={FaIcons[mainMenu?.linkIcon]} color='#fa9e00' className='mr-1' />}
+                            <h1 className="text-white text-[1rem] font-light">
+                            {mainMenu.linkHeader}</h1>
                             {mainMenu?.subLinks?.length && (
                                 <span className='ml-2'>
                                     <FontAwesomeIcon
                                         className='text-orange-peel'
                                         icon={faCaretDown}
-                                        size="xl"
+                                        size="lg"
                                     />
                                 </span>
                             )}
@@ -61,33 +64,47 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                             {/* Submenu */}
                             {activeIndex === mainIndex && mainMenu?.subLinks?.length && (
                                 <div className='absolute top-full left-0 bg-orange-peel shadow-lg p-2 rounded-md z-10 w-[250px]'>
-                                    <ul>
+                                    <ul className=' divide-y-[1px] divide-boulder divide-opacity-70'>
                                         {mainMenu.subLinks.map((subLink, subIndex) => (
                                             <li
                                                 key={subIndex}
-                                                className='relative py-1 px-2 text-violet leading-none font-semibold text-[0.9rem]'
+                                                className='relative py-1 px-2 text-violet leading-none font-light text-[1rem]'
                                                 onMouseEnter={() => handleSubMenuEnter(subIndex)}
                                                 onMouseLeave={handleSubMenuLeave}
                                             >
-                                                <a href={subLink.subLinkTo} className='text-violet hover:text-white'>
+                                                <a href={subLink.subLinkTo} className='text-violet hover:text-white' onClick={(e)=> {
+                                                    if(subLink.subLinkTo){
+                                                        e.preventDefault();
+                                                        if(window.confirm('You are being redirected to an external site. Do you want to continue?')){
+                                                            window.open(subLink.subLinkTo,'_blank','noreferrer')
+                                                        }
+                                                    }
+                                                }}>
                                                     {subLink.subLinkHeader}
                                                     {subLink?.associatedSubLinks?.length && (
                                                     <span className='ml-2'>
                                                         <FontAwesomeIcon
                                                             className='text-violet'
                                                             icon={faCaretRight}
-                                                            size="xl"
+                                                            size="lg"
                                                         />
                                                     </span>
                                                 )}
                                                 </a>
                                                 {/* Nested Submenu */}
                                                 {activeSubIndex === subIndex && subLink?.associatedSubLinks?.length && (
-                                                    <div className='absolute top-0 left-full ml-2 bg-orange-peel shadow-lg p-2 rounded-md z-10'>
-                                                        <ul>
+                                                    <div className='absolute top-0 left-full bg-orange-peel shadow-lg p-2 rounded-md z-10 w-[250px]'>
+                                                        <ul className=' divide-y-[1px] divide-boulder divide-opacity-70'>
                                                             {subLink.associatedSubLinks.map((subSubLink, subSubIndex) => (
-                                                                <li key={subSubIndex} className='py-1 px-2 text-black text-[0.9rem]'>
-                                                                    <a href={subSubLink.associatedSublinkTo} className='text-black no-underline hover:text-white'>
+                                                                <li key={subSubIndex} className='py-1 px-2 text-black text-[1rem]'>
+                                                                    <a href={subSubLink.associatedSublinkTo} className='text-black no-underline hover:text-white' onClick={(e)=> {
+                                                                        if(subSubLink.associatedSublinkTo){
+                                                                            e.preventDefault();
+                                                                            if(window.confirm('You are being redirected to an external site. Do you want to continue?')){
+                                                                                window.open(subSubLink.associatedSublinkTo,'_blank','noreferrer');
+                                                                            }
+                                                                        }
+                                                                    }} >
                                                                         {subSubLink.associatedSubLinkHeader}
                                                                     </a>
                                                                 </li>
@@ -103,8 +120,8 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                         </div>
                     ))}
                 </div>
-                <div className='cursor-pointer' onClick={openNavigationDrawer}>
-                    <h1 className='text-white font-semibold text-[1rem]'>
+                <div className='cursor-pointer bg-orange-peel py-2 px-4 rounded-md' onClick={openNavigationDrawer}>
+                    <h1 className='text-violet font-semibold text-[1rem]'>
                         <span><FontAwesomeIcon icon={faBars} size='xl' /></span> More
                     </h1>
                 </div>

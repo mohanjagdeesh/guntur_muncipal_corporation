@@ -1,9 +1,10 @@
 import React from 'react';
 import HomeBannerCarousels from './HomeBannerCarousels.tsx';
 import HomeBioCards from './HomeBioCards.tsx';
-import LatestNews from './ImageGallery.tsx';
+import ImageGallery from './ImageGallery.tsx';
 import Services from './Services.tsx';
 import RelatedLinks from './RelatedLinks.tsx';
+import LatestNews from './LatestNews.tsx';
 
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
                 <HomeBioCards/>
                 <LatestNews/>
                 <Services/>
+                <ImageGallery/>
                 <RelatedLinks/>
             </div>
         )

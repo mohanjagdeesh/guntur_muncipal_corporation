@@ -1,6 +1,9 @@
 import React from 'react'
 import {IImageRank } from '../../interfaces/IImageRank';
 import ImageRank from '../../global-components/image-rank/image-rank.tsx';
+import { PEOPLE_CALCULATION_MOCK_DATA } from '../../mock-data/people-calculation-mock-data.ts';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as FaIcons from '@fortawesome/free-solid-svg-icons';
 
 const ministersDetails:IImageRank[]=[
     {
@@ -17,11 +20,26 @@ const ministersDetails:IImageRank[]=[
 
 const AboutMinisters = () => {
   return (
-    <div className=' grid grid-cols-1 md:grid-cols-2'>
-    {ministersDetails.map((minister:IImageRank,index:number)=> {
-        return <ImageRank key={index} image={minister.image} name={minister.name} rank={minister.rank} index={index} />
-    })}
-    </div>
+    <>
+      <div className=' grid grid-cols-1 md:grid-cols-2 border-2 border-orange-peel pt-4 mb-4'>
+      {ministersDetails.map((minister:IImageRank,index:number)=> {
+          return <ImageRank key={index} image={minister.image} name={minister.name} rank={minister.rank} index={index} />
+      })}
+      </div>
+      <div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+          {PEOPLE_CALCULATION_MOCK_DATA.map((each,index)=> {
+            const {iconName,value}= each;
+            return(
+              <div key={index} className='border-2 border-boulder flex flex-col items-center justify-center h-[150px]'>
+                <FontAwesomeIcon className=' text-orange-peel' icon={FaIcons[iconName]} size='2xl' />
+                <h1 className=' text-[1.7rem] font-bold'>{value}</h1>
+            </div>
+            )
+          })}
+        </div>
+      </div>
+    </>
   )
 }
 

@@ -16,7 +16,7 @@ const Header = () => {
         <h1 className='text-center leading-none w-1/2 hover:bg-black hover:text-white text-lg font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
       </div>
       <hr className=' border-[1px] border-slate-400 mt-2' />
-      <div className=' flex items-center justify-between p-2 md:justify-around mb-4'>
+      <div className=' flex items-center justify-around p-2 md:justify-center md:gap-5 lg:gap-8 mb-4'>
         <h1 className='hidden md:block'>SKIP TO MAIN CONTENT</h1>
         <FontAwesomeIcon className='md:hidden' title='Skip To Main Content' icon={faRetweet} size="xl" />
         <FontAwesomeIcon title='Font Size' icon={faFont} size="xl" />
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <div>
             <h1 className='text-[1rem] font-bold leading-none text-green text-center'>GUNTUR MUNCIPAL CORPORATION</h1>
-            <h1 className='text-[1rem] font-bold leading-tight text-center'>గుంటూరు మున్సిపల్ కార్పొరేషన్</h1>
+            <h1 className='text-[1rem] font-bold leading-tight text-center'>గుంటూరు నగర పాలక సంస్ధ</h1>
           </div>
         </div>
         <div className=' flex items-center'>

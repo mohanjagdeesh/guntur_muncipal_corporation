@@ -4,7 +4,7 @@ import AboutMinisters from './AboutMinisters.tsx';
 
 const AboutMuncipality = () => {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 items-center justify-center'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center'>
         <div>
             <h1 className=' text-black text-[2rem] font-semibold leading-none'>Welcome To Guntur Muncipal Corporation</h1>
             <p className='text-black text-[1rem] font-light text-left my-3'>Guntur, the third-largest city in Andhra Pradesh, is often referred to as the "Mirchi Capital" of India due to its prominence as the largest red chili market in Asia. According to the 2011 Census, Guntur had a population of 743,354 spread across 159.46 square kilometers, resulting in a high population density of 4,676 people per square kilometer. By 2024, the population is estimated to have exceeded 1 million, reflecting significant urban growth.

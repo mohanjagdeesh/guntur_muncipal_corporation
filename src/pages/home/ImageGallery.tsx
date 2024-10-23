@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LatestNews = () => {
+const ImageGallery = () => {
   return (
     <div className='bg-violet'>
     <div className='container'>
@@ -17,7 +17,7 @@ const LatestNews = () => {
             </div>
             <div>
             <iframe
-                className="h-[300px] lg:h-[250px] xl:h-[300px] w-full"
+                className="h-[300px] lg:h-[250px] xl:h-[350px] w-full"
                 src="https://www.youtube.com/embed/5c_ZYCNOcAA?start=659"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -31,4 +31,4 @@ const LatestNews = () => {
   )
 }
 
-export default LatestNews;
+export default ImageGallery;
