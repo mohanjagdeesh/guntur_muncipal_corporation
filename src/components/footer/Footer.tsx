@@ -15,13 +15,13 @@ const Footer = () => {
           <ul>
             <h1 className=' text-orange-peel text-md font-semibold mb-4'>COMPANY</h1>
             {FOOTER_COMPANY_LIST_ITEMS.map((each) => {
-              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon="faChevronRight" />;
+              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon="faChevronRight" liNavigation={each.liNavigation} />;
             })}
           </ul>
           <ul>
             <h1 className=' text-orange-peel text-md font-semibold mb-4'>SERVICES</h1>
             {FOOTER_SERVICES_LIST_ITEMS.map((each) => {
-              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon="faChevronRight" />;
+              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon="faChevronRight" liUrl={each?.liUrl} />;
             })}
           </ul>
         </div>

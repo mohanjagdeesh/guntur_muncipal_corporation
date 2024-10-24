@@ -12,18 +12,18 @@ import Support from './pages/support/Support.tsx';
 function App() {
   return (
     <div className="bg-white h-screen relative">
-      <Header />
         <BrowserRouter>
-          <Routes>
-            <Route index element={<HomePage/>} />
-            <Route path='/about-us' element={<AboutUs/>} />
-            <Route path='/contact-us' element={<ContactUs/>} />
-            <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
-            <Route path='/terms-and-conditions' element={<TermsAndConditions/>} />
-            <Route path='/support' element={<Support/>} />
-          </Routes>
+          <Header />
+            <Routes>
+              <Route index element={<HomePage/>} />
+              <Route path='/about-us' element={<AboutUs/>} />
+              <Route path='/contact-us' element={<ContactUs/>} />
+              <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+              <Route path='/terms-and-conditions' element={<TermsAndConditions/>} />
+              <Route path='/support' element={<Support/>} />
+            </Routes>
+            <Footer />
         </BrowserRouter>
-      <Footer />
     </div>
   );
 }

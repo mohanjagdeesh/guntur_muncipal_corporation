@@ -18,40 +18,45 @@ export const FOOTER_CONTACT_LIST_ITEMS:IFooterNavigation[] = [
 export const FOOTER_COMPANY_LIST_ITEMS:IFooterNavigation[] = [
     {
         liName:"About Us",
-        liNavigation:'about-us'
+        liNavigation:'/about-us'
     },
     {
         liName:"Contact Us",
-        liNavigation:'contact-us'
+        liNavigation:'/contact-us'
     },
     {
         liName:"Privacy Policy",
-        liNavigation:'privacy-policy'
+        liNavigation:'/privacy-policy'
     },
     {
         liName:"Terms & Conditions",
-        liNavigation:'terms-and-conditions'
+        liNavigation:'/terms-and-conditions'
     },
     {
         liName:"Support",
-        liNavigation:'support'
+        liNavigation:'/support'
     },
 ]
 
 export const FOOTER_SERVICES_LIST_ITEMS:IFooterNavigation[] = [
     {
         liName:"Online Services",
+        liUrl:'https://google.com'
     },
     {
         liName:"Property Taxes",
+        liUrl:'https://guntur.emunicipal.ap.gov.in/ptis/citizen/search/search-searchForm.action#no-back-button',
     },
     {
         liName:"Water Taxes",
+        liUrl:'https://guntur.emunicipal.ap.gov.in/wtms/search/waterSearch/',
     },
     {
         liName:"Birth Certificates",
+        liUrl:'https://crsorgi.gov.in/web/index.php/auth/login',
     },
     {
         liName:"Marriage Registrations",
+        liUrl:'https://guntur.emunicipal.ap.gov.in/mrs/registration/register?applicationSource=online',
     },
 ]

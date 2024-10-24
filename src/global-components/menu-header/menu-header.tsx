@@ -49,8 +49,8 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                             onMouseLeave={handleMouseLeave}
                         >
                             {mainMenu.linkIcon && <FontAwesomeIcon icon={FaIcons[mainMenu?.linkIcon]} color='#fa9e00' className='mr-1' />}
-                            <h1 className="text-white text-[1rem] font-light">
-                            {mainMenu.linkHeader}</h1>
+                            <a href={mainMenu.linkTo} rel='noreferrer' className="text-white text-[1rem] font-light">
+                            {mainMenu.linkHeader}</a>
                             {mainMenu?.subLinks?.length && (
                                 <span className='ml-2'>
                                     <FontAwesomeIcon
