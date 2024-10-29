@@ -8,10 +8,10 @@ const Services = () => {
   return (
     <div className=' container'>
     <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-6'>
-    {HOME_SERVICES_MOCK_DATA.map((service)=> {
+    {HOME_SERVICES_MOCK_DATA.map((service,index)=> {
         const {serviceIcon} = service;
         return (
-          <a href={service.serviceUrl} rel='noreferrer'>
+          <a key={index} href={service.serviceUrl} rel='noreferrer'>
             <Card
               className="group hover:bg-orange-peel p-4 transition duration-300 ease-in-out cursor-pointer"
               key={service.serviceName}

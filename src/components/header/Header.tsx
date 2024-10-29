@@ -1,52 +1,54 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRetweet, faFont, faUserPlus, faSitemap, faWheelchair, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import MenuHeader from '../../global-components/menu-header/menu-header.tsx';
 import NavigationDrawer from '../../global-components/menu-header/navigation-drawer.tsx';
 import DrawerNavigation from '../../global-components/menu-header/drawer-navigation.tsx';
+import { HEADER_ICONS } from '../../mock-data/header-mock-data.ts';
+import { IHeaderIcons } from '../../interfaces/ImobileMenuOptions.ts';
+import * as FaIcons from '@fortawesome/free-solid-svg-icons';
 
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
     <>
-    <div className='container'> 
-      <div className=' bg-white flex items-center justify-between md:flex-col'>
-        <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-lg font-bold mb-0 md:mb-2' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
-        <h1 className='text-center leading-none w-1/2 hover:bg-black hover:text-white text-lg font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
+    <div className='container'>
+      <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center'>
+        <div className='hidden bg-white items-center justify-between md:block md:flex-col lg:flex-row  lg:items-center lg:justify-items-start'>
+          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-lg font-bold mb-0 md:mb-2' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
+          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-lg font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
+        </div>
+        <div className=' flex items-center justify-around p-2 md:justify-center md:gap-5 lg:gap-8 mb-4'>
+          <h1 className='hidden md:block leading-none text-center text-[0.9rem]'>SKIP TO MAIN CONTENT</h1>
+          {HEADER_ICONS.map((each:IHeaderIcons,index:number)=> (
+            <FontAwesomeIcon key={index} title={each?.title} icon={FaIcons[each?.icon]} className={`${each?.className ? each?.className : ''}`} size='1x' />
+          ))}
+          <select defaultValue="English" className=' outline-none border-2 border-black rounded-md'>
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </div>
       </div>
-      <hr className=' border-[1px] border-slate-400 mt-2' />
-      <div className=' flex items-center justify-around p-2 md:justify-center md:gap-5 lg:gap-8 mb-4'>
-        <h1 className='hidden md:block'>SKIP TO MAIN CONTENT</h1>
-        <FontAwesomeIcon className='md:hidden' title='Skip To Main Content' icon={faRetweet} size="xl" />
-        <FontAwesomeIcon title='Font Size' icon={faFont} size="xl" />
-        <FontAwesomeIcon title='Social' icon={faUserPlus} size="xl" />
-        <FontAwesomeIcon title='Sitemap' icon={faSitemap} size="xl" />
-        <FontAwesomeIcon title='Accessibility' icon={faWheelchair} size="xl" />
-        <select defaultValue="English" className=' outline-none border-2 border-black rounded-md'>
-          <option value="English">English</option>
-          <option value="Hindi">Hindi</option>
-        </select>
-      </div>
-      </div>
-      <div className=' container'>
+    </div>
+    <div className=' container'>
         <div className='flex flex-col items-center gap-4 md:gap-0 md:flex-row md:justify-between'>
-        <div className=' flex flex-col items-center md:flex-row gap-4'>
+        <div className=' flex  items-center gap-4'>
           <div className=' h-20 w-20 rounded-full'>
             <img src='assets/ggmc.jpeg' alt='GGMC Logo' />
           </div>
           <div>
-            <h1 className='text-[1rem] font-bold leading-none text-green text-center'>GUNTUR MUNCIPAL CORPORATION</h1>
-            <h1 className='text-[1rem] font-bold leading-tight text-center'>గుంటూరు నగర పాలక సంస్ధ</h1>
+            <h1 className='text-[0.9rem] md:text-[1.2rem] lg:text-[1.5rem] font-bold leading-none text-green-600 text-center'>GUNTUR MUNCIPAL CORPORATION</h1>
+            <h1 className='text-[0.9rem] md:text-[1.2rem] lg:text-[1.5rem] font-bold leading-tight text-center'>గుంటూరు నగర పాలక సంస్ధ</h1>
           </div>
         </div>
-        <div className=' flex items-center'>
+        <div className='hidden md:flex items-center'>
           <img className='h-24 w-22' src='assets/ap_govt_logo.png' alt='AP Govt Logo' />
           <img className='h-24 w-28' src='assets/swatch_bharath_logo.png' alt='Swatch Bharath Logo'/>
         </div>
         </div>
-      </div>
-      <div className='md:hidden'>
+    </div>
+    <div className='md:hidden'>
         <div className=' bg-violet w-full flex items-center justify-between py-2 px-4'>
           <h1 className=' text-white font-semibold text-xl'>Menu</h1>
           <button onClick={() => setOpenMenu(!openMenu)}>
@@ -54,14 +56,14 @@ const Header = () => {
           </button>
         </div>
         {openMenu && <NavigationDrawer navOptionsCount={0}/>}
-      </div>
-      <div className='hidden md:block lg:hidden'>
+    </div>
+    <div className='hidden md:block lg:hidden'>
         <MenuHeader headerItemsCount={4} />
-      </div>
-      <div className='hidden lg:block'>
+    </div>
+    <div className='hidden lg:block'>
         <MenuHeader headerItemsCount={6} />
-      </div>
-      <DrawerNavigation/>
+    </div>
+    <DrawerNavigation/>
     </>
   )
 }

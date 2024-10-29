@@ -1,0 +1,6 @@
+.news-tabs-button{
+
+    & div button[aria-selected="true"]{
+        background-color: theme('colors.orange-peel');
+    }
+}

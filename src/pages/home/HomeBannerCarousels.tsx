@@ -5,20 +5,16 @@ import { ICarouselItems } from '../../interfaces/ICarousel'
 const carouselItems:ICarouselItems = {
     items:[
         {
-            image:'assets/carousel1.jpeg',
+            image:'assets/banner1.jpg',
             alt:'building1',
         },
         {
-            image:'assets/carousel2.jpeg',
+            image:'assets/banner2.jpg',
             alt:'building2',
         },
         {
-            image:'assets/carousel3.jpg',
+            image:'assets/banner3.jpg',
             alt:'building3',
-        },
-        {
-            image:'assets/carousel4.jpg',
-            alt:'building4'
         },
     ]
 }

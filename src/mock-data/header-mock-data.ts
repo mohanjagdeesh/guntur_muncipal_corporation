@@ -1,4 +1,4 @@
-import { IMobleOptions } from "../interfaces/ImobileMenuOptions";
+import { IHeaderIcons, IMobleOptions } from "../interfaces/ImobileMenuOptions";
 
 export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
     {
@@ -368,3 +368,28 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
         ]
     },
 ]
+
+
+export const HEADER_ICONS:IHeaderIcons[] = [
+    {
+        title:'Skip To Main Content',
+        icon:'faRetweet',
+        className:'md:hidden',
+    },
+    {
+        title:'Font Size',
+        icon:'faFont',
+    },
+    {
+        title:'Social',
+        icon:'faUserPlus',
+    },
+    {
+        title:'Sitemap',
+        icon:'faSitemap',
+    },
+    {
+        title:'Accessibility',
+        icon:'faWheelchair',
+    },
+];
