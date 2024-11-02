@@ -15,9 +15,9 @@ const Header = () => {
     <>
     <div className='container'>
       <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center'>
-        <div className='hidden bg-white items-center justify-between md:block md:flex-col lg:flex-row  lg:items-center lg:justify-items-start'>
-          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-lg font-bold mb-0 md:mb-2' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
-          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-lg font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
+        <div className='hidden md:flex md:items-center'>
+          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-[0.8rem] font-bold mb-0 md:mb-2' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
+          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-[0.8rem] font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
         </div>
         <div className=' flex items-center justify-around p-2 md:justify-center md:gap-5 lg:gap-8 mb-4'>
           <h1 className='hidden md:block leading-none text-center text-[0.9rem]'>SKIP TO MAIN CONTENT</h1>
