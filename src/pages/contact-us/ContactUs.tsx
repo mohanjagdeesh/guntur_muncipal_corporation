@@ -88,7 +88,7 @@ const CONTACT_US_GRID_PROPS:IGridReport ={
 const ContactUs = () => {
   const [contactUsGridProps , setContactUsGridProps] = useState<IGridReport>(CONTACT_US_GRID_PROPS);
   return (
-    <div>
+    <div className=' flex flex-col h-full'>
       <PageTitleBanner title='Contact Us'/>
       <div className='bg-white h-screen container'>
       <h1  className='text-violet text-[2rem] font-semibold'>Contacts</h1>
@@ -124,7 +124,7 @@ const ContactUs = () => {
           />
       </div>
     </div>
-        <GridReport {...contactUsGridProps} />
+          <GridReport {...contactUsGridProps} />
       </div>
     </div>
   )

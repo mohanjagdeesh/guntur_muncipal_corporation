@@ -14,13 +14,13 @@ const GridReport = ({columns,data}:IGridReport) => {
         getCoreRowModel: getCoreRowModel(),
       })
     return (
-        <div className="p-2">
+        <div className="py-4 overflow-x-scroll">
           <table className=' w-full'>
             <thead className='bg-violet'>
               {table.getHeaderGroups().map(headerGroup => (
                 <tr key={headerGroup.id}>
                   {headerGroup.headers.map(header => (
-                    <th key={header.id} className=' text-left text-white p-4 text-[18px] border-1 border-white'>
+                    <th key={header.id} className=' text-left text-white p-1 md:p-2.5 lg:p-4 text-[12px] md:text-[14px] lg:text-[18px] border-1 border-white'>
                       {header.isPlaceholder
                         ? null
                         : flexRender(
@@ -36,7 +36,7 @@ const GridReport = ({columns,data}:IGridReport) => {
               {table.getRowModel().rows.map(row => (
                 <tr key={row.id} className='even:bg-gray-100 odd:bg-gray-300'>
                   {row.getVisibleCells().map(cell => (
-                    <td key={cell.id} className='p-4 text-[18px]'>
+                    <td key={cell.id} className='p-1 md:p-2.5 lg:p-4 text-[12px] md:text-[14px] lg:text-[18px]'>
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
                     </td>
                   ))}

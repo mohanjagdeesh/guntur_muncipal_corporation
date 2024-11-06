@@ -8,18 +8,16 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
     },
     {
         linkHeader: 'ABOUT GMC',
+        linkTo:'/about-us',
         subLinks: [
             {
                 subLinkHeader: 'ULB Profile',
-                subLinkTo: '/'
             },
             {
                 subLinkHeader: 'Organization Chart',
-                subLinkTo: '/'
             },
             {
                 subLinkHeader: 'WHO is wHO',
-                subLinkTo: '/'
             },
         ]
     },
@@ -308,6 +306,7 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
     },
     {
         linkHeader: 'CONTACT US',
+        linkTo:'/contact-us'
     },
     {
         linkHeader: 'DASHBOARDS',

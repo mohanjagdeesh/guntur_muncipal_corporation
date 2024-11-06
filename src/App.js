@@ -11,21 +11,24 @@ import Support from './pages/support/Support.tsx';
 
 function App() {
   return (
-    <div className="bg-white h-screen relative">
-        <BrowserRouter>
-          <Header />
-            <Routes>
-              <Route index element={<HomePage/>} />
-              <Route path='/about-us' element={<AboutUs/>} />
-              <Route path='/contact-us' element={<ContactUs/>} />
-              <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
-              <Route path='/terms-and-conditions' element={<TermsAndConditions/>} />
-              <Route path='/support' element={<Support/>} />
-            </Routes>
-            <Footer />
-        </BrowserRouter>
+    <div className="bg-white min-h-screen flex flex-col">
+      <BrowserRouter>
+        <Header />
+        <main id='main-content' className="flex-grow overflow-y-auto no-scrollbar">
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path='/about-us' element={<AboutUs />} />
+            <Route path='/contact-us' element={<ContactUs />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+            <Route path='/support' element={<Support />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;

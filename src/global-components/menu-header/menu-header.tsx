@@ -38,7 +38,7 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
 
     return (
         <>
-        <div className='bg-violet w-full py-4'>
+        <div className='bg-violet w-full py-2'>
             <div className='container flex items-center justify-between'>
                 <div className='flex flex-1 items-center gap-4'>
                     {MOBILE_MENU_OPTIONS.slice(0, headerItemsCount).map((mainMenu, mainIndex) => (
@@ -49,7 +49,7 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                             onMouseLeave={handleMouseLeave}
                         >
                             {mainMenu.linkIcon && <FontAwesomeIcon icon={FaIcons[mainMenu?.linkIcon]} color='#fa9e00' className='mr-1' />}
-                            <a href={mainMenu.linkTo} rel='noreferrer' className="text-white text-[1rem] font-light">
+                            <a href={mainMenu.linkTo} rel='noreferrer' className="text-white text-[0.9rem] font-light">
                             {mainMenu.linkHeader}</a>
                             {mainMenu?.subLinks?.length && (
                                 <span className='ml-2'>
@@ -68,7 +68,7 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                                         {mainMenu.subLinks.map((subLink, subIndex) => (
                                             <li
                                                 key={subIndex}
-                                                className='relative py-1 px-2 text-violet leading-none font-light text-[1rem]'
+                                                className='relative py-1 px-2 text-violet leading-none font-light text-[0.9rem]'
                                                 onMouseEnter={() => handleSubMenuEnter(subIndex)}
                                                 onMouseLeave={handleSubMenuLeave}
                                             >
@@ -96,7 +96,7 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                                                     <div className='absolute top-0 left-full bg-orange-peel shadow-lg p-2 rounded-md z-10 w-[250px]'>
                                                         <ul className=' divide-y-[1px] divide-boulder divide-opacity-70'>
                                                             {subLink.associatedSubLinks.map((subSubLink, subSubIndex) => (
-                                                                <li key={subSubIndex} className='py-1 px-2 text-black text-[1rem]'>
+                                                                <li key={subSubIndex} className='py-1 px-2 text-black text-[0.9rem]'>
                                                                     <a href={subSubLink.associatedSublinkTo} className='text-black no-underline hover:text-white' onClick={(e)=> {
                                                                         if(subSubLink.associatedSublinkTo){
                                                                             e.preventDefault();

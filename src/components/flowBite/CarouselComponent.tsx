@@ -6,8 +6,8 @@ const CarouselComponent:React.FC<ICarouselItems> = ({items,className}) => {
     return (
         <div className={className}>
         <Carousel>
-          {items.map((item)=>{
-            return <img key={item.alt} src={item.image} alt={item.alt} />
+          {items.map((item,index)=>{
+            return <img key={index} src={item.image} alt={item.alt} className='h-full' />
           })}
         </Carousel>
       </div>

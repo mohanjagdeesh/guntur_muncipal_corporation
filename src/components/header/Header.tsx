@@ -13,26 +13,29 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
     <>
-    <div className='container'>
-      <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center'>
-        <div className='hidden md:flex md:items-center'>
-          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-[0.8rem] font-bold mb-0 md:mb-2' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
-          <h1 className='text-center leading-tight w-1/2 hover:bg-black hover:text-white text-[0.8rem] font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
+    <div className='bg-solitaire'>
+      <div className='container'>
+      <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center py-2'>
+        <div className='hidden w-full md:flex md:flex-row md:justify-center md:gap-10 lg:justify-normal lg:gap-8 lg:w-1/2'>
+          <h1 className='text-center leading-tight text-[0.9rem] font-bold mb-0' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
+          <h1 className='text-center leading-tight text-[0.9rem] font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
         </div>
-        <div className=' flex items-center justify-around p-2 md:justify-center md:gap-5 lg:gap-8 mb-4'>
-          <h1 className='hidden md:block leading-none text-center text-[0.9rem]'>SKIP TO MAIN CONTENT</h1>
+        <div className=' flex items-center justify-around md:justify-center md:gap-5 md:p-2 lg:p-0'>
+          <a href='#main-content' className='hidden md:block leading-none text-center text-[0.8rem] cursor-pointer'>SKIP TO MAIN CONTENT</a>
           {HEADER_ICONS.map((each:IHeaderIcons,index:number)=> (
             <FontAwesomeIcon key={index} title={each?.title} icon={FaIcons[each?.icon]} className={`${each?.className ? each?.className : ''}`} size='1x' />
           ))}
-          <select defaultValue="English" className=' outline-none border-2 border-black rounded-md'>
+          <select defaultValue="English" className=' outline-0 h-[25px] w-[100px] text-[12px] py-0'>
             <option value="English">English</option>
-            <option value="Hindi">Hindi</option>
+            <option value="Telugu">తెలుగు</option>
           </select>
         </div>
       </div>
+      </div>
     </div>
+
     <div className=' container'>
-        <div className='flex flex-col items-center gap-4 md:gap-0 md:flex-row md:justify-between'>
+        <div className='flex flex-col items-center gap-4 md:gap-0 md:flex-row md:justify-between py-2'>
         <div className=' flex  items-center gap-4'>
           <div className=' h-20 w-20 rounded-full'>
             <img src='assets/ggmc.jpeg' alt='GGMC Logo' />
@@ -43,7 +46,7 @@ const Header = () => {
           </div>
         </div>
         <div className='hidden md:flex items-center'>
-          <img className='h-24 w-22' src='assets/ap_govt_logo.png' alt='AP Govt Logo' />
+          <img className='h-20 w-20' src='assets/ap_govt_logo.png' alt='AP Govt Logo' />
           <img className='h-24 w-28' src='assets/swatch_bharath_logo.png' alt='Swatch Bharath Logo'/>
         </div>
         </div>

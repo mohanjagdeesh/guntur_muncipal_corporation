@@ -37,7 +37,7 @@ const LatestNews = () => {
                         </Tabs.Item>
                     ))}
                 </Tabs>
-                <div className=' flex items-center justify-center border-8 border-orange-peel p-4'>
+                <div className='border-2 border-orange-peel p-2'>
                 <Tweet id="1628832338187636740" />
                 </div>
             </div>
