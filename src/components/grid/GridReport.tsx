@@ -32,7 +32,7 @@ const GridReport = ({columns,data}:IGridReport) => {
                 </tr>
               ))}
             </thead>
-            <tbody className='divide-y-[1px] divide-violet'>
+            <tbody className='divide-y-[0.5px] divide-violet'>
               {table.getRowModel().rows.map(row => (
                 <tr key={row.id} className='even:bg-gray-100 odd:bg-gray-300'>
                   {row.getVisibleCells().map(cell => (

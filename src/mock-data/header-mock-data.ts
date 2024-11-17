@@ -7,17 +7,38 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
         linkIcon:'faHouse',
     },
     {
-        linkHeader: 'ABOUT GMC',
+        linkHeader: 'ABOUT',
         linkTo:'/about-us',
         subLinks: [
             {
-                subLinkHeader: 'ULB Profile',
+                subLinkHeader: 'History/Introduction',
             },
             {
-                subLinkHeader: 'Organization Chart',
+                subLinkHeader: 'Organization',
             },
             {
-                subLinkHeader: 'WHO is wHO',
+                subLinkHeader: 'Profile',
+            },
+            {
+                subLinkHeader: 'Structure',
+            },
+            {
+                subLinkHeader: 'Mayor',
+            },
+            {
+                subLinkHeader: 'Standing Committee',
+            },
+            {
+                subLinkHeader: 'Counsellors',
+            },
+            {
+                subLinkHeader: 'Commissioner',
+            },
+            {
+                subLinkHeader: 'Officers Profile',
+            },
+            {
+                subLinkHeader: 'Wards/Divisions/Zones',
             },
         ]
     },
@@ -52,7 +73,7 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                         associatedSublinkTo: 'https://guntur.emunicipal.ap.gov.in/ptis/search/searchproperty-registeredtransfer.action?applicationSource=online#no-back-button'
                     },
                     {
-                        associatedSubLinkHeader: 'File Your Addition/ Alteration (Including conversion from VLT to HT)',
+                        associatedSubLinkHeader: 'File Your Addition/ Alteration',
                         associatedSublinkTo: 'https://guntur.emunicipal.ap.gov.in/ptis/search/searchproperty-alter-assessment.action?applicationSource=online#no-back-button'
                     },
                     {
@@ -285,28 +306,56 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
         linkHeader: 'DEPARTMENTS',
         subLinks: [
             {
-                subLinkHeader: 'Health & Sanitation',
+                subLinkHeader:'Administration & Education',
+                subLinkTo:'/department/administration-and-education',
+                outOfBrowser:false,
             },
             {
-                subLinkHeader: 'Welfare Schemes',
+                subLinkHeader: 'Revenue',
+                subLinkTo:'/department/revenue',
+                outOfBrowser:false,
             },
             {
-                subLinkHeader: 'Taxes',
+                subLinkHeader: 'Accounts',
+                subLinkTo:'/department/accounts',
+                outOfBrowser:false,
             },
             {
-                subLinkHeader: 'Waste Management',
+                subLinkHeader: 'Town Planning',
+                subLinkTo:'/department/town-planning',
+                outOfBrowser:false,
             },
             {
-                subLinkHeader:'City Planning'
+                subLinkHeader: 'Engineering',
+                subLinkTo:'/department/engineering',
+                outOfBrowser:false,
             },
             {
-                subLinkHeader:'Disaster Management'
-            }
+                subLinkHeader:'Public Health',
+                subLinkTo:'/department/public-health',
+                outOfBrowser:false,
+            },
+            {
+                subLinkHeader:'UPACELL',
+                subLinkTo:'/department/uapcell',
+                outOfBrowser:false,
+            },
         ]
     },
     {
         linkHeader: 'CONTACT US',
         linkTo:'/contact-us'
+    },
+    {
+        linkHeader:'PROGRAMS/SCHEMES',
+        subLinks:[
+            {
+                subLinkHeader:'Swachh Bharat Mission',
+            },
+            {
+                subLinkHeader:'PMAY'
+            }
+        ]
     },
     {
         linkHeader: 'DASHBOARDS',
@@ -326,10 +375,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             {
                 subLinkHeader:'Online Project Management System (E-works)',
                 subLinkTo:'http://appms.ap.gov.in/SEPL.PWIMS.Dashboard/APPMS_Dashboard/ViewDashboard.aspx'
-            },
-            {
-                subLinkHeader:'Right of Way Permission',
-                subLinkTo:'https://maudrow.ap.gov.in/SLAReport.do'
             },
         ]
     },

@@ -68,12 +68,12 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                                         {mainMenu.subLinks.map((subLink, subIndex) => (
                                             <li
                                                 key={subIndex}
-                                                className='relative py-1 px-2 text-violet leading-none font-light text-[0.9rem]'
+                                                className='relative py-2 px-2 text-violet leading-none font-light text-[0.9rem]'
                                                 onMouseEnter={() => handleSubMenuEnter(subIndex)}
                                                 onMouseLeave={handleSubMenuLeave}
                                             >
                                                 <a href={subLink.subLinkTo} className='text-violet hover:text-white' onClick={(e)=> {
-                                                    if(subLink.subLinkTo){
+                                                    if(subLink.subLinkTo && subLink.outOfBrowser){
                                                         e.preventDefault();
                                                         if(window.confirm('You are being redirected to an external site. Do you want to continue?')){
                                                             window.open(subLink.subLinkTo,'_blank','noreferrer')

@@ -12,7 +12,7 @@ import * as FaIcons from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
-    <>
+    <div className=' sticky top-0 z-20 bg-white'>
     <div className='bg-solitaire'>
       <div className='container'>
       <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center py-2'>
@@ -38,7 +38,7 @@ const Header = () => {
         <div className='flex flex-col items-center gap-4 md:gap-0 md:flex-row md:justify-between py-2'>
         <div className=' flex  items-center gap-4'>
           <div className=' h-20 w-20 rounded-full'>
-            <img src='assets/ggmc.jpeg' alt='GGMC Logo' />
+            <img src='/assets/ggmc.jpeg' alt='GGMC Logo' />
           </div>
           <div>
             <h1 className='text-[0.9rem] md:text-[1.2rem] lg:text-[1.5rem] font-bold leading-none text-green-600 text-center'>GUNTUR MUNCIPAL CORPORATION</h1>
@@ -46,8 +46,8 @@ const Header = () => {
           </div>
         </div>
         <div className='hidden md:flex items-center'>
-          <img className='h-20 w-20' src='assets/ap_govt_logo.png' alt='AP Govt Logo' />
-          <img className='h-24 w-28' src='assets/swatch_bharath_logo.png' alt='Swatch Bharath Logo'/>
+          <img className='h-20 w-20' src='/assets/ap_govt_logo.png' alt='AP Govt Logo' />
+          <img className='h-24 w-28' src='/assets/swatch_bharath_logo.png' alt='Swatch Bharath Logo'/>
         </div>
         </div>
     </div>
@@ -67,7 +67,7 @@ const Header = () => {
         <MenuHeader headerItemsCount={6} />
     </div>
     <DrawerNavigation/>
-    </>
+    </div>
   )
 }
 
