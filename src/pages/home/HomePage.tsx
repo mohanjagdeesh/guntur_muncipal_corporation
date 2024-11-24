@@ -5,6 +5,7 @@ import ImageGallery from './ImageGallery.tsx';
 import Services from './Services.tsx';
 import RelatedLinks from './RelatedLinks.tsx';
 import LatestNews from './LatestNews.tsx';
+import SocialMediaPosts from './SocialMediaPosts.tsx';
 
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
                 <HomeBannerCarousels/>
                 <HomeBioCards/>
                 <LatestNews/>
+                <SocialMediaPosts/>
                 <Services/>
                 <ImageGallery/>
                 <RelatedLinks/>

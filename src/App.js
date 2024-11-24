@@ -14,6 +14,9 @@ import Accounts from './pages/departments/accounts.tsx';
 import TownPlanning from './pages/departments/town-planning.tsx';
 import Engineering from './pages/departments/engineering.tsx';
 import PublicHealth from './pages/departments/public-health.tsx';
+import Organization from './pages/about-us/organization.tsx';
+import Profile from './pages/about-us/Profile.tsx';
+import OfficersProfile from './pages/about-us/OfficersProfile.tsx';
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
             <Route path='/department/town-planning' element={<TownPlanning />} />
             <Route path='/department/engineering' element={<Engineering />} />
             <Route path='/department/public-health' element={<PublicHealth />} />
+            <Route path='/about-us/organization' element={<Organization />} />
+            <Route path='/about-us/profile' element={<Profile />} />
+            <Route path='/about-us/officers-profile' element={<OfficersProfile />} />
           </Routes>
         </main>
         <Footer />

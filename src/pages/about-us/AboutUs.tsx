@@ -1,6 +1,7 @@
 import React from 'react'
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
 
+
 const About = () => {
   return (
     <div>

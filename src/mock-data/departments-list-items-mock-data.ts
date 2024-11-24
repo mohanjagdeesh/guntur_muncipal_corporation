@@ -127,4 +127,155 @@ export const REVENUE_FM_OF_LIST_ITEMS:IRenderListItems[] = [
             }
         ]
     }
-]
+];
+
+export const ACCOUNTS_LIST_ITEMS:IRenderListItems[]=[
+    {
+        title:'Financial Accounting',
+        liData:[
+            {
+                title:'Preparation and Maintenance of Accounts',
+                subTitle:'Maintaining accurate and up-to-date financial records, including general ledgers, cash books, and subsidiary ledgers.'
+            },
+            {
+                title:'Budgeting',
+                subTitle:'Preparing annual budgets, monitoring expenditure, and ensuring funds are allocated effectively.'
+            },
+            {
+                title:'Revenue Accounting',
+                subTitle:'Recording and monitoring revenue collection from various sources like property taxes, user charges, and fees.',
+            },
+            {
+                title:'Expenditure Accounting',
+                subTitle:'Recording and monitoring expenditure on various municipal services and projects.',
+            }
+        ],
+    },
+    {
+        title:'Financial Reporting',
+        liData:[
+            {
+                title:'Preparation of Financial Statements',
+                subTitle:'Preparing periodic financial statements, including income statements, balance sheets, and cash flow statements.',
+            },
+            {
+                title:'Submission of Financial Reports',
+                subTitle:'Submitting financial reports to the concerned authorities, such as the state government and the Comptroller and Auditor General (CAG).',
+            },
+            {
+                title:'Compliance with Accounting Standards',
+                subTitle:'Ensuring compliance with relevant accounting standards and regulations.',
+            },
+        ],
+    },
+    {
+        title:'Financial Control',
+        liData:[
+            {
+                title:'Internal Control Systems',
+                subTitle:'Implementing and maintaining strong internal control systems to prevent fraud, errors, and inefficiencies.',
+            },
+            {
+                title:'Auditing',
+                subTitle:'Coordinating with internal and external auditors to ensure the accuracy and reliability of financial information.',
+            },
+            {
+                title:'Risk Management',
+                subTitle:'Identifying, assessing, and mitigating financial risks.',
+            },
+        ],
+    },
+    {
+        title:'Other Functions',
+        liData:[
+            {
+                title:'Payroll Processing',
+                subTitle:'Processing salaries and wages for municipal employees.',
+            },
+            {
+                title:'Treasury Management',
+                subTitle:`Managing the corporation's treasury functions, including bank accounts and investments`,
+            },
+            {
+                title:'Tax Collection and Remittance',
+                subTitle:'Collecting taxes and remitting them to the appropriate authorities.',
+            },
+            {
+                title:'Financial Advisory Services',
+                subTitle:'Providing financial advice to the municipal administration on various matters.',
+            },
+        ],
+    },
+];
+
+
+export const TOWN_PLANNING_LIST_ITEMS:IRenderListItems[]=[
+    {
+        title:'Urban Planning',
+        liData:[
+            {
+                title:'Master Plan Preparation',
+                subTitle:`Developing comprehensive long-term plans for the city's growth and development, including land use zoning, infrastructure development, and transportation networks.`,
+            },
+            {
+                title:'Development Control Regulations',
+                subTitle:`Formulating and enforcing building bylaws and regulations to ensure orderly development and prevent haphazard construction.`,
+            },
+            {
+                title:'Land Use Zoning',
+                subTitle:`Classifying land into different zones, such as residential, commercial, industrial, and green zones, to optimize land use and prevent conflicts.`
+            }
+        ],
+    },
+    {
+        title:'Infrastructure Planning',
+        liData:[
+            {
+                title:'Transportation Planning',
+                subTitle:`Planning and implementing transportation infrastructure, including roads, highways, public transport systems, and pedestrian walkways.`,
+            },
+            {
+                title:'Water Supply and Sewerage',
+                subTitle:`Planning and implementing water supply and sewerage systems to ensure adequate and clean water supply and efficient sewage disposal.`,
+            },
+            {
+                title:'Stormwater Drainage',
+                subTitle:`Designing and implementing stormwater drainage systems to prevent flooding and waterlogging.`
+            },
+            {
+                title:'Solid Waste Management',
+                subTitle:`Planning and implementing solid waste management systems, including waste collection, transportation, and disposal.`,
+            }
+        ],
+    },
+    {
+        title:'Environmental Planning',
+        liData:[
+            {
+                title:'Environmental Impact Assessment',
+                subTitle:`Conducting environmental impact assessments for development projects to minimize their negative impact on the environment.`,
+            },
+            {
+                title:'Green Spaces and Parks',
+                subTitle:`Planning and developing green spaces, parks, and recreational areas to improve the city's environment and quality of life.`,
+            },
+            {
+                title:'Conservation of Heritage',
+                subTitle:`Identifying and preserving heritage sites and buildings to maintain the city's cultural heritage.`,
+            },
+        ],
+    },
+    {
+        title:'Public Participation',
+        liData:[
+            {
+                title:'Public Consultations',
+                subTitle:`Involving the public in the planning process through public consultations and hearings.`,
+            },
+            {
+                title:'Transparency and Accountability',
+                subTitle:`Ensuring transparency and accountability in the planning process by providing public access to plans and decisions.`
+            },
+        ],
+    },
+];

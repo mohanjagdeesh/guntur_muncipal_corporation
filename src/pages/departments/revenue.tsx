@@ -12,8 +12,9 @@ const REVENUE_FM_OF_GRID_PROPS:IGridReport ={
     columns:[
       {
         header:'S.No',
-        accessorKey:'serialNo',
-        id:'serialNo',
+        accessorKey:'sno',
+        id:'sno',
+        cell: ({ row }: any) => row.index + 1,
       },
       {
         header:'Name(Sri/Smt)',

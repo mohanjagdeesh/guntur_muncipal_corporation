@@ -4,7 +4,7 @@ import GridReport from '../../components/grid/GridReport.tsx';
 import { IGridReport } from '../../interfaces/IGridReport.ts';
 
 
-const CONTACT_US_GRID_PROPS:IGridReport ={
+export const CONTACT_US_GRID_PROPS:IGridReport ={
   columns:[
     {
       header:'S.No',

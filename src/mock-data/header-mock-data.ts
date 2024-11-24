@@ -15,9 +15,11 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             },
             {
                 subLinkHeader: 'Organization',
+                subLinkTo:'/about-us/organization'
             },
             {
                 subLinkHeader: 'Profile',
+                subLinkTo:'/about-us/profile'
             },
             {
                 subLinkHeader: 'Structure',
@@ -36,6 +38,7 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             },
             {
                 subLinkHeader: 'Officers Profile',
+                subLinkTo:'/about-us/officers-profile'
             },
             {
                 subLinkHeader: 'Wards/Divisions/Zones',

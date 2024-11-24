@@ -4,7 +4,7 @@ import DepartmentsDataRenderer from '../../global-components/departments-data-re
 import { REVENUE_FM_OF_LIST_ITEMS } from '../../mock-data/departments-list-items-mock-data.ts';
 import RenderListItems from '../../global-components/render-list-items/render-list-items.tsx';
 import GridReport from '../../components/grid/GridReport.tsx';
-import { REVENUE_FM_OF_CONTACTS } from '../../mock-data/departments-contacts-mock-data.ts';
+import { PUBLIC_HEALTH_CONTACTS } from '../../mock-data/departments-contacts-mock-data.ts';
 import { IGridReport } from '../../interfaces/IGridReport.ts';
 
 
@@ -12,8 +12,9 @@ const REVENUE_FM_OF_GRID_PROPS:IGridReport ={
     columns:[
       {
         header:'S.No',
-        accessorKey:'serialNo',
-        id:'serialNo',
+        accessorKey:'sno',
+        id:'sno',
+        cell:({row})=>row.index + 1,
       },
       {
         header:'Name(Sri/Smt)',
@@ -31,7 +32,7 @@ const REVENUE_FM_OF_GRID_PROPS:IGridReport ={
         id:'mobile',
       },
     ],
-    data:REVENUE_FM_OF_CONTACTS
+    data:PUBLIC_HEALTH_CONTACTS
   };
 
 const PublicHealth = () => {

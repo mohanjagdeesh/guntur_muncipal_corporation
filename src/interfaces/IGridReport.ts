@@ -2,6 +2,7 @@ interface IGridcolumns{
     header:string;
     accessorKey:string;
     id:string;
+    cell?:({row})=>any|undefined;
 };
 
 
