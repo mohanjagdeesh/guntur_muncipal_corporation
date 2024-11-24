@@ -279,3 +279,157 @@ export const TOWN_PLANNING_LIST_ITEMS:IRenderListItems[]=[
         ],
     },
 ];
+
+export const ENGINEERING_LIST_ITEMS:IRenderListItems[] = [
+    {
+        title:'Infrastructure Planning and Development',
+        liData:[
+            {
+                title:'Master Planning',
+                subTitle:`Developing comprehensive long-term plans for the city's infrastructure, including roads, water supply, sewerage, drainage, and solid waste management systems.`
+            },
+            {
+                title:'Project Planning and Design',
+                subTitle:`Planning, designing, and estimating costs for various infrastructure projects.`,
+            },
+            {
+                title:'Construction Supervision',
+                subTitle:`Supervising the construction of infrastructure projects to ensure quality and adherence to standards.`,
+            },
+            {
+                title:'Maintenance of Infrastructure',
+                subTitle:`Regularly inspecting and maintaining existing infrastructure to ensure its functionality and longevity.`,
+            },
+        ],
+    },
+    {
+        title:'Public Works',
+        liData:[
+            {
+                title:'Road Construction and Maintenance',
+                subTitle:`Constructing, repairing, and maintaining roads, streets, and sidewalks.`,
+            },
+            {
+                title:'Stormwater Drainage',
+                subTitle:`Designing, constructing, and maintaining stormwater drainage systems to prevent flooding`,
+            },
+            {
+                title:'Solid Waste Management',
+                subTitle:`Planning and implementing solid waste collection, transportation, and disposal systems.`,
+            },
+            {
+                title:'Street Lighting',
+                subTitle:`Designing, installing, and maintaining street lighting systems.`,
+            },
+        ],
+    },
+    {
+        title:'Utilities',
+        liData:[
+            {
+                title:'Water Supply',
+                subTitle:`Planning, designing, and operating water supply systems, including water treatment plants and distribution networks.`,
+            },
+            {
+                title:'Sewerage',
+                subTitle:`Planning, designing, and operating sewerage systems, including sewage treatment plants and sewer networks.`,
+            },
+        ],
+    },
+    {
+        title:'Building Regulations',
+        liData:[
+            {
+                title:'Building Permits',
+                subTitle:`ssuing building permits and enforcing building codes and regulations.`,
+            },
+            {
+                title:'Building Inspections',
+                subTitle:`Inspecting buildings under construction to ensure compliance with building codes and safety standards.`,
+            },
+        ],
+    },
+];
+
+export const PUBLIC_HEALTH_LIST_ITEMS:IRenderListItems[]=[
+    {
+        title:'Preventive Healthcare',
+        liData:[
+            {
+                title:'Immunization Programs',
+                subTitle:`Implementing and monitoring immunization programs to prevent infectious diseases.`,
+            },
+            {
+                title:'Health Education and Awareness',
+                subTitle:`Conducting health education campaigns to promote healthy lifestyles, hygiene practices, and disease prevention.`,
+            },
+            {
+                title:'Vector Control',
+                subTitle:`Controlling the spread of vector-borne diseases like dengue, malaria, and chikungunya through measures like fogging, larviciding, and public awareness campaigns.`,
+            },
+            {
+                title:'Food Safety and Hygiene',
+                subTitle:`Inspecting food establishments, ensuring adherence to food safety regulations, and taking action against violations.`,
+            },
+        ],
+    },
+    {
+        title:'Curative Healthcare',
+        liData:[
+            {
+                title:'Primary Healthcare Centers',
+                subTitle:` Operating primary healthcare centers to provide basic medical care, including diagnosis, treatment, and referral services.`,
+            },
+            {
+                title:'Family Planning Services',
+                subTitle:`Providing family planning services and counseling.`,
+            },
+            {
+                title:'Maternal and Child Health',
+                subTitle:`Providing antenatal, postnatal, and child healthcare services.`,
+            },
+            {
+                title:'Emergency Medical Services:',
+                subTitle:`Providing emergency medical services, including ambulance services and disaster response.`,
+            },
+        ],
+    },
+    {
+        title:'Environmental Health',
+        liData:[
+            {
+                title:'Sanitation',
+                subTitle:`Ensuring proper sanitation and waste management practices, including solid waste collection, transportation, and disposal.`,
+            },
+            {
+                title:'Clean Water Supply',
+                subTitle:`Monitoring water quality and ensuring safe drinking water supply.`,
+            },
+            {
+                title:'Air Quality Monitoring',
+                subTitle:`Monitoring air quality and taking measures to reduce pollution.`,
+            },
+            {
+                title:'Control of Communicable Diseases',
+                subTitle:`Implementing measures to control the spread of communicable diseases.`,
+            },
+        ],
+    },
+    {
+        title:'Public Health Surveillance',
+        liData:[
+            {
+                title:'Disease Surveillance',
+                subTitle:`Monitoring the incidence and prevalence of diseases.`,
+            },
+            {
+                title:'Epidemic Response',
+                subTitle:`Responding to outbreaks of infectious diseases.`,
+            },
+            {
+                title:'Health Data Analysis',
+                subTitle:`Analyzing health data to identify trends and inform public health policies.`,
+            },
+        ],
+    },
+];

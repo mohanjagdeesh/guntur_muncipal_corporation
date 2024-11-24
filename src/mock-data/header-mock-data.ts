@@ -42,6 +42,7 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             },
             {
                 subLinkHeader: 'Wards/Divisions/Zones',
+                subLinkTo:'/about-us/wards-zones',
             },
         ]
     },

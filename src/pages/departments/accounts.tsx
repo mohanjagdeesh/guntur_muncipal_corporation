@@ -1,10 +1,10 @@
 import React from 'react'
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
 import DepartmentsDataRenderer from '../../global-components/departments-data-renderer/departments-data-renderer.tsx';
-import { ACCOUNTS_LIST_ITEMS, REVENUE_FM_OF_LIST_ITEMS } from '../../mock-data/departments-list-items-mock-data.ts';
+import { ACCOUNTS_LIST_ITEMS } from '../../mock-data/departments-list-items-mock-data.ts';
 import RenderListItems from '../../global-components/render-list-items/render-list-items.tsx';
 import GridReport from '../../components/grid/GridReport.tsx';
-import { ACCOUNTS_CONTACTS, REVENUE_FM_OF_CONTACTS } from '../../mock-data/departments-contacts-mock-data.ts';
+import { ACCOUNTS_CONTACTS } from '../../mock-data/departments-contacts-mock-data.ts';
 import { IGridReport } from '../../interfaces/IGridReport.ts';
 
 

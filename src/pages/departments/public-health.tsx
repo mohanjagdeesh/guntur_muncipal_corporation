@@ -1,7 +1,7 @@
 import React from 'react'
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
 import DepartmentsDataRenderer from '../../global-components/departments-data-renderer/departments-data-renderer.tsx';
-import { REVENUE_FM_OF_LIST_ITEMS } from '../../mock-data/departments-list-items-mock-data.ts';
+import { PUBLIC_HEALTH_LIST_ITEMS } from '../../mock-data/departments-list-items-mock-data.ts';
 import RenderListItems from '../../global-components/render-list-items/render-list-items.tsx';
 import GridReport from '../../components/grid/GridReport.tsx';
 import { PUBLIC_HEALTH_CONTACTS } from '../../mock-data/departments-contacts-mock-data.ts';
@@ -40,9 +40,9 @@ const PublicHealth = () => {
     <div>
         <PageTitleBanner title='PUBLIC HEALTH' />
         <div className='container'>
-          <DepartmentsDataRenderer description={`The Public Health Department in a Municipal Corporation plays a crucial role in safeguarding public health and ensuring a healthy environment for its citizens. Here are its key functions:`} liRenderer={REVENUE_FM_OF_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/public-health.jpg' />
+          <DepartmentsDataRenderer description={`The Public Health Department in a Municipal Corporation plays a crucial role in safeguarding public health and ensuring a healthy environment for its citizens. Here are its key functions:`} liRenderer={PUBLIC_HEALTH_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/public-health.jpg' />
           <GridReport {...REVENUE_FM_OF_GRID_PROPS} />
-          <p>By effectively performing these functions, the Revenue Department contributes to the financial sustainability of the Municipal Corporation and helps in providing essential services to the citizens.</p>
+          <p>By effectively performing these functions, the Public Health Department contributes to the overall health and well-being of the city's population.</p>
         </div>
     </div>
   )

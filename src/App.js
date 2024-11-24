@@ -17,6 +17,7 @@ import PublicHealth from './pages/departments/public-health.tsx';
 import Organization from './pages/about-us/organization.tsx';
 import Profile from './pages/about-us/Profile.tsx';
 import OfficersProfile from './pages/about-us/OfficersProfile.tsx';
+import WardsAndZones from './pages/about-us/WardsAndZones.tsx';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path='/about-us/organization' element={<Organization />} />
             <Route path='/about-us/profile' element={<Profile />} />
             <Route path='/about-us/officers-profile' element={<OfficersProfile />} />
+            <Route path='/about-us/wards-zones' element={<WardsAndZones />} />
           </Routes>
         </main>
         <Footer />

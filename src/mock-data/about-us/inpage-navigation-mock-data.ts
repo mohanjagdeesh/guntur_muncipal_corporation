@@ -23,6 +23,6 @@ export const INPAGE_NAVIGATIN_PROPS:InpageNavigationProps[] =[
     },
     {
         navTitle:'Zones & Wards',
-        navLink:'/about-us/zones-wards',
+        navLink:'/about-us/wards-zones',
     },
 ];
