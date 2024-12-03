@@ -1,12 +1,12 @@
 export const ZONES_WARDS_TABS_MOCK_DATA = [
     {
-        tabTitle:'North Zone',
+        tabTitle:'East',
     },
     {
-        tabTitle:'South-West Zone',
+        tabTitle:'West',
     },
     {
-        tabTitle:'South-East Zone',
+        tabTitle:'Prathipadu',
     },
     {
         tabTitle:'Map View'

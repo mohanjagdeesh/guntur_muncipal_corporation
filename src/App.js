@@ -18,6 +18,9 @@ import Organization from './pages/about-us/organization.tsx';
 import Profile from './pages/about-us/Profile.tsx';
 import OfficersProfile from './pages/about-us/OfficersProfile.tsx';
 import WardsAndZones from './pages/about-us/WardsAndZones.tsx';
+import Structure from './pages/about-us/Structure.tsx';
+import HistoricalAndReligiousPlaces from './pages/about-us/HistoricalAndReligiousPlaces.tsx';
+import Commissioner from './pages/about-us/Commissioner.tsx';
 
 function App() {
   return (
@@ -42,6 +45,9 @@ function App() {
             <Route path='/about-us/profile' element={<Profile />} />
             <Route path='/about-us/officers-profile' element={<OfficersProfile />} />
             <Route path='/about-us/wards-zones' element={<WardsAndZones />} />
+            <Route path='/about-us/structure' element={<Structure />} />
+            <Route path='/about-us/religious-places' element={<HistoricalAndReligiousPlaces />} />
+            <Route path='/about-us/commissioner' element={<Commissioner />} />
           </Routes>
         </main>
         <Footer />

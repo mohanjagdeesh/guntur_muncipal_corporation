@@ -23,6 +23,7 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             },
             {
                 subLinkHeader: 'Structure',
+                subLinkTo:'/about-us/structure'
             },
             {
                 subLinkHeader: 'Mayor',
@@ -35,6 +36,7 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             },
             {
                 subLinkHeader: 'Commissioner',
+                subLinkTo:'/about-us/commissioner'
             },
             {
                 subLinkHeader: 'Officers Profile',
@@ -43,6 +45,14 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             {
                 subLinkHeader: 'Wards/Divisions/Zones',
                 subLinkTo:'/about-us/wards-zones',
+            },
+            {
+                subLinkHeader: 'Historical And Religious Places',
+                subLinkTo:'/about-us/religious-places',
+            },
+            {
+                subLinkHeader: 'Parks',
+                subLinkTo:'/about-us/parks',
             },
         ]
     },

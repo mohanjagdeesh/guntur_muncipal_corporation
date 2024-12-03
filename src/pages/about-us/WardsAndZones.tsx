@@ -3,6 +3,8 @@ import { ZONES_WARDS_TABS_MOCK_DATA } from '../../mock-data/about-us/zone-tabs-m
 import MapView from './MapView.tsx';
 import InpageNavigation from '../../global-components/inpage-navigation/inpage-navigation.tsx';
 import { INPAGE_NAVIGATIN_PROPS } from '../../mock-data/about-us/inpage-navigation-mock-data.ts';
+import GridReport from '../../components/grid/GridReport.tsx';
+import { EAST_ZONE_WARD_DATA, PRATHIPADU_WARD_DATA, WARDS_ZONES_HEADERS_MOCK_DATA, WEST_ZONE_WARD_DATA } from '../../mock-data/about-us/wards-zones-mock-data.ts';
 
 const WardsAndZones = () => {
     const [selectedTabIndex , setSelectedTabIndex] = useState<number | undefined>(0);
@@ -12,15 +14,15 @@ const WardsAndZones = () => {
         switch (index){
             case 0:
                 return(
-                    <h1>North Zone Content</h1>
+                    <GridReport {...WARDS_ZONES_HEADERS_MOCK_DATA} data={EAST_ZONE_WARD_DATA}  />
                 );
             case 1:
                 return(
-                    <h1>South-West Zone Content</h1>
+                    <GridReport {...{...WARDS_ZONES_HEADERS_MOCK_DATA,data:WEST_ZONE_WARD_DATA}} />
                 );
             case 2:
                 return(
-                    <h1>South-East Zone Content</h1>
+                    <GridReport {...WARDS_ZONES_HEADERS_MOCK_DATA} data={PRATHIPADU_WARD_DATA} />
                 );
             case 3:
                 return(
