@@ -16,15 +16,7 @@ const MapView = () => {
       />
     </div>
     <div className=' h-[250px] md:h-[300px] lg:h-[350px] flex-1 mb-4'>
-      <iframe
-        title="Google Map"
-        src="https://www.google.com/maps/embed?pb=u8U5cy4YdcomxtfA7"
-        width="100%"
-        height="100%"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-      />
+      <iframe className='mb-4' title='GMC_Wards' src="https://www.google.com/maps/d/embed?mid=119a-sP2p4IOY9x4cqTg1wjMQi1pXaSY&ehbc=2E312F" width="100%" height="480"/>
     </div>
 </>
   )

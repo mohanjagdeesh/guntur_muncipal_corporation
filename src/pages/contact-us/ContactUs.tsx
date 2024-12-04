@@ -121,35 +121,21 @@ const ContactUs = () => {
       <div className='bg-white h-screen container'>
       <h1  className='text-violet text-[2rem] font-semibold'>Contacts</h1>
       <div className='w-full flex flex-col md:flex-row'>
-        <div className=' bg-violet flex items-center justify-center flex-1 py-1'>
-          <h1 className='text-white text-[1.2rem]'>CDMA</h1>
+        <div className=' bg-violet flex items-center justify-center py-1 w-1/2'>
+          <h1 className='text-white text-[1.2rem]'>GMC</h1>
         </div>
-        <div className='bg-orange-peel flex items-center justify-center py-1 px-2'>
-          <h1 className=' text-white text-[1.2rem] text-center leading-none'>Collectors/Additional Collectors/MLA/Mayor/Chairperson/Commissioners</h1>
+        <div className='bg-orange-peel flex items-center justify-center w-1/2 py-1 px-2'>
         </div>
       </div>
       <div className=' flex flex-col md:flex-row md:items-center md:gap-4 md:py-4'>
         <div>
           <h1 className='text-black text-[1.5rem] my-2 font-bold leading-none md:text-[2rem]'>Head Office Address</h1>
           <p className=' text-black text-[1rem] mb-2 font-normal leading-tight md:text-[1.2rem] md:mb-0'>
-              Director of Municipal Administration,<br/>
-              PRIME HILL CREST,<br/>
-              4th Floor, Near DGP Office,<br/>
-              Beside Ultratech ReadyMix Plant,<br/>
-              Vaddeswaram Village, Mangalagiri, Andhra Pradesh<br/>
-              Pincode: 522502
+          7CRW+RGM, Grand Trunk Rd,<br/> Opposite Gandhi Park Guntur,<br/> Lalapet, Guntur,<br/> Andhra Pradesh 522003
           </p>
         </div>
         <div className=' h-[250px] flex-1'>
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=u8U5cy4YdcomxtfA7"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-          />
+        <iframe title='GMC_Office' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.603520260743!2d80.44371547575255!3d16.292078584420253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a0acbe667825d%3A0xca688f973ff5651c!2sGuntur%20Municipal%20Corporation!5e0!3m2!1sen!2sin!4v1733338497512!5m2!1sen!2sin" width="100%" height="250"></iframe>
       </div>
     </div>
           <GridReport {...contactUsGridProps} />

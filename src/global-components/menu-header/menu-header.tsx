@@ -63,16 +63,16 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
 
                             {/* Submenu */}
                             {activeIndex === mainIndex && mainMenu?.subLinks?.length && (
-                                <div className='absolute top-full left-0 bg-orange-peel shadow-lg p-2 rounded-md z-10 w-[250px]'>
+                                <div className='absolute top-full left-0 bg-[#f1f1f1] shadow-lg p-2 rounded-md z-10 w-[250px]'>
                                     <ul className=' divide-y-[1px] divide-boulder divide-opacity-70'>
                                         {mainMenu.subLinks.map((subLink, subIndex) => (
                                             <li
                                                 key={subIndex}
-                                                className='relative py-2 px-2 text-violet leading-none font-light text-[0.9rem]'
+                                                className='relative py-2 px-2 text-violet leading-none font-light text-[0.9rem] hover:bg-[#f2d6a6] hover:border-l-4 hover:border-orange-peel'
                                                 onMouseEnter={() => handleSubMenuEnter(subIndex)}
                                                 onMouseLeave={handleSubMenuLeave}
                                             >
-                                                <a href={subLink.subLinkTo} className='text-violet hover:text-white' onClick={(e)=> {
+                                                <a href={subLink.subLinkTo} className='text-violet hover:text-black' onClick={(e)=> {
                                                     if(subLink.subLinkTo && subLink.outOfBrowser){
                                                         e.preventDefault();
                                                         if(window.confirm('You are being redirected to an external site. Do you want to continue?')){
@@ -93,11 +93,11 @@ const MenuHeader:React.FC<IHeaderItems> = ({ headerItemsCount }) => {
                                                 </a>
                                                 {/* Nested Submenu */}
                                                 {activeSubIndex === subIndex && subLink?.associatedSubLinks?.length && (
-                                                    <div className='absolute top-0 left-full bg-orange-peel shadow-lg p-2 rounded-md z-10 w-[250px]'>
+                                                    <div className='absolute top-0 left-full bg-[#f1f1f1] shadow-lg p-2 rounded-md z-10 w-[250px]'>
                                                         <ul className=' divide-y-[1px] divide-boulder divide-opacity-70'>
                                                             {subLink.associatedSubLinks.map((subSubLink, subSubIndex) => (
-                                                                <li key={subSubIndex} className='py-1 px-2 text-black text-[0.9rem]'>
-                                                                    <a href={subSubLink.associatedSublinkTo} className='text-black no-underline hover:text-white' onClick={(e)=> {
+                                                                <li key={subSubIndex} className='relative py-2 px-2 text-violet leading-none font-light text-[0.9rem] hover:bg-[#f2d6a6] hover:border-l-4 hover:border-orange-peel'>
+                                                                    <a href={subSubLink.associatedSublinkTo} className='text-black no-underline hover:text-black' onClick={(e)=> {
                                                                         if(subSubLink.associatedSublinkTo){
                                                                             e.preventDefault();
                                                                             if(window.confirm('You are being redirected to an external site. Do you want to continue?')){

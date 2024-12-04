@@ -18,7 +18,7 @@ const Header = () => {
       <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center py-2'>
         <div className='hidden w-full md:flex md:flex-row md:justify-center md:gap-10 lg:justify-normal lg:gap-8 lg:w-1/2'>
           <h1 className='text-center leading-tight text-[0.9rem] font-bold mb-0' title="This is Andhra Pradesh Government in Telugu">ఆంధ్ర ప్రదేశ్ ప్రభుత్వం</h1>
-          <h1 className='text-center leading-tight text-[0.9rem] font-bold'>GOVERNMENT OF ANDHRAPRADESH</h1>
+          <h1 className='text-center leading-tight text-[0.9rem] font-bold'>GOVERNMENT OF ANDHRA PRADESH</h1>
         </div>
         <div className=' flex items-center justify-around md:justify-center md:gap-5 md:p-2 lg:p-0'>
           <a href='#main-content' className='hidden md:block leading-none text-center text-[0.8rem] cursor-pointer'>SKIP TO MAIN CONTENT</a>

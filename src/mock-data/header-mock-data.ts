@@ -8,10 +8,10 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
     },
     {
         linkHeader: 'ABOUT',
-        linkTo:'/about-us',
         subLinks: [
             {
                 subLinkHeader: 'History/Introduction',
+                subLinkTo:'/about-us'
             },
             {
                 subLinkHeader: 'Organization',
