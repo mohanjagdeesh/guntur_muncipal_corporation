@@ -1,19 +1,25 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
-import Introduction from './Introduction';
-import Profile from './Profile';
-import Structure from './Structure';
-import WardsAndZones from './WardsAndZones';
-import Organization from './organization';
-import Commissioner from './Commissioner';
-import HistoricalAndReligiousPlaces from './HistoricalAndReligiousPlaces';
-import ListOfHods from './ListOfHods';
+import Introduction from './Introduction.tsx';
+import Profile from './Profile.tsx';
+import Structure from './Structure.tsx';
+import WardsAndZones from './WardsAndZones.tsx';
+import Organization from './organization.tsx';
+import Commissioner from './Commissioner.tsx';
+import HistoricalAndReligiousPlaces from './HistoricalAndReligiousPlaces.tsx';
+import ListOfHods from './ListOfHods.tsx';
+import ParksList from './ParksList.tsx';
+import Mayor from './Mayor.tsx';
+import DeputyMayor from './DeputyMayor.tsx';
+import AdditionalCommissioner from './AdditionalCommissioner.tsx';
+import Corporators from './Corporators.tsx';
+
 
 const AboutUs = () => {
     const {pathname} = useLocation();
     const renderPage = ()=> {
         switch(pathname){
-            case '/about-us':
+            case '/about-us/introduction':
                 return <Introduction/>;
             case '/about-us/organization':
                 return<Organization/>;
@@ -29,6 +35,16 @@ const AboutUs = () => {
                 return <HistoricalAndReligiousPlaces/>;
             case '/about-us/wards-zones':
                 return <WardsAndZones/>;
+            case '/about-us/parks':
+                return <ParksList/>
+            case '/about-us/mayor':
+                return <Mayor/>
+            case '/about-us/deputy-mayor':
+                return <DeputyMayor/>
+            case '/about-us/additional-commissioner':
+                return <AdditionalCommissioner/>
+            case '/about-us/corporators':
+                return <Corporators/>
             default:
                 return <h1>OOPS....... Page Not Found</h1>;
         }

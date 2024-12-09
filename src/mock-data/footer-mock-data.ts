@@ -36,6 +36,10 @@ export const FOOTER_COMPANY_LIST_ITEMS:IFooterNavigation[] = [
         liName:"Support",
         liNavigation:'/support'
     },
+    {
+        liName:'Site Map',
+        liNavigation:'/site-map'
+    },
 ]
 
 export const FOOTER_SERVICES_LIST_ITEMS:IFooterNavigation[] = [

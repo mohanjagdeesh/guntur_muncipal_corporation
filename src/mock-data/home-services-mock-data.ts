@@ -29,7 +29,7 @@ export const HOME_SERVICES_MOCK_DATA:IServices[] = [
         serviceIcon:'faNewspaper',
         serviceName:'Register a Complaint',
         serviceDescription:'Click here for Complaint registration',
-        serviceUrl:'https://google.com'
+        serviceUrl:'/register-complaint'
     },
     {
         serviceIcon:'faComputer',

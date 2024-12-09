@@ -17,24 +17,25 @@ const MapView = () => {
   ];
 
   const downloadImage = async (url, fileName) => {
-    try {
-      const response = await fetch(url);
-      const blob = await response.blob();
-      const blobUrl = window.URL.createObjectURL(blob);
-      console.log(blobUrl)
+    alert('Will Implement Soon')
+    // try {
+    //   const response = await fetch(url);
+    //   const blob = await response.blob();
+    //   const blobUrl = window.URL.createObjectURL(blob);
+    //   console.log(blobUrl)
       
-      const a = document.createElement('a');
-      a.href = blobUrl;
-      a.download = fileName;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
+    //   const a = document.createElement('a');
+    //   a.href = blobUrl;
+    //   a.download = fileName;
+    //   document.body.appendChild(a);
+    //   a.click();
+    //   a.remove();
       
-      // Release memory
-      window.URL.revokeObjectURL(blobUrl);
-    } catch (error) {
-      console.error('Error downloading the image:', error);
-    }
+    //   // Release memory
+    //   window.URL.revokeObjectURL(blobUrl);
+    // } catch (error) {
+    //   console.error('Error downloading the image:', error);
+    // }
   };
 
   return (

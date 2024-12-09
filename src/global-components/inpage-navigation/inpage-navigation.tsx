@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 const InpageNavigation = ({inpageNavigationProps,className}:IInpageNavigation) => {
     const {pathname} = useLocation();
   return (
-    <div className={`${className}`}>
+    <div className={`${className} bg-gray-100`}>
         <ul className=' divide-y-[1px] w-[250px]'>
             {
                 inpageNavigationProps.map((ipn,index)=><li 

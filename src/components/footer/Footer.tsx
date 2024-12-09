@@ -13,7 +13,7 @@ const Footer = () => {
             })}
           </ul>
           <ul>
-            <h1 className=' text-orange-peel text-md font-semibold mb-4'>COMPANY</h1>
+            <h1 className=' text-orange-peel text-md font-semibold mb-4'>OTHER LINKS</h1>
             {FOOTER_COMPANY_LIST_ITEMS.map((each) => {
               return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon="faChevronRight" liNavigation={each.liNavigation} />;
             })}

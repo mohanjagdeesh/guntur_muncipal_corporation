@@ -18,16 +18,12 @@ export const INPAGE_NAVIGATIN_PROPS:InpageNavigationProps[] =[
         navLink:'/about-us/structure',
     },
     {
-        navTitle:'Standing Committee',
-        navLink:'/about-us/standing-committee',
-    },
-    {
         navTitle:'Commissioner',
         navLink:'/about-us/commissioner',
     },
     {
-        navTitle:'Officers Profile',
-        navLink:'/about-us/officers-profile',
+        navTitle:'List Of Hods',
+        navLink:'/about-us/list-of-hods',
     },
     {
         navTitle:'Historical & Religious Places',

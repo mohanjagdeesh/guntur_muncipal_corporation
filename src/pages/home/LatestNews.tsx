@@ -38,7 +38,7 @@ const LatestNews = () => {
                 </Tabs>
                 <div>
                     <h1 className='bg-orange-peel py-2 text-center font-bold text-violet text-[1.5rem]'>MC Corner</h1>
-                    <div className=' bg-white h-[300px]'>
+                    <div className=' bg-white h-[300px] flex items-center justify-center'>
                         <h1>MC Corner Content Will Go Here</h1>
                     </div>
                     <div className="scrolling-text bg-orange-peel">

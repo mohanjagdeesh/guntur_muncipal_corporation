@@ -24,6 +24,9 @@ import Mayor from './pages/about-us/Mayor.tsx';
 import DeputyMayor from './pages/about-us/DeputyMayor.tsx';
 import AdditionalCommissioner from './pages/about-us/AdditionalCommissioner.tsx';
 import ListOfHods from './pages/about-us/ListOfHods.tsx';
+import Corporators from './pages/about-us/Corporators.tsx';
+import ParksList from './pages/about-us/ParksList.tsx';
+import RegisterAComplaint from './pages/home/RegisterAComplaint.tsx';
 
 function App() {
   return (
@@ -54,6 +57,9 @@ function App() {
             <Route path='/about-us/mayor' element={<Mayor />} />
             <Route path='/about-us/deputy-mayor' element={<DeputyMayor />} />
             <Route path='/about-us/additional-commissioner' element={<AdditionalCommissioner />} />
+            <Route path='/about-us/corporators' element={<Corporators />} />
+            <Route path='/about-us/parks' element={<ParksList />} />
+            <Route path='/register-complaint' element={<RegisterAComplaint />} />
           </Routes>
         </main>
         <Footer />
