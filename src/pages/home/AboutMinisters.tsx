@@ -4,6 +4,7 @@ import ImageRank from '../../global-components/image-rank/image-rank.tsx';
 import { PEOPLE_CALCULATION_MOCK_DATA } from '../../mock-data/people-calculation-mock-data.ts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FaIcons from '@fortawesome/free-solid-svg-icons';
+import {currencyConvertor} from '../../utils/Constants.tsx';
 
 const ministersDetails:IImageRank[]=[
     {
@@ -33,7 +34,7 @@ const AboutMinisters = () => {
             return(
               <div key={index} className='border-2 border-boulder flex flex-col items-center justify-center h-[150px]'>
                 <FontAwesomeIcon className=' text-orange-peel' icon={FaIcons[iconName]} size='2xl' />
-                <h1 className=' text-[1.7rem] font-bold'>{value}</h1>
+                <h1 className=' text-[1.7rem] font-bold'>{currencyConvertor(value)}</h1>
             </div>
             )
           })}

@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import InpageNavigation from '../../global-components/inpage-navigation/inpage-navigation.tsx';
 import { INPAGE_NAVIGATIN_PROPS } from '../../mock-data/about-us/inpage-navigation-mock-data.ts';
-import { OFFICERS_MOCK_DATA } from '../../mock-data/about-us/officers-mock-data.ts';
+import { LIST_OF_HODS_MOCK_DATA } from '../../mock-data/gmc-body/list-of-hods-mock-data.ts';
 
-const OfficersProfile = () => {
+const ListOfHods = () => {
   return (
     <div className="container">
       <div className="flex flex-col md:flex-row items-start gap-5 my-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-4">
-          {OFFICERS_MOCK_DATA.map((each: any, index: number) => (
+          {LIST_OF_HODS_MOCK_DATA.map((each: any, index: number) => (
               <div
                 key={index}
                 className={`${
@@ -42,4 +42,4 @@ const OfficersProfile = () => {
   );
 };
 
-export default OfficersProfile;
+export default ListOfHods;

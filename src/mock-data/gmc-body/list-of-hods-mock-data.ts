@@ -1,19 +1,19 @@
-export const OFFICERS_MOCK_DATA = [
+export const LIST_OF_HODS_MOCK_DATA = [
     {
       serialNo:1,
       name:'Sri P Sreenivasulu, I.A.S',
       designation:'Commissioner',
       mobile:9849908385,
       email:'mc.guntur@cdma.gov.in',
-      image:'/assets/comissioner.jpg'
+      image:'/assets/gmc-body/comissioner.jpg'
     },
     {
       serialNo:2,
       name:'Sri C Obulesu',
       designation:'Additional Commissioner',
       mobile:9849908396,
-      email:'ac.gurntucorporation.gmail.com',
-      image:'/assets/officer-4.jpg',
+      email:'ac.gurntucorporation@gmail.com',
+      image:'/assets/gmc-body/additional_commissioner.jpg',
     },
     {
       serialNo:3,
@@ -21,46 +21,47 @@ export const OFFICERS_MOCK_DATA = [
       designation:'Deputy Commisisioner-1',
       mobile:9849908364,
       email:'dc1.gunturcorporation@gmail.com',
-      image:'/assets/officer-1.jpg'
+      image:'/assets/gmc-body/deputy_commissioner-1.jpg'
     },
     {
       serialNo:4,
       name:'Sri Ch Srinivas',
       designation:'Deputy Commisisioner-2',
       mobile:9704600939,
-      email:'dc2.gunturcorporation.gmail.com',
-      image:'/assets/officer-2.jpg'
+      email:'dc2.gunturcorporation@gmail.com',
+      image:'/assets/gmc-body/deputy_commissioner-2.jpg'
     },
     {
       serialNo:5,
       name:'Sri T Venkata Krishnaiah',
       designation:'Deputy Commisisioner-3',
       mobile:9963995326,
-      email:'dc3.gunturcorporation.gmail.com',
-      image:'/assets/officer-3.jpg',
+      email:'dc3.gunturcorporation@gmail.com',
+      image:'/assets/gmc-body/deputy_commissioner-3.jpg',
     },
     {
       serialNo:6,
       name:'Sri. Sundar Rami Reddy',
       designation:'Superintending Engineer I/c',
       mobile:9849908400,
-      email:'sundarramireddy@gmcguntur.com',
+      email:'se.gunturcorp@gmail.com',
+      image:'/assets/gmc-body/superintending_engineer.jpg',
     },
     {
       serialNo:7,
       name:'Sri Jinka Nagendra Kumar',
       designation:'Examiner Of Accounts',
       mobile:9849908373,
-      email:'acct.gunturcorporation.gamil.com',
-      image:'/assets/officer-5.jpg',
+      email:'acct.gunturcorporation@gamil.com',
+      image:'/assets/gmc-body/examiner_of_accounts.jpg',
     },
     {
       serialNo:8,
       name:'Sri. D Rambabu',
       designation:'City Planner',
       mobile:9849908390,
-      email:'cp.gunturcorporation.gmail.com',
-      image:'/assets/officer-7.jpg',
+      email:'cp.gunturcorporation@gmail.com',
+      image:'/assets/gmc-body/city_planner.jpg',
     },
     {
       serialNo:9,
@@ -68,7 +69,7 @@ export const OFFICERS_MOCK_DATA = [
       designation:'EChief Medical of Health',
       mobile:7799222882,
       email:'cmho.gunturcorporation@gmail.com',
-      image:'/assets/officer-6.jpg',
+      image:'/assets/gmc-body/chief_medical_of_health.jpg',
     },
     {
       serialNo:10,
@@ -76,7 +77,7 @@ export const OFFICERS_MOCK_DATA = [
       designation:'Municipal Health Officer',
       mobile:8919797379,
       email:'mho.gunturcorporation@gmail.com',
-      image:'/assets/officer-8.jpg',
+      image:'/assets/gmc-body/municipal_health_officer.jpg',
     },
     {
       serialNo:11,

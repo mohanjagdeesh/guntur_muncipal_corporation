@@ -3,7 +3,6 @@ import Header from './components/header/Header.tsx';
 import './scss/main.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/home/HomePage.tsx';
-import AboutUs from './pages/about-us/AboutUs.tsx';
 import ContactUs from './pages/contact-us/ContactUs.tsx';
 import PrivacyPolicy from './pages/privacy-policy/PrivacyPolicy.tsx';
 import TermsAndConditions from './pages/terms-conditions/TermsAndConditions.tsx';
@@ -16,11 +15,15 @@ import Engineering from './pages/departments/engineering.tsx';
 import PublicHealth from './pages/departments/public-health.tsx';
 import Organization from './pages/about-us/organization.tsx';
 import Profile from './pages/about-us/Profile.tsx';
-import OfficersProfile from './pages/about-us/OfficersProfile.tsx';
 import WardsAndZones from './pages/about-us/WardsAndZones.tsx';
 import Structure from './pages/about-us/Structure.tsx';
 import HistoricalAndReligiousPlaces from './pages/about-us/HistoricalAndReligiousPlaces.tsx';
 import Commissioner from './pages/about-us/Commissioner.tsx';
+import Introduction from './pages/about-us/Introduction.tsx';
+import Mayor from './pages/about-us/Mayor.tsx';
+import DeputyMayor from './pages/about-us/DeputyMayor.tsx';
+import AdditionalCommissioner from './pages/about-us/AdditionalCommissioner.tsx';
+import ListOfHods from './pages/about-us/ListOfHods.tsx';
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
         <main id='main-content' className="flex-grow overflow-y-auto no-scrollbar">
           <Routes>
             <Route index element={<HomePage />} />
-            <Route path='/about-us' element={<AboutUs />} />
+            <Route path='/about-us' element={<Introduction />} />
             <Route path='/contact-us' element={<ContactUs />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
@@ -43,11 +46,14 @@ function App() {
             <Route path='/department/public-health' element={<PublicHealth />} />
             <Route path='/about-us/organization' element={<Organization />} />
             <Route path='/about-us/profile' element={<Profile />} />
-            <Route path='/about-us/officers-profile' element={<OfficersProfile />} />
+            <Route path='/about-us/list-of-hods' element={<ListOfHods />} />
             <Route path='/about-us/wards-zones' element={<WardsAndZones />} />
             <Route path='/about-us/structure' element={<Structure />} />
             <Route path='/about-us/religious-places' element={<HistoricalAndReligiousPlaces />} />
             <Route path='/about-us/commissioner' element={<Commissioner />} />
+            <Route path='/about-us/mayor' element={<Mayor />} />
+            <Route path='/about-us/deputy-mayor' element={<DeputyMayor />} />
+            <Route path='/about-us/additional-commissioner' element={<AdditionalCommissioner />} />
           </Routes>
         </main>
         <Footer />

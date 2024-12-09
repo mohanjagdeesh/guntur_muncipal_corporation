@@ -55,3 +55,21 @@ body {
     }
 }
 
+
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.scrolling-text p {
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+}
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+

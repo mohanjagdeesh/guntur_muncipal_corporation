@@ -2,6 +2,10 @@ import { InpageNavigationProps } from "../../interfaces/IInpageNavigation";
 
 export const INPAGE_NAVIGATIN_PROPS:InpageNavigationProps[] =[
     {
+        navTitle:'Introduction',
+        navLink:'/about-us',
+    },
+    {
         navTitle:'Organization',
         navLink:'/about-us/organization',
     },
@@ -18,8 +22,16 @@ export const INPAGE_NAVIGATIN_PROPS:InpageNavigationProps[] =[
         navLink:'/about-us/standing-committee',
     },
     {
+        navTitle:'Commissioner',
+        navLink:'/about-us/commissioner',
+    },
+    {
         navTitle:'Officers Profile',
         navLink:'/about-us/officers-profile',
+    },
+    {
+        navTitle:'Historical & Religious Places',
+        navLink:'/about-us/religious-places',
     },
     {
         navTitle:'Zones & Wards',

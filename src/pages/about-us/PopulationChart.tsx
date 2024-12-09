@@ -8,8 +8,8 @@ const PopulationChart = () => {
         label: "Population",
         data: [
           { primary: "Male", secondary: 2440521,fill:'#ffff00' },
-          { primary: "Female", secondary: 2441521,fill:'#f576f7' },
-          { primary: "Total", secondary: 4282042,fill:'#00ff00' },
+          { primary: "Female", secondary: 2250279,fill:'#f576f7' },
+          { primary: "Total", secondary: 4690800,fill:'#00ff00' },
         ],
       },
     ],

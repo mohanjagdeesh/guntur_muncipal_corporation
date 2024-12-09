@@ -6,7 +6,6 @@ import { LATEST_NEWS_TAB_ITEMS, } from '../../mock-data/home-latest-news-mock-da
 import RenderLatestNews from '../../global-components/latest-news/latest-news.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { Tweet } from 'react-tweet';
 
 
 const ICONS_MAP = {
@@ -37,8 +36,14 @@ const LatestNews = () => {
                         </Tabs.Item>
                     ))}
                 </Tabs>
-                <div className='border-2 border-orange-peel p-2'>
-                <Tweet id="1628832338187636740" />
+                <div>
+                    <h1 className='bg-orange-peel py-2 text-center font-bold text-violet text-[1.5rem]'>MC Corner</h1>
+                    <div className=' bg-white h-[300px]'>
+                        <h1>MC Corner Content Will Go Here</h1>
+                    </div>
+                    <div className="scrolling-text bg-orange-peel">
+                        <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] py-2 text-white'><span className='font-bold text-violet'>Latest News:-</span> Here is the Latest News from municipal commissioner corner.</p>
+                    </div>
                 </div>
             </div>
         </div>

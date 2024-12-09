@@ -1,29 +1,20 @@
 import React from 'react';
-import { FacebookProvider, EmbeddedPost } from 'react-facebook';
-import { Tweet } from 'react-tweet';
+import { FacebookEmbed , InstagramEmbed , XEmbed} from 'react-social-media-embed';
 
 const SocialMediaPosts = () => {
   return (
     <div className='bg-white h-fit py-5'>
       <div className='container'>
-        <div className='flex'>
-          <FacebookProvider appId="your-app-id">
-            <EmbeddedPost
-              href="https://www.facebook.com/story.php?story_fbid=360967623203257&id=100078700676279&rdid=r08qW54RF0ZgOktv"
-              width="300"
-            />
-          </FacebookProvider>
-          <div className='bg-white border-2 border-gray-600'>
-            <h1 className='bg-violet py-2 text-white font-bold text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] text-center'>
-              MC Corner
-            </h1>
-            <img src='/assets/comissioner.jpg' alt='Commissioner' />
-            <div className='bg-violet py-2 overflow-hidden relative'>
-              <div className='text-white font-thin text-center text-[1rem] scrolling-text'>
-                Latest News: This is the latest update from the commissioner. Stay tuned for more updates!
-              </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 border-2 border-orange-peel'>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <FacebookEmbed url="https://www.facebook.com/story.php?story_fbid=360967623203257&id=100078700676279&rdid=r08qW54RF0ZgOktv" width={550} />
             </div>
-          </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <InstagramEmbed url="https://www.instagram.com/p/DBqodiXzDmn/?igsh=MXN4Y2ZjbnF4dHhwdw%3D%3D&img_index=1" width={328} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <XEmbed url="https://twitter.com/PixelAndBracket/status/1356633038717923333" width={325} />
+            </div>
         </div>
       </div>
     </div>

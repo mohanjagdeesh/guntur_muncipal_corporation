@@ -34,7 +34,9 @@ module.exports = {
         'violet': '#15093A',
         'orange-peel': '#fa9e00',
         'boulder':'#7a7979',
-        'solitaire':"#fef5e5"
+        'solitaire':"#fef5e5",
+        'sea-shell':'#f1f1f1',
+        'new-orleans':'#f2d6a6',
       },
     },
   },

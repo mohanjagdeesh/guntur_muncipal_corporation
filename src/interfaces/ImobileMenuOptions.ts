@@ -5,6 +5,7 @@ interface IMobileSublinks {
     associatedSubLinks?: {
         associatedSubLinkHeader: string;
         associatedSublinkTo: string;
+        outOfBrowser?:boolean;
     }[]
 }
 

@@ -10,6 +10,41 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
         linkHeader: 'ABOUT',
         subLinks: [
             {
+                subLinkHeader:'GMC Body',
+                associatedSubLinks:[
+                    {
+                        associatedSubLinkHeader:'Honorable Mayor',
+                        associatedSublinkTo:'/about-us/mayor',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Honarable Deputy Mayor',
+                        associatedSublinkTo:'/about-us/deputy-mayor',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Honarable Commissioner',
+                        associatedSublinkTo:'/about-us/commissioner',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Honarable Additional Commissioner',
+                        associatedSublinkTo:'/about-us/additional-commissioner',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'List Of Hods',
+                        associatedSublinkTo:'/about-us/list-of-hods',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Honarable Corporators',
+                        associatedSublinkTo:'/about-us/corporators',
+                        outOfBrowser:false,
+                    },
+                ]
+            },
+            {
                 subLinkHeader: 'History/Introduction',
                 subLinkTo:'/about-us'
             },
@@ -24,23 +59,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             {
                 subLinkHeader: 'Structure',
                 subLinkTo:'/about-us/structure'
-            },
-            {
-                subLinkHeader: 'Mayor',
-            },
-            {
-                subLinkHeader: 'Standing Committee',
-            },
-            {
-                subLinkHeader: 'Counsellors',
-            },
-            {
-                subLinkHeader: 'Commissioner',
-                subLinkTo:'/about-us/commissioner'
-            },
-            {
-                subLinkHeader: 'Officers Profile',
-                subLinkTo:'/about-us/officers-profile'
             },
             {
                 subLinkHeader: 'Wards/Divisions/Zones',
@@ -402,26 +420,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             {
                 subLinkHeader: 'RTI 4(1)(b)',
                 subLinkTo: 'https://cdma.ap.gov.in/sites/default/files/Revised_RTI_4.docx'
-            },
-        ]
-    },
-    {
-        linkHeader:'Key Acts & Rules',
-    },
-    {
-        linkHeader: 'Know your city',
-        subLinks: [
-            {
-                subLinkHeader: 'Key Statistics',
-            },
-            {
-                subLinkHeader: 'Historical Places',
-            },
-            {
-                subLinkHeader: 'Religious Places',
-            },
-            {
-                subLinkHeader: 'Parks/Gardens',
             },
         ]
     },
