@@ -22,32 +22,6 @@ export const ADMINISTRATION_LIST_ITEMS:IRenderListItems ={
     ],
 };
 
-export const EDUCATION_LIST_ITEMS:IRenderListItems ={
-    title:'Education',
-    liData:[
-        {
-            title:'School Management',
-            subTitle:'Establishes, maintains, and upgrades municipal schools, including primary, secondary, and higher secondary schools.'
-        },
-        {
-            title:'Teacher Recruitment and Training',
-            subTitle:'Recruits, trains, and provides professional development opportunities for teachers'
-        },
-        {
-            title:'Curriculum Development',
-            subTitle:' Develops and implements the curriculum for municipal schools, ensuring it aligns with national and state education standards.'
-        },
-        {
-            title:'Student Enrollment and Welfare',
-            subTitle:'Manages student admissions, attendance, and provides support services for student welfare.'
-        },
-        {
-            title:'Infrastructure Development',
-            subTitle:'Ensures the construction, maintenance, and repair of school buildings, classrooms, and other facilities.'
-        },
-    ],
-};
-
 export const EDUCATION_ADMINISTRATION_LIST_ITEMS:IRenderListItems = {
     title:'Overall, the Administration & Education department works to',
     liData:[

@@ -6,7 +6,7 @@ const DeputyMayor = () => {
   return (
     <>
       <PageTitleBanner title='Deputy Mayor' />
-      <GmcBody name={DeputyMayorDetails.name} designation={DeputyMayorDetails.designation} email={DeputyMayorDetails.email} mobile={DeputyMayorDetails.mobile} image={DeputyMayorDetails.image} description={DeputyMayorDetails.description} />
+      {DeputyMayorDetails.map((mayor)=> <GmcBody name={mayor.name} designation={mayor.designation} mobile={mayor.mobile} image={mayor.image} description={mayor.description}  />)}
     </>
   );
 };

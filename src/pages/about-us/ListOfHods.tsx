@@ -9,7 +9,7 @@ import PageTitleBanner from '../../global-components/page-title-banner/page-titl
 const ListOfHods = () => {
   return (
     <>
-      <PageTitleBanner title='List Of Hods' />
+      <PageTitleBanner title='Honourable Hods' />
       <div className="container">
         <div className="flex flex-col md:flex-row items-start gap-5 my-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-4">

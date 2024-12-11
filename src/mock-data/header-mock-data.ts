@@ -13,33 +13,38 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkHeader:'GMC Body',
                 associatedSubLinks:[
                     {
-                        associatedSubLinkHeader:'Honorable Mayor',
+                        associatedSubLinkHeader:'Honourable Mayor',
                         associatedSublinkTo:'/about-us/mayor',
                         outOfBrowser:false,
                     },
                     {
-                        associatedSubLinkHeader:'Honarable Deputy Mayor',
+                        associatedSubLinkHeader:'Honourable Deputy Mayor',
                         associatedSublinkTo:'/about-us/deputy-mayor',
                         outOfBrowser:false,
                     },
                     {
-                        associatedSubLinkHeader:'Honarable Commissioner',
+                        associatedSubLinkHeader:'Honourable Commissioner',
                         associatedSublinkTo:'/about-us/commissioner',
                         outOfBrowser:false,
                     },
                     {
-                        associatedSubLinkHeader:'Honarable Additional Commissioner',
+                        associatedSubLinkHeader:'Honourable Additional Commissioner',
                         associatedSublinkTo:'/about-us/additional-commissioner',
                         outOfBrowser:false,
                     },
                     {
-                        associatedSubLinkHeader:'List Of Hods',
-                        associatedSublinkTo:'/about-us/list-of-hods',
+                        associatedSubLinkHeader:'Honourable Hods',
+                        associatedSublinkTo:'/about-us/honourable-hods',
                         outOfBrowser:false,
                     },
                     {
-                        associatedSubLinkHeader:'Honarable Corporators',
+                        associatedSubLinkHeader:'Honourable Corporators',
                         associatedSublinkTo:'/about-us/corporators',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'GMC Officers',
+                        associatedSublinkTo:'/about-us/gmc-officers',
                         outOfBrowser:false,
                     },
                 ]

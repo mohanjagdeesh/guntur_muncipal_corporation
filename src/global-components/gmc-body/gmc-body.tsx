@@ -10,12 +10,12 @@ const GmcBody = ({name,designation,email,mobile,description,image}:IGmcBody) => 
                 <div className='mt-4'>
                   <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-bold leading-none'>Name:- {name}</p>
                   <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>Designation:- {designation}</p>
-                  <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>Email:- {email}</p>
+                  {email &&<p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>Email:- {email}</p>}
                   <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>Mobile:- {mobile}</p>
                 </div>
             </div>
             <div className=' self-center mt-2 md:mt-0'>
-              <p className='text-justify leading-none text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]'>{description}</p>
+              <i className='text-justify leading-none text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] '>{description}</i>
             </div>
         </div>
     </div>

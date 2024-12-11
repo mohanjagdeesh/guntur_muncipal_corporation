@@ -22,8 +22,8 @@ export const INPAGE_NAVIGATIN_PROPS:InpageNavigationProps[] =[
         navLink:'/about-us/commissioner',
     },
     {
-        navTitle:'List Of Hods',
-        navLink:'/about-us/list-of-hods',
+        navTitle:'Honourable Hods',
+        navLink:'/about-us/honourable-hods',
     },
     {
         navTitle:'Historical & Religious Places',
@@ -32,5 +32,9 @@ export const INPAGE_NAVIGATIN_PROPS:InpageNavigationProps[] =[
     {
         navTitle:'Zones & Wards',
         navLink:'/about-us/wards-zones',
+    },
+    {
+        navTitle:'GMC Officers',
+        navLink:'/about-us/gmc-officers',
     },
 ];

@@ -27,6 +27,7 @@ import ListOfHods from './pages/about-us/ListOfHods.tsx';
 import Corporators from './pages/about-us/Corporators.tsx';
 import ParksList from './pages/about-us/ParksList.tsx';
 import RegisterAComplaint from './pages/home/RegisterAComplaint.tsx';
+import GmcOfficers from './pages/about-us/GmcOfficers.tsx';
 
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
             <Route path='/department/public-health' element={<PublicHealth />} />
             <Route path='/about-us/organization' element={<Organization />} />
             <Route path='/about-us/profile' element={<Profile />} />
-            <Route path='/about-us/list-of-hods' element={<ListOfHods />} />
+            <Route path='/about-us/honourable-hods' element={<ListOfHods />} />
             <Route path='/about-us/wards-zones' element={<WardsAndZones />} />
             <Route path='/about-us/structure' element={<Structure />} />
             <Route path='/about-us/religious-places' element={<HistoricalAndReligiousPlaces />} />
@@ -60,6 +61,7 @@ function App() {
             <Route path='/about-us/corporators' element={<Corporators />} />
             <Route path='/about-us/parks' element={<ParksList />} />
             <Route path='/register-complaint' element={<RegisterAComplaint />} />
+            <Route path='/about-us/gmc-officers' element={<GmcOfficers />} />
           </Routes>
         </main>
         <Footer />
