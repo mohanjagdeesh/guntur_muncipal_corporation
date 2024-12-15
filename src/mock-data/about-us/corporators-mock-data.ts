@@ -336,46 +336,60 @@ export const CORPORATORS_MOCK_DATA = [
       "mobile": "7799399456"
     },
     {
-      "name": "Sri Kalidindi Nagaraju",
-      "designation": "Corporator",
+      "name": "Sri Vanama Bala Vajra Babu",
+      "designation": "Deputy Mayor-I",
       "party": "YSR Congress",
       "wardNo": 50,
-      "mobile": "9346634909"
+      "mobile": "9553434777"
     },
     {
-      "name": "Sri Seshaiah D",
+      "name": "Smt. Muppavarapu Bharathi",
       "designation": "Corporator",
       "party": "Telugu Desam",
       "wardNo": 51,
-      "mobile": "8019609833"
+      "mobile": "9603805157"
     },
     {
-      "name": "Sri Yeruva Sambi Reddy",
+      "name": "Smt. Malliboina Srivalli",
       "designation": "Corporator",
       "party": "YSR Congress",
       "wardNo": 52,
-      "mobile": "9008495333"
+      "mobile": "8555807224"
     },
     {
-      "name": "Smt. J K Sesha Kumari",
+      "name": "Sri Dhupati Vamsi Babu",
       "designation": "Corporator",
       "party": "YSR Congress",
       "wardNo": 53,
-      "mobile": "8008449662"
+      "mobile": "9666579122"
     },
     {
-      "name": "Smt. Vundavalli Kusuma",
+      "name": "Smt. Mallavarapu Ramya",
       "designation": "Corporator",
       "party": "Telugu Desam",
       "wardNo": 54,
-      "mobile": "8247906409"
+      "mobile": "9347829552"
     },
     {
-      "name": "Sri Mallipeddi Jyothi",
+      "name": "Sri Papathiti Ambedkar",
       "designation": "Corporator",
       "party": "YSR Congress",
       "wardNo": 55,
-      "mobile": "9912320918"
-    }
+      "mobile": "9912892165"
+    },
+    {
+      "name": "Smt. Ayisetti Kanakadurga",
+      "designation": "Corporator",
+      "party": "YSR Congress",
+      "wardNo": 56,
+      "mobile": "9849046346"
+    },
+    {
+      "name": "Sri Pathan Rihana",
+      "designation": "Corporator",
+      "party": "YSR Congress",
+      "wardNo": 57,
+      "mobile": "7893644461"
+    },
   ]
   

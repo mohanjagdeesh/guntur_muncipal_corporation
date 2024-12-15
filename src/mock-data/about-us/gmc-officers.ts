@@ -1,4 +1,13 @@
 export const REVENUE_SECTION_MOCK_DATA = [
+    { "name": "Sri YVL Sivannarayana Rao", "designation": "Revenue Officer - I", "phone": "9849908374" },
+    { "name": "Sri Md Sadiqpasha", "designation": "Revenue Officer - II", "phone": "9550525235" },
+    { "name": "Sri Sk. Mujibur Rahaman", "designation": "Revenue Officer - III", "phone": "9963995310" },
+    { "name": "A. Ravi Kiran Reddy", "designation": "Revenue Officer - IV", "phone": "9963995302" },
+    { "name": "Smt P. Leela Rani", "designation": "Revenue Inspector - I", "phone": "7661864991" },
+    { "name": "Sri Addanki Srinivasarao", "designation": "Revenue Inspector - II", "phone": "9885963266" },
+    { "name": "Smt M. Renuka Durga Bhavani", "designation": "Revenue Inspector - III", "phone": "8977230456" },
+    { "name": "Sri K. Subba Rao", "designation": "Revenue Inspector - IV", "phone": "9959666908" },
+    { "name": "Sri Sk Nazeer Ahmad", "designation": "Revenue Inspector - V", "phone": "9392088986" },
     { name: "Sri Sk Nazeer Ahmad", designation: "Revenue Inspector - V", phone: "9392088986" },
     { name: "Sri M.Kasaiah", designation: "Revenue Inspector - VI", phone: "9396896949" },
     { name: "Smt K.Jyothirmai", designation: "Revenue Inspector – VII", phone: "9963995360" },

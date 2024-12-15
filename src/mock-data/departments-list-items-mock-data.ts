@@ -46,18 +46,6 @@ export const REVENUE_FM_OF_LIST_ITEMS:IRenderListItems[] = [
                 subTitle:'Assessing the value of properties within the municipal limits and collecting property taxes from property owners.'
             },
             {
-                title:'User Charges',
-                subTitle:'Collecting fees for various municipal services like water supply, sewerage, solid waste management, and building permits.'
-            },
-            {
-                title:'License Fees',
-                subTitle:'Collecting fees for various licenses and permits issued by the corporation, such as trade licenses, hawker licenses, and vehicle parking permits.'
-            },
-            {
-                title:'Advertisement Tax',
-                subTitle:'Collecting taxes on advertisements displayed on public and private properties within the municipal area.'
-            },
-            {
                 title:'Other Revenue Sources',
                 subTitle:'Identifying and exploring other potential revenue sources, such as toll taxes, lease rentals, and fines.'
             }
@@ -307,19 +295,6 @@ export const ENGINEERING_LIST_ITEMS:IRenderListItems[] = [
             {
                 title:'Sewerage',
                 subTitle:`Planning, designing, and operating sewerage systems, including sewage treatment plants and sewer networks.`,
-            },
-        ],
-    },
-    {
-        title:'Building Regulations',
-        liData:[
-            {
-                title:'Building Permits',
-                subTitle:`ssuing building permits and enforcing building codes and regulations.`,
-            },
-            {
-                title:'Building Inspections',
-                subTitle:`Inspecting buildings under construction to ensure compliance with building codes and safety standards.`,
             },
         ],
     },

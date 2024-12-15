@@ -23,30 +23,15 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                         outOfBrowser:false,
                     },
                     {
-                        associatedSubLinkHeader:'Honourable Commissioner',
-                        associatedSublinkTo:'/about-us/commissioner',
-                        outOfBrowser:false,
-                    },
-                    {
-                        associatedSubLinkHeader:'Honourable Additional Commissioner',
-                        associatedSublinkTo:'/about-us/additional-commissioner',
-                        outOfBrowser:false,
-                    },
-                    {
-                        associatedSubLinkHeader:'Honourable Hods',
-                        associatedSublinkTo:'/about-us/honourable-hods',
-                        outOfBrowser:false,
-                    },
-                    {
                         associatedSubLinkHeader:'Honourable Corporators',
                         associatedSublinkTo:'/about-us/corporators',
                         outOfBrowser:false,
                     },
                     {
-                        associatedSubLinkHeader:'GMC Officers',
-                        associatedSublinkTo:'/about-us/gmc-officers',
+                        associatedSubLinkHeader:'Ex-Officio Members',
+                        associatedSublinkTo:'/about-us/ex-officio-members',
                         outOfBrowser:false,
-                    },
+                    }
                 ]
             },
             {
@@ -60,6 +45,22 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             {
                 subLinkHeader: 'Profile',
                 subLinkTo:'/about-us/profile'
+            },
+            {
+                subLinkHeader:'Honourable Commissioner',
+                subLinkTo:'/about-us/commissioner',
+            },
+            {
+                subLinkHeader:'Honourable Additional Commissioner',
+                subLinkTo:'/about-us/additional-commissioner',
+            },
+            {
+                subLinkHeader:'Honourable Hods',
+                subLinkTo:'/about-us/honourable-hods',
+            },
+            {
+                subLinkHeader:'GMC Officers',
+                subLinkTo:'/about-us/gmc-officers',
             },
             {
                 subLinkHeader: 'Structure',
@@ -272,7 +273,17 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             },
             {
                 subLinkHeader:'Birth & Death Registrations ',
-                subLinkTo:'https://crsorgi.gov.in/web/index.php/auth/login'
+                subLinkTo:'https://crsorgi.gov.in/web/index.php/auth/login',
+                associatedSubLinks:[
+                    {
+                        associatedSubLinkHeader:'1967 To November 2016',
+                        associatedSublinkTo:'http://ubd.ap.gov.in:8080/UBDMIS/',
+                    },
+                    {
+                        associatedSubLinkHeader:'From December 2016',
+                        associatedSublinkTo:'https://dc.crsorgi.gov.in/crs/',
+                    },
+                ],
             },
             {
                 subLinkHeader:'Marriage Registrations ',
@@ -330,10 +341,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkTo:'https://guntur.emunicipal.ap.gov.in/lams-web/app/citizen/search-agreement/citizen-search.html'
             },
             {
-                subLinkHeader:'CLAP',
-                subLinkTo:'https://clap.ap.gov.in/uc/onlinepayment/GUNTUR/GUNTUR'
-            },
-            {
                 subLinkHeader:'Advertisement Tax ',
                 subLinkTo:'https://guntur.emunicipal.ap.gov.in/adtax/citizen/search/search-advertisement'
             },
@@ -343,8 +350,8 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
         linkHeader: 'DEPARTMENTS',
         subLinks: [
             {
-                subLinkHeader:'Administration & Education',
-                subLinkTo:'/department/administration-and-education',
+                subLinkHeader:'Administration',
+                subLinkTo:'/department/administration',
                 outOfBrowser:false,
             },
             {
@@ -404,10 +411,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             {
                 subLinkHeader: 'Municipal Services',
                 subLinkTo: 'https://apcdmaopenportal.emunicipal.ap.gov.in/application-dashboard'
-            },
-            {
-                subLinkHeader: 'CLAP',
-                subLinkTo: 'https://clap.ap.gov.in/lDashBoard'
             },
             {
                 subLinkHeader:'Online Project Management System (E-works)',

@@ -28,6 +28,7 @@ import Corporators from './pages/about-us/Corporators.tsx';
 import ParksList from './pages/about-us/ParksList.tsx';
 import RegisterAComplaint from './pages/home/RegisterAComplaint.tsx';
 import GmcOfficers from './pages/about-us/GmcOfficers.tsx';
+import ExOfficioMembers from './pages/about-us/ExOfficioMembers.tsx';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
             <Route path='/support' element={<Support />} />
-            <Route path='/department/administration-and-education' element={<AdministrationAndEducation />} />
+            <Route path='/department/administration' element={<AdministrationAndEducation />} />
             <Route path='/department/revenue' element={<Revenue />} />
             <Route path='/department/accounts' element={<Accounts />} />
             <Route path='/department/town-planning' element={<TownPlanning />} />
@@ -62,6 +63,7 @@ function App() {
             <Route path='/about-us/parks' element={<ParksList />} />
             <Route path='/register-complaint' element={<RegisterAComplaint />} />
             <Route path='/about-us/gmc-officers' element={<GmcOfficers />} />
+            <Route path='/about-us/ex-officio-members' element={<ExOfficioMembers />} />
           </Routes>
         </main>
         <Footer />

@@ -12,7 +12,7 @@ export const LIST_OF_HODS_MOCK_DATA = [
       name:'Sri C Obulesu',
       designation:'Additional Commissioner',
       mobile:9849908396,
-      email:'ac.gurntucorporation@gmail.com',
+      email:'ac.gunturcorporation@gmail.com',
       image:'/assets/gmc-body/additional_commissioner.jpg',
     },
     {
@@ -41,9 +41,9 @@ export const LIST_OF_HODS_MOCK_DATA = [
     },
     {
       serialNo:6,
-      name:'Sri. Sundar Rami Reddy',
+      name:'Sri. K Naga Malleswara Rao',
       designation:'Superintending Engineer I/c',
-      mobile:9849908400,
+      mobile:9849908401,
       email:'se.gunturcorp@gmail.com',
       image:'/assets/gmc-body/superintending_engineer.jpg',
     },

@@ -41,7 +41,7 @@ const AdministrationAndEducation = () => {
     <div>
         <PageTitleBanner title='ADMINISTRATION' />
         <div className='container'>
-          <DepartmentsDataRenderer description={`The Administration department in a Municipal Corporation plays a crucial role in overseeing various administrative and educational functions within the city. Here's a breakdown of its key responsibilities:`} liRenderer={<RenderListItems {...ADMINISTRATION_LIST_ITEMS} />} dataGrid={<GridReport {...ADMINISTRATION_AND_EDUCATION_GRID_PROPS}  />} departmentImage='/assets/administration_education.jpg' />
+          <DepartmentsDataRenderer description={`The Administration department in a Municipal Corporation plays a crucial role in overseeing various administrative functions within the city. Here's a breakdown of its key responsibilities:`} liRenderer={<RenderListItems {...ADMINISTRATION_LIST_ITEMS} />} dataGrid={<GridReport {...ADMINISTRATION_AND_EDUCATION_GRID_PROPS}  />} departmentImage='/assets/administration_education.jpg' />
           <RenderListItems {...EDUCATION_ADMINISTRATION_LIST_ITEMS} />
           <GridReport columns={ADMINISTRATION_AND_EDUCATION_GRID_PROPS?.columns} data={EDUCATION_CONTACTS} />
           <p>By effectively fulfilling these responsibilities, the Administration & Education department contributes to the well-being and progress of the city and its residents.</p>
