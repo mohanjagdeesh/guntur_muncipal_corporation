@@ -37,7 +37,7 @@ export const DeputyMayorDetails:IGmcBody[] =[{
 export const AdditionalCommissionerDetails:IGmcBody = {
     name:'Sri C Obulesu',
     designation:'Additional Commissioner',
-    email:'ac.gunturcorporation.gmail.com',
+    email:'ac.gunturcorporation@gmail.com',
     mobile:'9849908396',
     description:'It Is Our Endeavour To Bring The Best Of The Muncipal Services At The Doorstep Of The Citizens Of Guntur And To Serve With 24x7 And 360 Degree Approach.',
     image:'/assets/gmc-body/additional_commissioner.jpg',

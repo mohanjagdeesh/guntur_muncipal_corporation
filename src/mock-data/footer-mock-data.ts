@@ -6,7 +6,7 @@ export const FOOTER_CONTACT_LIST_ITEMS:IFooterNavigation[] = [
         liIcon:'faLocationDot'
     },
     {
-        liName:`+91 1234567890`,
+        liName:`+91 8632345103`,
         liIcon:'faPhone'
     },
     {

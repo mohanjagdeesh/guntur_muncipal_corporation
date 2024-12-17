@@ -23,11 +23,8 @@ export const ADMINISTRATION_LIST_ITEMS:IRenderListItems ={
 };
 
 export const EDUCATION_ADMINISTRATION_LIST_ITEMS:IRenderListItems = {
-    title:'Overall, the Administration & Education department works to',
+    title:'Overall, the Administration department works to',
     liData:[
-        {
-            subTitle:`Provide quality education to the city's children.`
-        },
         {
             subTitle:`Ensure efficient and effective administration of municipal services.`
         },

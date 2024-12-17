@@ -13,7 +13,7 @@ const SocialMediaPosts = () => {
               <InstagramEmbed url="https://www.instagram.com/p/DBqodiXzDmn/?igsh=MXN4Y2ZjbnF4dHhwdw%3D%3D&img_index=1" width={328} />
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <XEmbed url="https://twitter.com/PixelAndBracket/status/1356633038717923333" width={325} />
+            <blockquote class="twitter-tweet"><p lang="te" dir="ltr">గుంటూరు నగరపాలక సంస్థ పరిధిలో ఎమినిటి కార్యదర్శులు పిఎంఏవై 2.0 డిమాండ్ సర్వేని వేగంగా పూర్తి చేయాలని నగరపాలక సంస్థ అదనపు కమిషనర్ సిహెచ్.ఓబులేసు ఆదేశించారు. <a href="https://t.co/TdHYXOzxmm">pic.twitter.com/TdHYXOzxmm</a></p>&mdash; Guntur Municipal Corporation (@GCorporati20083) <a href="https://twitter.com/GCorporati20083/status/1863935662107365483?ref_src=twsrc%5Etfw">December 3, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
       </div>

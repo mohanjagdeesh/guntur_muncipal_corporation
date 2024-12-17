@@ -11,8 +11,9 @@ const Structure = () => {
          <PageTitleBanner title='Structure' />
          <div className='container'>
             <div className='md:flex md:items-start md:justify-between gap-5 my-4'>
-               <OrganisationalChart data={ORGANIZATION_STRUCTURE} />
-               <InpageNavigation inpageNavigationProps={INPAGE_NAVIGATIN_PROPS} className='hidden md:block'/>
+               {/* <OrganisationalChart data={ORGANIZATION_STRUCTURE} /> */}
+               <img src='/assets/organisation_chart.jpg' alt='Organisation_Chart' />
+               {/* <InpageNavigation inpageNavigationProps={INPAGE_NAVIGATIN_PROPS} className='hidden md:block'/> */}
             </div>
          </div>
        </>
