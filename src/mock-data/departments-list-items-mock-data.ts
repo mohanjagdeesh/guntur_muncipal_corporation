@@ -9,7 +9,7 @@ export const ADMINISTRATION_LIST_ITEMS:IRenderListItems ={
         },
         {
             title:'Financial Management',
-            subTitle:'Oversees the preparation and execution of the municipal budget, including revenue collection and expenditure control.'
+            subTitle:'Pay and allowence bull for the ministerial employees & maintenance of service register of the municiple employees'
         },
         {
             title:'Legal Affairs',
@@ -19,18 +19,6 @@ export const ADMINISTRATION_LIST_ITEMS:IRenderListItems ={
             title:'General Administration',
             subTitle:'Handles day-to-day administrative tasks, such as record-keeping, correspondence, and facility management.'
         },
-    ],
-};
-
-export const EDUCATION_ADMINISTRATION_LIST_ITEMS:IRenderListItems = {
-    title:'Overall, the Administration department works to',
-    liData:[
-        {
-            subTitle:`Ensure efficient and effective administration of municipal services.`
-        },
-        {
-            subTitle:`Promote the overall development of the city.`
-        }
     ],
 };
 
@@ -302,79 +290,14 @@ export const PUBLIC_HEALTH_LIST_ITEMS:IRenderListItems[]=[
         title:'Preventive Healthcare',
         liData:[
             {
-                title:'Immunization Programs',
-                subTitle:`Implementing and monitoring immunization programs to prevent infectious diseases.`,
-            },
-            {
-                title:'Health Education and Awareness',
-                subTitle:`Conducting health education campaigns to promote healthy lifestyles, hygiene practices, and disease prevention.`,
-            },
-            {
-                title:'Vector Control',
-                subTitle:`Controlling the spread of vector-borne diseases like dengue, malaria, and chikungunya through measures like fogging, larviciding, and public awareness campaigns.`,
-            },
-            {
-                title:'Food Safety and Hygiene',
-                subTitle:`Inspecting food establishments, ensuring adherence to food safety regulations, and taking action against violations.`,
-            },
-        ],
-    },
-    {
-        title:'Curative Healthcare',
-        liData:[
-            {
-                title:'Primary Healthcare Centers',
-                subTitle:` Operating primary healthcare centers to provide basic medical care, including diagnosis, treatment, and referral services.`,
-            },
-            {
-                title:'Family Planning Services',
-                subTitle:`Providing family planning services and counseling.`,
-            },
-            {
-                title:'Maternal and Child Health',
-                subTitle:`Providing antenatal, postnatal, and child healthcare services.`,
-            },
-            {
-                title:'Emergency Medical Services:',
-                subTitle:`Providing emergency medical services, including ambulance services and disaster response.`,
-            },
-        ],
-    },
-    {
-        title:'Environmental Health',
-        liData:[
-            {
-                title:'Sanitation',
-                subTitle:`Ensuring proper sanitation and waste management practices, including solid waste collection, transportation, and disposal.`,
-            },
-            {
-                title:'Clean Water Supply',
-                subTitle:`Monitoring water quality and ensuring safe drinking water supply.`,
-            },
-            {
-                title:'Air Quality Monitoring',
-                subTitle:`Monitoring air quality and taking measures to reduce pollution.`,
-            },
-            {
                 title:'Control of Communicable Diseases',
-                subTitle:`Implementing measures to control the spread of communicable diseases.`,
-            },
-        ],
-    },
-    {
-        title:'Public Health Surveillance',
-        liData:[
-            {
-                title:'Disease Surveillance',
-                subTitle:`Monitoring the incidence and prevalence of diseases.`,
+                subTitle:`Our approach focuses on minimizing the spread of communicable diseases through proactive and targeted interventions. This includes ensuring safe water quality, managing outbreaks with swift and strategic responses, and implementing the Urban Malaria Scheme to reduce the prevalence of vector-borne diseases. By adopting a holistic and community-centric methodology, we aim to enhance public health outcomes and promote healthier urban living environments.`,
             },
             {
-                title:'Epidemic Response',
-                subTitle:`Responding to outbreaks of infectious diseases.`,
-            },
-            {
-                title:'Health Data Analysis',
-                subTitle:`Analyzing health data to identify trends and inform public health policies.`,
+                title:'Birth and Death Registration',
+                subTitle:`The Public Health Department, under the municipal corporation, is responsible for registering all births and deaths occurring within its jurisdiction. This essential service includes issuing accurate certificates, making necessary corrections to birth and death records, and facilitating the addition of child names in birth certificates.
+                        Maintenance of Urban Primary Health Centers (UPHCs)
+                        The Public Health Department of the Municipal Corporation oversees the management and operation of Urban Primary Health Centers (UPHCs). These centers provide essential healthcare services, focusing on maternal and child health, including antenatal care, postnatal care, and pediatric healthcare. Additionally, UPHCs play a critical role in implementing and monitoring immunization programs aimed at preventing infectious diseases, ensuring healthier communities through proactive and comprehensive care.`,
             },
         ],
     },

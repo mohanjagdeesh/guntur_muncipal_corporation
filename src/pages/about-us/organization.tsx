@@ -15,7 +15,7 @@ const Organization = () => {
               <div>
                   <h1 className=' text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold text-black'>Guntur Muncipal Corporation</h1>
                   <p className=' text-[1rem] font-light text-black'>
-                  Guntur Municipal Corporation is 1st largest ULB in the Guntur District of A.P. it is spread over an area of  159.4 km2 (65.02 sq mi) with a population of 7,43,354 (2011 census). The sex ratio is 999 females per 1000 males. The literacy rates 66.08%, 69.46% of the male population and 62.69 % of the female population are literate. The city limits were expanded by merging the ten surrounding villages into the corporation. There exists 57 political divisions post merger of villages into the corporation.   
+                  Guntur Municipal Corporation is 1st largest ULB in the Guntur District of A.P. it is spread over an area of  161.4 km2 (65.02 sq mi) with a population of 9,06,344 (2024 census). The sex ratio is 999 females per 1000 males. The literacy rates 66.08%, 69.46% of the male population and 62.69 % of the female population are literate. The city limits were expanded by merging the ten surrounding villages into the corporation. There exists 57 political divisions post merger of villages into the corporation.   
                   </p>
                   <p className=' text-[1rem] font-light text-black my-5'>
                   Guntur is renowned for its significant contributions to agriculture, particularly for chillies, cotton, and tobacco. It boasts the largest chilli-market yard in Asia, making it a key player in the spice trade.

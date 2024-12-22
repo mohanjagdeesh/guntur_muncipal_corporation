@@ -31,6 +31,11 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                         associatedSubLinkHeader:'Ex-Officio Members',
                         associatedSublinkTo:'/about-us/ex-officio-members',
                         outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Co-option',
+                        associatedSublinkTo:'/about-us/co-option',
+                        outOfBrowser:false,
                     }
                 ]
             },

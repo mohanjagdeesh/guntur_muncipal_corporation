@@ -63,4 +63,16 @@ export const FOOTER_SERVICES_LIST_ITEMS:IFooterNavigation[] = [
         liName:"Marriage Registrations",
         liUrl:'https://guntur.emunicipal.ap.gov.in/mrs/registration/register?applicationSource=online',
     },
+];
+
+
+export const FOOTER_TOLL_FREE_NUMBERS_LIST_ITEMS:IFooterNavigation[] = [
+    {
+        liName:'08632345103,\n08632345104,\n08632345105',
+        liIcon:'faPhone'
+    },
+    {
+        liName:`9849908391`,
+        liIcon:'faPhone'
+    },
 ]

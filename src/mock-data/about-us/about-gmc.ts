@@ -13,7 +13,7 @@ export const ABOUT_GMC:Array<{title:string;titleInfo:string;}> =[
     },
     {
         title:'Area',
-        titleInfo:'159.4 Sq.Km',
+        titleInfo:'161.4 Sq.Km',
     },
     {
         title:'Region',

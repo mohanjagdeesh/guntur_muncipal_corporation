@@ -1,7 +1,7 @@
 export const PEOPLE_CALCULATION_MOCK_DATA = [
     {
         iconName:'faBuilding',
-        value:'159.4'
+        value:'168.41'
     },
     {
         iconName:'faUsersGear',
@@ -9,6 +9,6 @@ export const PEOPLE_CALCULATION_MOCK_DATA = [
     },
     {
         iconName:'faUsers',
-        value:'4690800'
+        value:'906344'
     },
 ]

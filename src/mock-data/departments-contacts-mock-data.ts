@@ -1,8 +1,8 @@
 export const ADMINISTRATION_CONTACTS = [
     {
-        name:'Sri S.N. Prasad',
+        name:'Sri Balaji Basha',
         designation:'Manager',
-        mobile:'9866337509',
+        mobile:'9849796626',
     },
     {
         name:'Sri SVVS Madan Gopal',
@@ -10,9 +10,9 @@ export const ADMINISTRATION_CONTACTS = [
         mobile:'9963995363',
     },
     {
-        name:'Sri Mirza Yusuf Baig',
+        name:'Sri Pahan Nazeer',
         designation:'Senior Assistant, C1',
-        mobile:'9963995306',
+        mobile:'9951949922',
     },
     {
         name:'Smt M Aruna',
@@ -52,34 +52,11 @@ export const ADMINISTRATION_CONTACTS = [
 ];
 
 
-export const EDUCATION_CONTACTS = [
-    {
-        name:'Sri M Poleswarao',
-        designation:'Superintendent',
-        mobile:'9959666959',
-    },
-    {
-        name:'Smt T Nirmala',
-        designation:'Senior Assistant, C4',
-        mobile:'9989951912',
-    },
-    {
-        name:'Smt Ch Leela Kumari',
-        designation:'Typist, C2 (I/c)',
-        mobile:'9966618653',
-    },
-    {
-        name:'Smt Ch Leela Kumari',
-        designation:'Typist, C3 (I/c)',
-        mobile:'9966618653',
-    },
-];
-
 export const REVENUE_FM_OF_CONTACTS = [
     {
-        name:'SSri YVL Sivannarayana Rao',
+        name:'Sri SK Balaji Basha',
         designation:'Revenue Officer -I',
-        mobile:'9849908374',
+        mobile:'9849796626',
     },
     {
         name:'Sri Md Sadiqpasha',
@@ -102,7 +79,7 @@ export const REVENUE_FM_OF_CONTACTS = [
         mobile:'7661864991',
     },
     {
-        name:`Sri Addanki Srinivasarao`,
+        name:`Sri K NagaRaju`,
         designation:`Revenue Inspector - II`,
         mobile:`9885963266`,
     },
@@ -117,7 +94,7 @@ export const REVENUE_FM_OF_CONTACTS = [
         mobile:`9959666908`,
     },
     {
-        name:`Sri Sk Nazeer Ahmad`,
+        name:`Sri Sk Naseer Ahmad`,
         designation:`Revenue Inspector - V`,
         mobile:`9392088986`,
     },
@@ -152,9 +129,9 @@ export const REVENUE_FM_OF_CONTACTS = [
         mobile:`9963995336`,
     },
     {
-        name:`Sri Pattan Nazeer`,
+        name:`Sri Mirza Yusuf Baig`,
         designation:`Senior Assistant, A2 - 1`,
-        mobile:`9951949922`,
+        mobile:`9963995306`,
     },
     {
         name:`Sri Challa Rajasekhar`,
@@ -218,7 +195,7 @@ export const ACCOUNTS_CONTACTS = [
         {
             name:'Sri P Namrat Kumar',
             designation:'Accountant-1',
-            mobile:'9849908385',
+            mobile:'9849908372',
         },
         {
             name:`Smt L Padma`,
@@ -226,9 +203,9 @@ export const ACCOUNTS_CONTACTS = [
             mobile:`7799240121`,
         },
         {
-            name:`Sri Md Fayaz`,
+            name:`Sri G Sridhar`,
             designation:`Junior Asst, B1`,
-            mobile:`9966197489`,
+            mobile:`9492903455`,
         },
         {
             name:`Smt K Lakshmi`,
@@ -286,27 +263,22 @@ export const ACCOUNTS_CONTACTS = [
 
 export const TOWN_PLANNING_CONTACTS = [
     {
-        name:'Sri. D Rambabu',
+        name:'Sri D Rambabu',
         designation:'City Planner',
         mobile:'9849908390',
     },
     {
-        name:'Sri. S. Mahapatra',
-        designation:'Deputy City Planner',
-        mobile:'7842291258',
-    },
-    {
-        name:'Sri. J Suraj Kumar',
+        name:'Sri J Suraj Kumar',
         designation:'Deputy City Planner',
         mobile:'9963995372',
     },
     {
-        name:'Sri. S Fazlur Rehaman',
+        name:'Sri S Fazlur Rehaman',
         designation:'Assistant City Planner I/c',
         mobile:'9177001864',
     },
     {
-        name:'Sri. D Mallikarjuna',
+        name:'Sri D Mallikarjuna',
         designation:'Assistant City Planner I/c',
         mobile:'9177001878',
     },
@@ -316,19 +288,29 @@ export const TOWN_PLANNING_CONTACTS = [
         mobile:`9963995314`,
     },
     {
-        name:`Smt. B. Nagavalli`,
+        name:`Sri S Chandra Sekhar`,
+        designation:`Assistant City Planner`,
+        mobile:`8341833070`,
+    },
+    {
+        name:`Smt Sesha Saila`,
         designation:`Town Planning Officer`,
-        mobile:`9666805212`,
+        mobile:`9963995330`,
     },
     {
-        name:`Sri. Ch. B. Suvarna Kumar`,
-        designation:`Town Planning Supervisor`,
-        mobile:`9573317131`,
-    },
-    {
-        name:`Sri. A. Lakshmana Swami`,
+        name:`Sri A. Lakshmana Swami`,
         designation:`Town Planning Supervisor`,
         mobile:`9989871276`,
+    },
+    {
+        name:`Sri SK Mahaboob Subhani`,
+        designation:`Town Surveyor-East`,
+        mobile:`9963995303`,
+    },
+    {
+        name:`Sri B Lakshmi Narayana`,
+        designation:`Town Surveyor-West`,
+        mobile:`9704501655`,
     },
     {
         name:`Sri KV Satyanarayana`,
@@ -336,69 +318,64 @@ export const TOWN_PLANNING_CONTACTS = [
         mobile:`9849900120`,
     },
     {
-        name:`Sri. Sk. Rasool`,
-        designation:`TPS`,
-        mobile:`8374511660`,
-    },
-    {
         name:`Sri Sk Yaseer Ahmed`,
-        designation:`TPBO I/c`,
+        designation:`TPBO-1`,
         mobile:`9160559786`,
     },
     {
-        name:`Sri A Mohammad`,
-        designation:`TPBO I/c`,
-        mobile:`9032929689`,
-    },
-    {
-        name:`Sri B Vishnu Vardhan Raju`,
-        designation:`TPBO I/c`,
-        mobile:`9848229226`,
-    },
-    {
-        name:`Sri Ch Bharath`,
-        designation:`TPBO I/c`,
-        mobile:`8333843253`,
-    },
-    {
-        name:`Sri Ch Naga Lakshmi`,
-        designation:`TPBO I/c`,
-        mobile:`7794029500`,
-    },
-    {
-        name:`Sri D Satyanarayana Raju`,
-        designation:`TPBO I/c`,
-        mobile:`8639423774`,
-    },
-    {
         name:`Sri E Rama Guravaiah`,
-        designation:`TPBO I/c`,
+        designation:`TPBO-2`,
         mobile:`9848493008`,
     },
     {
+        name:`Sri MD Anwarulla`,
+        designation:`TPBO-3`,
+        mobile:`9032929689`,
+    },
+    {
+        name:`Sri P Anil Kumar`,
+        designation:`TPBO-4`,
+        mobile:`9989092340`,
+    },
+    {
+        name:`Smt Ch Naga Lakshmi`,
+        designation:`TPBO-5`,
+        mobile:`7794029500`,
+    },
+    {
+        name:`Sri M Salman Raju`,
+        designation:`TPBO-6`,
+        mobile:`8886768876`,
+    },
+    {
+        name:`Sri B Vishnu Vardhan Raju`,
+        designation:`TPBO-7`,
+        mobile:`9848229226`,
+    },
+    {
         name:`Sri K Narendra Babu`,
-        designation:`TPBO I/c`,
+        designation:`TPBO-8`,
         mobile:`9505568409`,
     },
     {
         name:`Sri K Nikhil Vamsi`,
-        designation:`TPBO I/c`,
+        designation:`TPBO-9`,
         mobile:`8309592032`,
     },
     {
-        name:`Sri M Salman Raju`,
-        designation:`TPBO I/c`,
-        mobile:`8886768876`,
+        name:`Sri Ch Bharath`,
+        designation:`TPBO-10`,
+        mobile:`8333843253`,
     },
     {
         name:`Sri N Venkateswara Rao`,
-        designation:`TPBO I/c`,
+        designation:`TPBO-11`,
         mobile:`9160939291`,
     },
     {
-        name:`Sri P Anil Kumar`,
-        designation:`TPBO I/c`,
-        mobile:`9989092340`,
+        name:`Sri D Satyanarayana Raju`,
+        designation:`TPBO-12`,
+        mobile:`8639423774`,
     },
     {
         name:`Sri Hazaru Venkateswarlu`,
@@ -411,9 +388,9 @@ export const TOWN_PLANNING_CONTACTS = [
         mobile:`9959126026`,
     },
     {
-        name:`Sri T Narayana Murthy`,
+        name:`Sri V Malavaya`,
         designation:`Senior Assistant, G2 I/c`,
-        mobile:`9959126026`,
+        mobile:`9493966622`,
     },
     {
         name:`Sri P Karimulla`,
@@ -421,178 +398,168 @@ export const TOWN_PLANNING_CONTACTS = [
         mobile:`7799942786`,
     },
     {
-        name:`Smt K. Syamala`,
+        name:`Sri SK Jani`,
         designation:`Junior Assistant, G4`,
-        mobile:`9502833395`,
+        mobile:`7013848168`,
     },
 ];
 
 export const ENGINEERING_CONTACTS = [
     {
-        name:'Sri Sundar Rami Reddy',
+        name:'Sri Nagamalleswara Rao',
         designation:'Superintending Engineer I/c',
-        mobile:'9849908400',
+        mobile:'9849908401',
     },
     {
-        name:'Sri Y Rama RAO',
+        name:'Sri Srinivas',
         designation:'ADH',
         mobile:'9849908370',
     },
     {
-        name:'Sri G. Ramalingeswarao gadi',
+        name:'Sri G Ramalingeswarao',
         designation:'Deputy Director (Amrut)',
         mobile:'9705953939',
     },
     {
-        name:'Sri. D. Sundara Rami Reddy',
-        designation:'Executive Engineer - I',
-        mobile:'9849908395',
-    },
-    {
-        name:'Sri. K. Koteswara Rao',
-        designation:'Executive Engineer - II',
+        name:'Sri K Koteswara Rao',
+        designation:'Executive Engineer - 1',
         mobile:'9849908401',
     },
     {
-        name:`Sri Sundar Rami Reddy`,
-        designation:`Executive Engineer-III I/c`,
-        mobile:`9849908395`,
+        name:'Sri D Sundara Rami Reddy',
+        designation:'Executive Engineer - 2',
+        mobile:'9849908401',
     },
     {
-        name:`Sri. J. Srinivas`,
-        designation:`Executive Engineer-IV`,
-        mobile:`9963995304`,
+        name:'Sri M Ramesh Babu',
+        designation:'Deputy Executive Engineer - 1',
+        mobile:'8977078204',
     },
     {
-        name:`Sri Ch H.Siva Kumar`,
-        designation:`Drawing Branch`,
-        mobile:`9849908375`,
+        name:'Sri B Madhusudhana Rao',
+        designation:'Deputy Executive Engineer - 2',
+        mobile:'9959666959',
     },
     {
-        name:`Sri Nagabhushanam`,
-        designation:`Deputy Executive Engineer -I I/c`,
-        mobile:`9704501657`,
+        name:'Sri E Srinivasa Rao',
+        designation:'Deputy Executive Engineer - 3',
+        mobile:'9704501651',
     },
     {
-        name:`Sri Nagabhushanam`,
-        designation:`Deputy Executive Engineer -II I/c`,
-        mobile:`9704501657`,
+        name:'Sri Haneef Mohammad',
+        designation:'Deputy Executive Engineer - 4',
+        mobile:'9963995313',
     },
     {
-        name:`Sri E.Srinivasa Rao`,
-        designation:`Deputy Executive Engineer -III I/c`,
-        mobile:`9704501651`,
+        name:'Sri K Nagabhushanam',
+        designation:'Deputy Executive Engineer - 5',
+        mobile:'9704501657',
     },
     {
-        name:`Sri M. Ramesh Babu`,
-        designation:`Deputy Executive Engineer -IV I/c`,
-        mobile:`8977018204`,
+        name:'Sri P Kalyana Rao',
+        designation:'Deputy Executive Engineer - 6',
+        mobile:'9849908403',
     },
     {
-        name:`Sri. J. Satish Kumar`,
-        designation:`Deputy Executive Engineer`,
-        mobile:`8977018203`,
+        name:'Sri J Satish Kumar',
+        designation:'Deputy Executive Engineer - 7',
+        mobile:'9133858493',
     },
     {
-        name:`Sri. P. Kalyana Rao`,
-        designation:`Deputy Executive Engineer`,
-        mobile:`9849908403`,
+        name:'Sri B Chaitanya',
+        designation:'Assistant Engineer - 1 (HLR)',
+        mobile:'9849908406',
     },
     {
-        name:`Sri. Ch.H Siva Kumar`,
-        designation:`Deputy Executive Engineer`,
-        mobile:`9849908375`,
+        name: "Sri K Sambasiva Rao",
+        designation: "Assistant Engineer - 2 (Circle Office)",
+        mobile: "8977018202"
     },
     {
-        name:`Sri. Haneef Mohammad`,
-        designation:`Deputy Executive Engineer`,
-        mobile:`9989152525`,
+        name: "R Nikhil",
+        designation: "Assistant Engineer - 3 (WAS) Ward Amenity - 1021119",
+        mobile: "9160949376"
     },
     {
-        name:`Sri. Chaitanya`,
-        designation:`Assistant Engineer -I (HlR)`,
-        mobile:`9849907951`,
+        name: "Smt P L P Deepya",
+        designation: "Assistant Engineer - 4 (AT Agraharam)",
+        mobile: "9515665529"
     },
     {
-        name:`Sri. Chaitanya`,
-        designation:`Assistant Engineer -II (Circile Office)`,
-        mobile:`9849907951`,
+        name: "Smt P Sai1aja",
+        designation: "Assistant Engineer - 5 (Na11acheruvu)",
+        mobile: "9849908375"
     },
     {
-        name:`Kum. R. Nagaveni`,
-        designation:`Assistant Engineer -III (AT Agraharam)`,
-        mobile:`9963995315`,
+        name: "K Sai Krishna",
+        designation: "Assistant Engineer - 6 (WAS) Ward Amenity - 1021116",
+        mobile: "9121526325"
     },
     {
-        name:`Kum. R. Nagaveni`,
-        designation:`Assistant Engineer -IV (Nallacheruvu)`,
-        mobile:`9963995315`,
+        name: "M Bhargav",
+        designation: "Assistant Engineer - 7 WAS Ward Amenity - 1021038",
+        mobile: "8686061221"
     },
     {
-        name:`Sri. P. Venkateswara Rao`,
-        designation:`Assistant Engineer I/c`,
-        mobile:`9819908369`,
+        name: "Pavan Kumar Jyothi",
+        designation: "Assistant Engineer - 8 (WAS) Ward Amenity - 1021021",
+        mobile: "7799876628"
     },
     {
-        name:`Sri. B. Suneel Kumar`,
-        designation:`Assistant Engineer -VII &VIII (LB Nagar, BR Stadium)`,
-        mobile:`9177001853`,
+        name: "Sri N Ravi Kiran",
+        designation: "Assistant Engineer - 9 (BR Stadium)",
+        mobile: "7799954208"
     },
     {
-        name:`Sri. N. Ravi Kiran`,
-        designation:`Assistant Engineer-XI`,
-        mobile:`7799954208`,
+        name: "Sri P Venkateswara Rao",
+        designation: "Assistant Engineer - 10 (LB Nagar)",
+        mobile: "9849908369"
     },
     {
-        name:`Sri. S.N.M.S Babar`,
-        designation:`Assistant Engineer`,
-        mobile:`9849908389`,
+        name: "Ch Gopi",
+        designation: "Assistant Engineer - 11 (WAS) Ward Amenity - 102116",
+        mobile: "9989153566"
     },
     {
-        name:`Sri. K. Sambasiva Rao`,
-        designation:`Assistant Engineer`,
-        mobile:`8977018202`,
+        name: "Kum R Nagaveni",
+        designation: "Assistant Engineer - 12 (Nehrunagar)",
+        mobile: "9550388853"
     },
     {
-        name:`Sri. M. Pavan Kumar`,
-        designation:`Assistant Engineer -V`,
-        mobile:`9704501654`,
+        name: "P Madhusudhan Rao",
+        designation: "Assistant Engineer - 13 (LLR) (WAS) Ward Amenity - 1021029",
+        mobile: "9000024476"
     },
     {
-        name:`Sri. P. Venkateswara Rao`,
-        designation:`Assistant Engineer -VI (Nehru Nagar)`,
-        mobile:`9819908369`,
+        name: "M Ravi Teja",
+        designation: "Assistant Engineer - 14 (WAS) Ward Amenity - 1021022",
+        mobile: "9133858493"
     },
     {
-        name:`Kum. P. Neeharika`,
-        designation:`Assistant Engineer`,
-        mobile:`7799954205`,
+        name: "Sri Challa Rajashekar",
+        designation: "Superintendent i/c",
+        mobile: "9381530756"
     },
     {
-        name:`Sri L.Nageswara Rao`,
-        designation:`Superintendent`,
-        mobile:`9494275302`,
+        name: "Sri Akula Srinivasa Rao",
+        designation: "Senior Assistant, E-1",
+        mobile: "8523876443"
     },
     {
-        name:`Sri Akula Srinivasa Rao`,
-        designation:`Senior Assistant, E-1`,
-        mobile:`8523876443`,
+        name: "Sri SK Salam",
+        designation: "Junior Assistant, E-2",
+        mobile: "9963995352"
     },
     {
-        name:`Sri SK Salam`,
-        designation:`Junior Assistant ,E-2`,
-        mobile:`9963995352`,
+        name: "Sri SK Fayaz",
+        designation: "Junior Assistant, E-3",
+        mobile: "8179146703"
     },
     {
-        name:`Sri G Sridhar`,
-        designation:`Senior Assistant ,E-3`,
-        mobile:`9492903455`,
-    },
-    {
-        name:`Sri Kantu Nagaraju`,
-        designation:`Junior Assistant, E-4`,
-        mobile:`9848610070`,
-    },
+        name: "Sri K Rajendra Prasad",
+        designation: "Junior Assistant, E-4",
+        mobile: "817904170"
+    }
 ];
 
 export const PUBLIC_HEALTH_CONTACTS = [

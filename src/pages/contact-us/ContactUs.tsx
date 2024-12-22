@@ -45,7 +45,7 @@ export const CONTACT_US_GRID_PROPS:IGridReport ={
       name:'Sri C Obulesu',
       designation:'Additional Commissioner',
       mobile:9849908396,
-      email:'ac.gurntucorporation@gmail.com',
+      email:'ac.gunturcorporation@gmail.com',
     },
     {
       serialNo:3,
