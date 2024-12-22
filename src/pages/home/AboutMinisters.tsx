@@ -30,11 +30,12 @@ const AboutMinisters = () => {
       <div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           {PEOPLE_CALCULATION_MOCK_DATA.map((each,index)=> {
-            const {iconName,value}= each;
+            const {iconName,value,unit}= each;
             return(
               <div key={index} className='border-2 border-boulder flex flex-col items-center justify-center h-[150px]'>
                 <FontAwesomeIcon className=' text-orange-peel' icon={FaIcons[iconName]} size='2xl' />
-                <h1 className=' text-[1.7rem] font-bold'>{currencyConvertor(value)}</h1>
+                <h1 className=' text-[1.7rem] font-bold leading-none text-center mb-0 mt-1'>{currencyConvertor(value)}</h1>
+                <p className='font-light text-[1rem] mt-0'>{unit}</p>
             </div>
             )
           })}

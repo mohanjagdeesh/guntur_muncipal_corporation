@@ -68,11 +68,11 @@ export const FOOTER_SERVICES_LIST_ITEMS:IFooterNavigation[] = [
 
 export const FOOTER_TOLL_FREE_NUMBERS_LIST_ITEMS:IFooterNavigation[] = [
     {
-        liName:'08632345103,08632345104,08632345105',
+        liName:'0863 - 2345103,0863 - 2345104,0863 - 2345105',
         liIcon:'faPhone'
     },
     {
-        liName:`9849908391`,
+        liName:`+91 9849908391`,
         svgIcon:'/assets/whatsapp.png',
     },
 ]

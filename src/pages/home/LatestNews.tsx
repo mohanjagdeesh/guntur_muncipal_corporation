@@ -39,7 +39,7 @@ const LatestNews = () => {
                 <div>
                     <h1 className='bg-orange-peel py-2 text-center font-bold text-violet text-[1.5rem]'>MC Corner</h1>
                     <div className=' bg-white h-[300px] flex items-center justify-center'>
-                        <h1>MC Corner Content Will Go Here</h1>
+                        <img src='assets/mc_corner_1.jpeg' alt='' className='h-full w-full'/>
                     </div>
                     <div className="scrolling-text bg-orange-peel">
                         <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] py-2 text-white'><span className='font-bold text-violet'>Latest News:-</span> Here is the Latest News from municipal commissioner corner.</p>

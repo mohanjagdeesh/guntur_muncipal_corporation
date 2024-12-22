@@ -30,6 +30,8 @@ import RegisterAComplaint from './pages/home/RegisterAComplaint.tsx';
 import GmcOfficers from './pages/about-us/GmcOfficers.tsx';
 import ExOfficioMembers from './pages/about-us/ExOfficioMembers.tsx';
 import CoOption from './pages/about-us/CoOption.tsx';
+import UPACell from './pages/departments/upa-cell.tsx';
+import Infrastructure from './pages/about-us/Infrastructure.tsx';
 
 function App() {
   return (
@@ -66,6 +68,8 @@ function App() {
             <Route path='/about-us/gmc-officers' element={<GmcOfficers />} />
             <Route path='/about-us/ex-officio-members' element={<ExOfficioMembers />} />
             <Route path='/about-us/co-option' element={<CoOption />} />
+            <Route path='/department/upa-cell' element={<UPACell />} />
+            <Route path='/about-us/infrastructure' element={<Infrastructure />} />
           </Routes>
         </main>
         <Footer />

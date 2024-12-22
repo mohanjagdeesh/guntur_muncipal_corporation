@@ -83,6 +83,10 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkHeader: 'Parks',
                 subLinkTo:'/about-us/parks',
             },
+            {
+                subLinkHeader: 'Infrastructure',
+                subLinkTo:'/about-us/infrastructure',
+            },
         ]
     },
     {
@@ -385,8 +389,18 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 outOfBrowser:false,
             },
             {
-                subLinkHeader:'UPACELL',
-                subLinkTo:'/department/uapcell',
+                subLinkHeader:'UPACell',
+                subLinkTo:'/department/upa-cell',
+                outOfBrowser:false,
+            },
+            {
+                subLinkHeader:'Infrastructure',
+                subLinkTo:'/department/infrastructure',
+                outOfBrowser:false,
+            },
+            {
+                subLinkHeader:'Water Supply',
+                subLinkTo:'/department/water-supply',
                 outOfBrowser:false,
             },
         ]

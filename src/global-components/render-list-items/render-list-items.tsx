@@ -4,10 +4,10 @@ import { IRenderListItems } from '../../interfaces/IRenderListItems'
 const RenderListItems = ({title,liData,addClass}:IRenderListItems) => {
   return (
     <div className={addClass ? addClass : '' }>
-        {title && <h1 className='text-[1rem] md:text-[1.5rem] font-bold leading-none'>{title} :-</h1>}
+        {title && <h1 className='text-[1rem] md:text-[1.5rem] font-bold leading-none my-4'>{title} :-</h1>}
         <ul className=' list-disc pl-6'>
             {liData?.map((li)=>(
-                <li className='text-[1rem] font-light leading-tight text-justify'>{li.title && <span className='font-bold'>{li.title}: </span>}{li.subTitle}</li>
+                <li className='text-[0.8rem] md:text-[1.2rem] leading-tight text-justify mt-2'>{li.title && <span className='font-bold'>{li.title}: </span>}{li.subTitle}</li>
             ))}
         </ul>
     </div>

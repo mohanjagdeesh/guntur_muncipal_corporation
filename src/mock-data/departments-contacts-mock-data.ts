@@ -609,3 +609,37 @@ export const PUBLIC_HEALTH_CONTACTS = [
         mobile:'9704531647',
     },
 ];
+
+
+export const UPA_CELL_CONTACTS = [
+    {
+        name: 'Sri J Ramarao',
+        designation: 'Project Officer',
+        phone: '9063189222',
+    },
+    {
+        name: 'Sri S Siril Paul',
+        designation: 'Superintendent',
+        phone: '9063189222',
+    },
+    {
+        name: 'Sri G. Ranga Reddy',
+        designation: 'Senior Assistant, H1',
+        phone: '9703175559',
+    },
+    {
+        name: 'Smt L Sridevi',
+        designation: 'Junior Assistant, H2',
+        phone: '7386153170',
+    },
+    {
+        name: 'Sri Waseem Ali',
+        designation: 'Record Assistant, H3',
+        phone: '8686223304',
+    },
+    {
+        name: 'Smt D. Madhavi',
+        designation: 'Senior Assistant, H4',
+        phone: '9010522337',
+    },
+];

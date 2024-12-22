@@ -8,10 +8,10 @@ const ImageGallery = () => {
             <div>
                 <h1 className=' text-white font-bold text-[1.5rem] mb-4'>Image & Video Gallery</h1>
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-4'>
-                    <img src='assets/latest_news_1.jpg' alt='latestNews1' />
-                    <img src='assets/latest_news_2.jpg' alt='latestNews1'/>
-                    <img src='assets/latest_news_3.jpg' alt='latestNews1'/>
-                    <img src='assets/latest_news_4.jpg' alt='latestNews1'/>
+                    <img src='assets/latest_news_1.jpeg' alt='latestNews1' />
+                    <img src='assets/latest_news_2.jpeg' alt='latestNews1'/>
+                    <img src='assets/latest_news_3.jpeg' alt='latestNews1'/>
+                    <img src='assets/latest_news_4.jpeg' alt='latestNews1'/>
                 </div>
                 <h1 className=' text-white font-bold text-[1rem] text-right mt-2'>View More</h1>
             </div>

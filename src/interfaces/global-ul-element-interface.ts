@@ -5,4 +5,5 @@ export interface IGlobalUlElement {
     liNavigation?:string;
     svgIcon?:string;
     type?:string;
+    iconClass?:string;
 }

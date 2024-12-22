@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FaIcons from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-const GlobalUlElements: React.FC<IGlobalUlElement> = ({ liName, liIcon, liNavigation, liUrl,svgIcon , type}) => {
+const GlobalUlElements: React.FC<IGlobalUlElement> = ({ liName, liIcon, liNavigation, liUrl,svgIcon , type,iconClass}) => {
   const faIcon = liIcon ? (FaIcons[liIcon as keyof typeof FaIcons] as FaIcons.IconDefinition) : null;
   
   // const navigate = useNavigate();
@@ -51,15 +51,15 @@ const GlobalUlElements: React.FC<IGlobalUlElement> = ({ liName, liIcon, liNaviga
   
   return (
     <li className="text-white text-[1rem]">
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 mt-2">
         {faIcon && (
           <span>
-            <FontAwesomeIcon icon={faIcon} />
+            <FontAwesomeIcon icon={faIcon} className={`${iconClass ? iconClass : ''}`} />
           </span>
         )}
         {svgIcon && (
           <span className='mt-2'>
-            <img className='h-4 w-4' src={svgIcon} alt='Svg-Icon' />
+            <img className='h-6 w-6' src={svgIcon} alt='Svg-Icon' />
           </span>
         )}
         {type === 'number' ? 

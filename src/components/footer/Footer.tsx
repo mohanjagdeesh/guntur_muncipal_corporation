@@ -21,7 +21,7 @@ const Footer = () => {
           <ul>
             <h1 className=' text-orange-peel text-md font-semibold mb-4'>TOLL-FREE NUMBERS</h1>
             {FOOTER_TOLL_FREE_NUMBERS_LIST_ITEMS.map((each) => {
-              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon={each?.liIcon} liUrl={each?.liUrl} svgIcon={each.svgIcon} type='number' />;
+              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon={each?.liIcon} liUrl={each?.liUrl} svgIcon={each.svgIcon} type='number' iconClass='h-6 w-6' />;
             })}
           </ul>
         </div>

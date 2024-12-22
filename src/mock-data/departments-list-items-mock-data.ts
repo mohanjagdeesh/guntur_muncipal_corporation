@@ -302,3 +302,27 @@ export const PUBLIC_HEALTH_LIST_ITEMS:IRenderListItems[]=[
         ],
     },
 ];
+
+export const UPA_CELL_LIST_ITEMS:IRenderListItems[]=[
+    {
+        title:'Registration of births and deaths'
+    },
+    {
+        title:'Preparation of accounts and audit arrangements'
+    },
+    {
+        title:'Construction, development, and maintenance of roads'
+    },
+    {
+        title:'Maintenance of street lighting',
+    },
+    {
+        title:'Maintenance of elementary and secondary educational institutions'
+    },
+    {
+        title:'Regulation of D & O traders'
+    },
+    {
+        title:'Steps to control communicable diseases'
+    }
+]

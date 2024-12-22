@@ -47,9 +47,6 @@ const WardsAndZones = () => {
                         ))
                     }
                 </div>
-                <div>
-                    <InpageNavigation inpageNavigationProps={INPAGE_NAVIGATIN_PROPS} className='hidden md:block'/>
-                </div>
             </div>
             <div>
                 {renderTabContent(selectedTabIndex)}
