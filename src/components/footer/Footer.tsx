@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalUlElements from '../../global-components/global-ul-elements/global-ul-elements.tsx';
-import { FOOTER_COMPANY_LIST_ITEMS, FOOTER_CONTACT_LIST_ITEMS, FOOTER_SERVICES_LIST_ITEMS, FOOTER_TOLL_FREE_NUMBERS_LIST_ITEMS } from '../../mock-data/footer-mock-data.ts';
+import { FOOTER_COMPANY_LIST_ITEMS, FOOTER_CONTACT_LIST_ITEMS, FOOTER_TOLL_FREE_NUMBERS_LIST_ITEMS } from '../../mock-data/footer-mock-data.ts';
 const Footer = () => {
   return (
     <div className=' bg-violet h-fit py-4'>
@@ -19,15 +19,9 @@ const Footer = () => {
             })}
           </ul>
           <ul>
-            <h1 className=' text-orange-peel text-md font-semibold mb-4'>SERVICES</h1>
-            {FOOTER_SERVICES_LIST_ITEMS.map((each) => {
-              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon="faChevronRight" liUrl={each?.liUrl} />;
-            })}
-          </ul>
-          <ul>
             <h1 className=' text-orange-peel text-md font-semibold mb-4'>TOLL-FREE NUMBERS</h1>
             {FOOTER_TOLL_FREE_NUMBERS_LIST_ITEMS.map((each) => {
-              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon={each?.liIcon} liUrl={each?.liUrl} />;
+              return <GlobalUlElements key={each.liName} liName={each?.liName} liIcon={each?.liIcon} liUrl={each?.liUrl} svgIcon={each.svgIcon} type='number' />;
             })}
           </ul>
         </div>

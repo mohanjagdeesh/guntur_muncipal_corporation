@@ -2,10 +2,11 @@ import React from 'react';
 import { IGlobalUlElement } from '../../interfaces/global-ul-element-interface';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FaIcons from '@fortawesome/free-solid-svg-icons';
-import { useNavigate , Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const GlobalUlElements: React.FC<IGlobalUlElement> = ({ liName, liIcon, liNavigation, liUrl }) => {
+const GlobalUlElements: React.FC<IGlobalUlElement> = ({ liName, liIcon, liNavigation, liUrl,svgIcon , type}) => {
   const faIcon = liIcon ? (FaIcons[liIcon as keyof typeof FaIcons] as FaIcons.IconDefinition) : null;
+  
   // const navigate = useNavigate();
 
   // Handle internal navigation with `liNavigation`
@@ -46,6 +47,8 @@ const GlobalUlElements: React.FC<IGlobalUlElement> = ({ liName, liIcon, liNaviga
   }
 
   // Fallback for when no navigation or URL is provided
+  const numbers = liName?.split(',');
+  
   return (
     <li className="text-white text-[1rem]">
       <div className="flex items-center gap-6">
@@ -54,7 +57,21 @@ const GlobalUlElements: React.FC<IGlobalUlElement> = ({ liName, liIcon, liNaviga
             <FontAwesomeIcon icon={faIcon} />
           </span>
         )}
-        <p className="leading-none">{liName}</p>
+        {svgIcon && (
+          <span className='mt-2'>
+            <img className='h-4 w-4' src={svgIcon} alt='Svg-Icon' />
+          </span>
+        )}
+        {type === 'number' ? 
+        <div>
+          {numbers.map((number:string, index:number) => (
+            <p key={index} className="leading-none mt-1">
+              {number}
+            </p>
+          ))}
+        </div> : <p className="leading-6">
+              {liName}
+            </p>}
       </div>
     </li>
   );

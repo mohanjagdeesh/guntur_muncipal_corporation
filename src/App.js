@@ -1,6 +1,6 @@
 import Footer from './components/footer/Footer.tsx';
 import Header from './components/header/Header.tsx';
-import './scss/main.scss';
+import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/home/HomePage.tsx';
 import ContactUs from './pages/contact-us/ContactUs.tsx';

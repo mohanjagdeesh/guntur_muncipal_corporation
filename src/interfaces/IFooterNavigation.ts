@@ -3,4 +3,5 @@ export interface IFooterNavigation{
     liIcon?:string;
     liNavigation?:string;
     liUrl?:string;
+    svgIcon?:string;
 }
