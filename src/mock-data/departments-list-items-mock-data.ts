@@ -326,3 +326,23 @@ export const UPA_CELL_LIST_ITEMS:IRenderListItems[]=[
         title:'Steps to control communicable diseases'
     }
 ]
+
+
+export const SANITATION_LIST_ITEMS:IRenderListItems[]= [
+    {
+        title:'HOUSEHOLDS DETAILS',
+        liData:[
+            {
+                title:'Total Residential Households',
+                subTitle:'231826'
+            },
+            {
+                title:'Flats of Apartments',
+                subTitle:'47195	(No. of apartments: 2091)',
+            },
+            {
+                title:'Commercial Establishments',
+            }
+        ]
+    }
+]

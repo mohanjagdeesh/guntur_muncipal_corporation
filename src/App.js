@@ -32,6 +32,8 @@ import ExOfficioMembers from './pages/about-us/ExOfficioMembers.tsx';
 import CoOption from './pages/about-us/CoOption.tsx';
 import UPACell from './pages/departments/upa-cell.tsx';
 import Infrastructure from './pages/about-us/Infrastructure.tsx';
+import WaterSupply from './pages/departments/water-supply.tsx';
+import Sanitation from './pages/departments/sanitation.tsx';
 
 function App() {
   return (
@@ -69,7 +71,9 @@ function App() {
             <Route path='/about-us/ex-officio-members' element={<ExOfficioMembers />} />
             <Route path='/about-us/co-option' element={<CoOption />} />
             <Route path='/department/upa-cell' element={<UPACell />} />
-            <Route path='/about-us/infrastructure' element={<Infrastructure />} />
+            <Route path='/department/infrastructure' element={<Infrastructure />} />
+            <Route path='/department/water-supply' element={<WaterSupply />} />
+            {/* <Route path='/department/sanitation' element={<Sanitation />} /> */}
           </Routes>
         </main>
         <Footer />

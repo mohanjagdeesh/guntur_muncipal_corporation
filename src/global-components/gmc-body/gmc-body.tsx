@@ -8,10 +8,9 @@ const GmcBody = ({name,designation,email,mobile,description,image}:IGmcBody) => 
             <div className='w-full'>
                 <img src={image} alt={designation}/>
                 <div className='mt-4'>
-                  <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-bold leading-none'>Name:- {name}</p>
-                  <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>Designation:- {designation}</p>
-                  {email &&<p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>Email:- {email}</p>}
-                  <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>Mobile:- {mobile}</p>
+                  <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-bold leading-none'>{name}</p>
+                  {email &&<p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>{email}</p>}
+                  <p className=' text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] font-semibold'>{mobile}</p>
                 </div>
             </div>
             <div className=' self-center mt-2 md:mt-0'>

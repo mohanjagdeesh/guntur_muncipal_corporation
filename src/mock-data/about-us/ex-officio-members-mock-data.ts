@@ -27,7 +27,7 @@ export const EX_OFFICIO_MEMBERS_MOCK_DATA = [
     },
     {
         name:'Sri K.S Lakshamana Rao Garu',
-        designation:'MLA',
+        designation:'MLC',
         image:'/assets/gmc-body/ex_officio_6.jpg',
     },
     {

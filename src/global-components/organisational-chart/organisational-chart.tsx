@@ -4,7 +4,7 @@ import { Tree, TreeNode } from 'react-organizational-chart';
 
 const OrganisationalChart = ({data}:{data:any}) => {
   return (
-    <div className=' overflow-x-auto border-2 border-violet py-4'>
+    <div className=' overflow-x-auto py-4'>
     {data?.map((main)=>(
         <Tree  
         lineWidth={'4px'}

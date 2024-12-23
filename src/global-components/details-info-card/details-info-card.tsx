@@ -23,12 +23,12 @@ const DetailsInfoCard = ({ mainTitle, location, image, description, cardClick, i
         <div className="flex flex-col items-center justify-center md:flex-row my-4 gap-4">
           <img className="h-[200px] w-[200px] rounded-lg" src={image} alt="Place-Image" />
           <div>
-            <h1 className='text-violet'>
-              <span className='text-orange-peel font-bold'>Location: </span>
+            <h1 className='text-violet text-justify'>
+              <span className='text-orange-peel font-bold'>Location:<br/></span>
               {location}
             </h1>
-            <h1 className='text-violet'>
-              <span className='text-orange-peel font-bold'>Description: </span>
+            <h1 className='text-violet text-justify'>
+              <span className='text-orange-peel font-bold'>Description:<br/></span>
               {description}
             </h1>
           </div>

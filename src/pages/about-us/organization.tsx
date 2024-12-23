@@ -14,14 +14,14 @@ const Organization = () => {
           <div className=' flex items-start gap-5 mt-4'>
               <div>
                   <h1 className=' text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold text-black'>Guntur Muncipal Corporation</h1>
-                  <p className=' text-[1rem] font-light text-black'>
-                  Guntur Municipal Corporation is 1st largest ULB in the Guntur District of A.P. it is spread over an area of  161.4 km2 (65.02 sq mi) with a population of 9,06,344 (2024 census). The sex ratio is 999 females per 1000 males. The literacy rates 66.08%, 69.46% of the male population and 62.69 % of the female population are literate. The city limits were expanded by merging the ten surrounding villages into the corporation. There exists 57 political divisions post merger of villages into the corporation.   
+                  <p className=' text-[1rem] font-light text-black text-justify'>
+                  Guntur Municipal Corporation is the first largest ULB in the Guntur District of A.P. It is spread over an area of  161.4 km2 (65.02 Square Miles) with a population of 9,06,344 (2024 census). The sex ratio is 999 females per 1000 males. The literacy rate has been 66.08%, 69.46% of the male population and 62.69 % of the female population are literate. The city limits are expanded by merging the ten surrounding villages into the corporation. There exists 57 political divisions post merger of villages into the corporation.    
                   </p>
-                  <p className=' text-[1rem] font-light text-black my-5'>
-                  Guntur is renowned for its significant contributions to agriculture, particularly for chillies, cotton, and tobacco. It boasts the largest chilli-market yard in Asia, making it a key player in the spice trade.
+                  <p className=' text-[1rem] font-light text-black my-5 text-justify'>
+                  Guntur is renowned for its significant contributions to agriculture, particularly for Chilly, Cotton, and Tobacco. It boasts the largest Chilli-market yard in Asia, making it a key player in the spice trade.
                   </p>
-                  <p className=' text-[1rem] font-light text-black'>
-                  The city is also a hub of education and healthcare, home to prestigious institutions like Guntur Medical College and Andhra Christian College, along with the well-known Government Hospital. These elements highlight Guntur's blend of agricultural prominence, educational and medical excellence.
+                  <p className=' text-[1rem] font-light text-black text-justify'>
+                  The city is also a hub for education and healthcare, home to prestigious institutions like Guntur Medical College and Andhra Christian College, along with the well-known Government Hospital. These elements highlight Guntur's blend of agricultural prominence, educational and medical excellence.
                   </p>
               </div>
               <InpageNavigation inpageNavigationProps={INPAGE_NAVIGATIN_PROPS} className='hidden md:block'/>

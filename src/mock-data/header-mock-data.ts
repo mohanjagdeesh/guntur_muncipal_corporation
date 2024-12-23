@@ -60,7 +60,7 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkTo:'/about-us/additional-commissioner',
             },
             {
-                subLinkHeader:'Honourable Hods',
+                subLinkHeader:'Honourable HODs',
                 subLinkTo:'/about-us/honourable-hods',
             },
             {
@@ -82,10 +82,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
             {
                 subLinkHeader: 'Parks',
                 subLinkTo:'/about-us/parks',
-            },
-            {
-                subLinkHeader: 'Infrastructure',
-                subLinkTo:'/about-us/infrastructure',
             },
         ]
     },
@@ -403,6 +399,11 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkTo:'/department/water-supply',
                 outOfBrowser:false,
             },
+            // {
+            //     subLinkHeader:'Sanitation',
+            //     subLinkTo:'/department/sanitation',
+            //     outOfBrowser:false,
+            // },
         ]
     },
     {

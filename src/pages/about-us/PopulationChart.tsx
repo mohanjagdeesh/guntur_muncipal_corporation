@@ -1,16 +1,12 @@
 import React, { useMemo } from "react";
 import { AxisOptions, Chart } from "react-charts";
 
-const PopulationChart = () => {
+const BarChart = ({chartData,label}:{chartData:Array<{primary:string;secondary:number;fill:string;}>,label:string}) => {
   const data = useMemo(
     () => [
       {
-        label: "Population",
-        data: [
-          { primary: "Male", secondary: 2440521,fill:'#ffff00' },
-          { primary: "Female", secondary: 2250279,fill:'#f576f7' },
-          { primary: "Total", secondary: 4690800,fill:'#00ff00' },
-        ],
+        label: label,
+        data: chartData,
       },
     ],
     []
@@ -51,7 +47,7 @@ const PopulationChart = () => {
 
   return (
     <div>
-        <h1 className=" text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] font-bold py-3 text-center">Population</h1>
+        <h1 className=" text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] font-bold py-3 text-center">{label}</h1>
         <div className='h-[300px] lg:h-[400px] xl:h-[450px]'>
             <Chart
                 options={{
@@ -66,4 +62,4 @@ const PopulationChart = () => {
   );
 };
 
-export default PopulationChart;
+export default BarChart;

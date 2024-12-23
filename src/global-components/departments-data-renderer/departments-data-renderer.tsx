@@ -12,7 +12,7 @@ const DepartmentsDataRenderer = ({description,liRenderer,dataGrid,gridDescriptio
           {liRenderer}
         </div>
         {dataGrid}
-        <p>{gridDescription}</p>
+        <p className='text-justify font-light'>{gridDescription}</p>
     </div>
   );
 };

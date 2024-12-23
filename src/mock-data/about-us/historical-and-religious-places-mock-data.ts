@@ -11,7 +11,7 @@ export const HISTORICAL_PLACES_MOCK_DATA:IDetailsInfoCard[] =[
         mainTitle:'Amaravati Stupa',
         image:'/assets/amaravathi_stupa.jpeg',
         location:'About 35 km from Guntur city.',
-        description:`Under the Central government’s Swadesh Darshan Buddhist theme-based circuit, Buddhavanam will be set up in Amaravati at a cost of Rs 15 crore to attract Buddhists from across the world. An open-air theatre, puja mandir, auditorium, food court, open meditation hall, information centre and library hall will also be se`,
+        description:`Under the Central government’s Swadesh Darshan Buddhist theme-based circuit, Buddhavanam will be set up in Amaravati at a cost of Rs 15 crore to attract Buddhists from across the world. An open-air theatre, puja mandir, auditorium, food court, open meditation hall, information centre and library hall will also be setup`,
     },
     {
         mainTitle:'Kondavidu Fort',

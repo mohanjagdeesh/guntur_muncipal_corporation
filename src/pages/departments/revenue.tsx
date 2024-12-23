@@ -40,7 +40,7 @@ const Revenue = () => {
     <div>
         <PageTitleBanner title='REVENUE' />
         <div className='container'>
-          <DepartmentsDataRenderer description={`The Revenue Department in a Municipal Corporation plays a crucial role in generating revenue for the corporation and managing its financial resources. Here are the key functions of the Revenue Department:`} liRenderer={REVENUE_FM_OF_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/revenue.jpg' />
+          <DepartmentsDataRenderer description={`The Revenue Department in a Municipal Corporation plays a crucial role in generating revenue for the corporation and managing its financial resources.`} liRenderer={REVENUE_FM_OF_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/revenue.jpg' />
           <GridReport {...REVENUE_FM_OF_GRID_PROPS} />
           <p>By effectively performing these functions, the Revenue Department contributes to the financial sustainability of the Municipal Corporation and helps in providing essential services to the citizens.</p>
         </div>

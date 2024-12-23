@@ -2,7 +2,7 @@ import React from 'react'
 import InpageNavigation from '../../global-components/inpage-navigation/inpage-navigation.tsx'
 import { INPAGE_NAVIGATIN_PROPS } from '../../mock-data/about-us/inpage-navigation-mock-data.ts'
 import { ABOUT_GMC, GMC_COMPLETE_DATA } from '../../mock-data/about-us/about-gmc.ts';
-import PopulationChart from './PopulationChart.tsx';
+import BarChart from './PopulationChart.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FaIcons from '@fortawesome/free-solid-svg-icons';
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
@@ -30,7 +30,11 @@ const Profile = () => {
                 </div>
                 <InpageNavigation inpageNavigationProps={INPAGE_NAVIGATIN_PROPS} className='hidden md:block'/>
             </div>
-            <PopulationChart />
+            <BarChart chartData={[
+                { primary: "Male", secondary: 2440521,fill:'#ffff00' },
+                { primary: "Female", secondary: 2250279,fill:'#f576f7' },
+                { primary: "Total", secondary: 4690800,fill:'#00ff00' },
+                ]} label='Population' />
             <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
                 {
                     GMC_COMPLETE_DATA.map((data,index)=> (
