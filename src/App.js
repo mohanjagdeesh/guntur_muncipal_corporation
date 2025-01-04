@@ -33,7 +33,7 @@ import CoOption from './pages/about-us/CoOption.tsx';
 import UPACell from './pages/departments/upa-cell.tsx';
 import Infrastructure from './pages/about-us/Infrastructure.tsx';
 import WaterSupply from './pages/departments/water-supply.tsx';
-import Sanitation from './pages/departments/sanitation.tsx';
+import Horticulture from './pages/departments/Horticulture.tsx';
 
 function App() {
   return (
@@ -73,6 +73,7 @@ function App() {
             <Route path='/department/upa-cell' element={<UPACell />} />
             <Route path='/department/infrastructure' element={<Infrastructure />} />
             <Route path='/department/water-supply' element={<WaterSupply />} />
+            <Route path='/department/horticulture' element={< Horticulture/>} />
             {/* <Route path='/department/sanitation' element={<Sanitation />} /> */}
           </Routes>
         </main>

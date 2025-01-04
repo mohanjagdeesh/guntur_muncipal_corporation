@@ -15,7 +15,7 @@ const Profile = () => {
         <div className=' container'>
             <div className='flex items-start justify-between gap-5 mt-4'>
                 <div className=' flex flex-col lg:flex-row lg:gap-3'>
-                    <img src='/assets/guntur-junction.jpeg' alt='Guntur-Junction' className='w-full lg:h-[280px] lg:w-[280px]' />
+                    <img src='/assets/gmc_building.jpg' alt='Guntur-Junction' className='w-full lg:h-[280px] lg:w-[280px]' />
                     <ul className=' divide-y-[1px] my-4 lg:my-0'>
                         {
                             ABOUT_GMC.map((info,index)=>(

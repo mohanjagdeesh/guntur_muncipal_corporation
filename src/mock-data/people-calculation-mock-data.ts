@@ -1,7 +1,7 @@
 export const PEOPLE_CALCULATION_MOCK_DATA = [
     {
         iconName:'faChartArea',
-        value:'168.41',
+        value:'159.46',
         unit:'Sq.Kms',
     },
     {

@@ -86,4 +86,12 @@ export const LIST_OF_HODS_MOCK_DATA = [
       mobile:9160233356,
       email:'madhusudhanarao@gmcguntur.com',
     },
-  ]
+    {
+      serialNo:12,
+      name:'Pulivarthi Srinivas',
+      designation:'Assistant Director of Horticulture',
+      mobile:9182145446,
+      email:'pulivarthisrinivas@gmcguntur.com',
+      image:'/assets/gmc-body/Asst_Horticulture.jpg'
+    },
+  ];

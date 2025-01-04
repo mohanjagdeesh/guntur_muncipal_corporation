@@ -399,11 +399,11 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkTo:'/department/water-supply',
                 outOfBrowser:false,
             },
-            // {
-            //     subLinkHeader:'Sanitation',
-            //     subLinkTo:'/department/sanitation',
-            //     outOfBrowser:false,
-            // },
+            {
+                subLinkHeader:'Horticulture',
+                subLinkTo:'/department/horticulture',
+                outOfBrowser:false,
+            },
         ]
     },
     {

@@ -210,7 +210,7 @@ export const ACCOUNTS_CONTACTS = [
         {
             name:`Smt K Lakshmi`,
             designation:`Junior Asst ,B3`,
-            mobile:`9492903789`,
+            mobile:`8374647834`,
         },
         {
             name:`Sri MD Hythshavali`,
@@ -408,7 +408,7 @@ export const ENGINEERING_CONTACTS = [
     {
         name:'Sri Nagamalleswara Rao',
         designation:'Superintending Engineer I/c',
-        mobile:'9849908401',
+        mobile:'9849908400',
     },
     {
         name:'Sri Srinivas',
@@ -428,7 +428,7 @@ export const ENGINEERING_CONTACTS = [
     {
         name:'Sri D Sundara Rami Reddy',
         designation:'Executive Engineer - 2',
-        mobile:'9849908401',
+        mobile:'9849908395',
     },
     {
         name:'Sri M Ramesh Babu',
@@ -463,7 +463,7 @@ export const ENGINEERING_CONTACTS = [
     {
         name:'Sri J Satish Kumar',
         designation:'Deputy Executive Engineer - 7',
-        mobile:'9133858493',
+        mobile:'8977018203',
     },
     {
         name:'Sri B Chaitanya',
@@ -615,7 +615,7 @@ export const UPA_CELL_CONTACTS = [
     {
         name: 'Sri J Ramarao',
         designation: 'Project Officer',
-        phone: '9063189222',
+        phone: '9963995325',
     },
     {
         name: 'Sri S Siril Paul',
@@ -641,5 +641,29 @@ export const UPA_CELL_CONTACTS = [
         name: 'Smt D. Madhavi',
         designation: 'Senior Assistant, H4',
         phone: '9010522337',
+    },
+];
+
+
+export const HORTICULTURE_MOCK_DATA:Array<{icon:string;title:string;nos:number}> = [
+    {
+        icon:'faCannabis',
+        title:'Parks',
+        nos:32,
+    },
+    {
+        icon:'faWeter',
+        title:'Water Bodies',
+        nos:12,
+    },
+    {
+        icon:'faTrafficLight',
+        title:'Traffic Islands',
+        nos:15,
+    },
+    {
+        icon:'faSeedling',
+        title:'Avenue Plantation',
+        nos:3860,
     },
 ];

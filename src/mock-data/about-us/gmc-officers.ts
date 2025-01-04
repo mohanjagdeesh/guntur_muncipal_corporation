@@ -38,7 +38,7 @@ export const GMC_OFFICERS_MOCK_DATA = [
       { name: "Sri P Namrat Kumar", designation: "Accountant-1", phone: "9849908385" },
       { name: "Smt L Padma", designation: "Accountant-II", phone: "7799240121" },
       { name: "Sri Md Fayaz", designation: "Junior Asst, B1", phone: "9966197489" },
-      { name: "Smt K Lakshmi", designation: "Junior Asst, B3", phone: "9492903789" },
+      { name: "Smt K Lakshmi", designation: "Junior Asst, B3", phone: "8374647834" },
       { name: "Sri MD Hythshavali", designation: "Junior Asst, B4", phone: "9963995339" },
       { name: "Sri Gudavalli Srinivasarao", designation: "Senior Asst, B5", phone: "9347253513" },
       { name: "B Punna Rao", designation: "Record Asst, B6", phone: "9948621062" },
@@ -77,7 +77,7 @@ export const GMC_OFFICERS_MOCK_DATA = [
   {
     title:'Engineering Section',
     gridData:[
-      { name: "Sri Sundar Rami Reddy", designation: "Superintending Engineer I/c", phone: "9849908400" },
+      { name: "Sri Nagamalleswara Rao", designation: "Superintending Engineer I/c", phone: "9849908400" },
     { name: "Sri Y Rama RAO", designation: "ADH", phone: "9849908370" },
     { name: "Sri G. Ramalingeswarao gadi", designation: "Deputy Director (Amrut)", phone: "9705953939" },
     { name: "Sri D. Sundara Rami Reddy", designation: "Executive Engineer - I", phone: "9849908395" },
@@ -162,7 +162,7 @@ export const GMC_OFFICERS_MOCK_DATA = [
   {
     title:'Upa Cell',
     gridData:[
-      { name: "Sri Sk. Balaji Basha", designation: "Project Officer", phone: "9849796626" },
+      { name: "Sri J Ramarao", designation: "Project Officer", phone: "9963995325" },
       { name: "Sri G. Ranga Reddy", designation: "Senior Assistant, H1", phone: "9703175559" },
       { name: "Smt L Sridevi", designation: "Junior Assistant, H2", phone: "7386153170" },
       { name: "Sri Waseem Ali", designation: "Record Assistant, H3", phone: "8686223304" },
