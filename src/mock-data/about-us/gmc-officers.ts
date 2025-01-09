@@ -2,23 +2,22 @@ export const GMC_OFFICERS_MOCK_DATA = [
   {
     title:'Revenue Section',
     gridData :[
-      { name: "Sri YVL Sivannarayana Rao", designation: "Revenue Officer - I", phone: "9849908374" },
+      { name: "Sri SK Balaji Basha", designation: "Revenue Officer - I", phone: "9849796626" },
       { name: "Sri Md Sadiqpasha", designation: "Revenue Officer - II", phone: "9550525235" },
       { name: "Sri Sk. Mujibur Rahaman", designation: "Revenue Officer - III", phone: "9963995310" },
       { name: "A. Ravi Kiran Reddy", designation: "Revenue Officer - IV", phone: "9963995302" },
       { name: "Smt P. Leela Rani", designation: "Revenue Inspector - I", phone: "7661864991" },
-      { name: "Sri Addanki Srinivasarao", designation: "Revenue Inspector - II", phone: "9885963266" },
+      { name: "Sri K Nagaraju", designation: "Revenue Inspector - II", phone: "9885963266" },
       { name: "Smt M. Renuka Durga Bhavani", designation: "Revenue Inspector - III", phone: "8977230456" },
       { name: "Sri K. Subba Rao", designation: "Revenue Inspector - IV", phone: "9959666908" },
-      { name: "Sri Sk Nazeer Ahmad", designation: "Revenue Inspector - V", phone: "9392088986" },
-      { name: "Sri Sk Nazeer Ahmad", designation: "Revenue Inspector - V", phone: "9392088986" },
+      { name: "Sri Sk Naseer Ahmad", designation: "Revenue Inspector - V", phone: "9392088986" },
       { name: "Sri M.Kasaiah", designation: "Revenue Inspector - VI", phone: "9396896949" },
       { name: "Smt K.Jyothirmai", designation: "Revenue Inspector – VII", phone: "9963995360" },
       { name: "Sri D Vinayaka Rao", designation: "Revenue Inspector – VIII", phone: "8121666624" },
       { name: "Sri P Venkata Rao", designation: "Revenue Inspector – IX", phone: "8522991777" },
       { name: "Sri V Venkata Ramaiah", designation: "Superintendent", phone: "9866337559" },
       { name: "Sri J Syam Prasad", designation: "Senior Assistant, A1", phone: "9963995336" },
-      { name: "Sri Pattan Nazeer", designation: "Senior Assistant, A2 - 1", phone: "9951949922" },
+      { name: "Sri Mirza Yusuf Baig", designation: "Senior Assistant, A2 - 1", phone: "9963995306" },
       { name: "Sri Challa Rajasekhar", designation: "Senior Assistant, A2 - 2", phone: "9381530756" },
       { name: "Sri S Nageswara Rao", designation: "Record Assistant, A3 & A4", phone: "9963995341" },
       { name: "Sri A Siva Nageswara Rao", designation: "Junior Assistant, A5,A6&A7 (Circle office)", phone: "9963834369" },
@@ -51,27 +50,58 @@ export const GMC_OFFICERS_MOCK_DATA = [
     ]
   },
   {
-    title:'Education Section',
+    title:'Administration Section',
     gridData:[
-      { name: "Sri M Poleswarao", designation: "Superintendent", phone: "9959666959" },
-      { name: "Smt T Nirmala", designation: "Senior Assistant, C4", phone: "9989951912" },
-      { name: "Smt Ch Leela Kumari", designation: "Typist, C2 (I/c)", phone: "9966618653" },
-      { name: "Smt Ch Leela Kumari", designation: "Typist, C3 (I/c)", phone: "9966618653" },
-    ]
-  },
-  {
-    title:'Establishment Section',
-    gridData:[
-      { name: "Sri S.N. Prasad", designation: "Manager", phone: "9866337509" },
-      { name: "Sri SVVS Madan Gopal", designation: "Superintendent", phone: "9963995363" },
-      { name: "Sri Mirza Yusuf Baig", designation: "Senior Assistant, C1", phone: "9963995306" },
-      { name: "Smt M Aruna", designation: "Senior Assistant, C5", phone: "9030470660" },
-      { name: "Smt Ayesha Bibi Pathan", designation: "Junior Assistant, C8", phone: "7013326274" },
-      { name: "Sri Gopi Kishore", designation: "Junior Assistant, C9", phone: "8297940460" },
-      { name: "Smt B.Malleswari", designation: "Typist, C10", phone: "9347502120" },
-      { name: "Smt I Rajya Lakshmi", designation: "Senior Assistant, D1", phone: "9948436652" },
-      { name: "Smt Routhu Nagamani", designation: "Record Assistant, D2", phone: "9948085035" },
-      { name: "Sri Y Rajesh", designation: "Record Assistant, D7 I/c", phone: "9948085035" }
+      {
+        name:'Sri Balaji Basha',
+        designation:'Manager',
+        phone:'9849796626',
+    },
+    {
+        name:'Sri SVVS Madan Gopal',
+        designation:'Superintendent',
+        phone:'9963995363',
+    },
+    {
+        name:'Sri Pahan Nazeer',
+        designation:'Senior Assistant, C1',
+        phone:'9951949922',
+    },
+    {
+        name:'Smt M Aruna',
+        designation:'Senior Assistant, C5',
+        phone:'9030470660',
+    },
+    {
+        name:'Smt Ayesha Bibi Pathan',
+        designation:'Junior Assistant, C8',
+        phone:'7013326274',
+    },
+    {
+        name:'Sri Gopi Kishore',
+        designation:'Junior Assistant, C9',
+        phone:'8297940460',
+    },
+    {
+        name:'Smt B.Malleswari',
+        designation:'Typist, C10',
+        phone:'9347502120',
+    },
+    {
+        name:'Smt I Rajya Lakshmi',
+        designation:'Senior Assistant, D1',
+        phone:'9948436652',
+    },
+    {
+        name:'Smt Routhu Nagamani',
+        designation:'Record Assistant, D2',
+        phone:'9866337509',
+    },
+    {
+        name:'Sri Y Rajesh',
+        designation:'Record Assistant, D7 I/c',
+        phone:'9948085035',
+    },
     ]
   },
   {
@@ -115,7 +145,7 @@ export const GMC_OFFICERS_MOCK_DATA = [
   {
     title:'Public Health Section',
     gridData:[
-      { name: "Dr Sobha Rani", designation: "Chief Medical of Health", phone: "7799222882" },
+      { name: "Dr Amrutha", designation: "Chief Medical of Health", phone: "9491647614" },
       { name: "Dr. M Ravi Babu", designation: "Municipal Health Officer", phone: "8917977379" },
       { name: "Sri N Madhusudhana Rao", designation: "Biologist", phone: "9160233356" },
       { name: "Sri M Poleswarao", designation: "Superintendent", phone: "9959666959" },

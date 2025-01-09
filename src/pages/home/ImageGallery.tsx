@@ -1,4 +1,5 @@
 import React from 'react'
+import { IMAGE_GALLERY, VIDEO_GALLERY } from '../../mock-data/image-and-video-gallery/image-and-video-gallery-mock-data.ts';
 
 const ImageGallery = () => {
   return (
@@ -8,22 +9,25 @@ const ImageGallery = () => {
             <div>
                 <h1 className=' text-white font-bold text-[1.5rem] mb-4'>Image & Video Gallery</h1>
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-4'>
-                    <img src='assets/latest_news_1.jpeg' alt='latestNews1' />
-                    <img src='assets/latest_news_2.jpeg' alt='latestNews1'/>
-                    <img src='assets/latest_news_3.jpeg' alt='latestNews1'/>
-                    <img src='assets/latest_news_4.jpeg' alt='latestNews1'/>
+                {
+                    IMAGE_GALLERY.slice(0,4).map((each,index)=> <img src={`assets/${each}`} alt={`Image-${index}`} />)
+                }
                 </div>
-                <h1 className=' text-white font-bold text-[1rem] text-right mt-2'>View More</h1>
+                <a href='/image-and-video-gallery' className=' text-orange-peel font-bold text-[1rem] text-right mt-2 underline hover:text-white'>View More</a>
             </div>
             <div>
-            <iframe
-                className="h-[300px] lg:h-[250px] xl:h-[350px] w-full"
-                src="https://www.youtube.com/embed/5c_ZYCNOcAA?start=659"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-            />
-
+                {
+                    VIDEO_GALLERY.slice(0,1).map((each, index) => (
+                        <iframe
+                            key={index}
+                            className="h-[300px] lg:h-[250px] xl:h-[350px] w-full"
+                            src={each}
+                            title={`YouTube video player ${index}`}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    ))
+                }
             </div>
         </div>
     </div>

@@ -373,11 +373,25 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkHeader: 'Town Planning',
                 subLinkTo:'/department/town-planning',
                 outOfBrowser:false,
+                associatedSubLinks:[
+                    {
+                        associatedSubLinkHeader:'Complaints',
+                        associatedSublinkTo:'https://dtcp.ap.gov.in/',
+                        outOfBrowser:true,
+                    }
+                ]
             },
             {
                 subLinkHeader: 'Engineering',
                 subLinkTo:'/department/engineering',
                 outOfBrowser:false,
+                associatedSubLinks:[
+                    {
+                        associatedSubLinkHeader:'Horticulture',
+                        associatedSublinkTo:'/department/horticulture',
+                        outOfBrowser:false,
+                    },
+                ]
             },
             {
                 subLinkHeader:'Public Health',
@@ -390,19 +404,14 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 outOfBrowser:false,
             },
             {
-                subLinkHeader:'Infrastructure',
+                subLinkHeader:'GMC Infrastructure',
                 subLinkTo:'/department/infrastructure',
                 outOfBrowser:false,
             },
             {
                 subLinkHeader:'Water Supply',
                 subLinkTo:'/department/water-supply',
-                outOfBrowser:false,
-            },
-            {
-                subLinkHeader:'Horticulture',
-                subLinkTo:'/department/horticulture',
-                outOfBrowser:false,
+                outOfBrowser:true,
             },
         ]
     },
@@ -417,7 +426,9 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkHeader:'Swachh Bharat Mission',
             },
             {
-                subLinkHeader:'PMAY'
+                subLinkHeader:'PMAY',
+                subLinkTo:'https://guntur-site-assets.s3.us-east-1.amazonaws.com/pmaynotesforsite.pdf',
+                outOfBrowser:true,
             }
         ]
     },

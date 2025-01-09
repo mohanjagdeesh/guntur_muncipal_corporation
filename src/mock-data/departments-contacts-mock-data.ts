@@ -564,7 +564,7 @@ export const ENGINEERING_CONTACTS = [
 
 export const PUBLIC_HEALTH_CONTACTS = [
     {
-        name:'Dr Sobha Rani',
+        name:'Dr Amrutha',
         designation:'Chief Medical of Health',
         mobile:'7799222882',
     },
