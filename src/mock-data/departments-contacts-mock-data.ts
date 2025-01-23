@@ -564,9 +564,9 @@ export const ENGINEERING_CONTACTS = [
 
 export const PUBLIC_HEALTH_CONTACTS = [
     {
-        name:'Dr Amrutha',
+        name:'Dr John Amrutham',
         designation:'Chief Medical of Health',
-        mobile:'7799222882',
+        mobile:'9491647614',
     },
     {
         name:'Dr. M Ravi Babu',
@@ -648,8 +648,13 @@ export const UPA_CELL_CONTACTS = [
 export const HORTICULTURE_MOCK_DATA:Array<{icon:string;title:string;nos:number}> = [
     {
         icon:'faCannabis',
-        title:'Parks',
-        nos:32,
+        title:'Developed Parks',
+        nos:25,
+    },
+    {
+        icon:'faCannabis',
+        title:'Open Spaces',
+        nos:192,
     },
     {
         icon:'faWeter',

@@ -4,7 +4,8 @@ import DetailsInfoCard from '../../global-components/details-info-card/details-i
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
 
 const HistoricalAndReligiousPlaces = () => {
-    const [activeInfoCardIndex , setActiveInfoCardIndex] = useState<number | undefined>(undefined);
+    const [historicalActiveInfoCardIndex , setHistoricalActiveInfoCardIndex] = useState<number | undefined>(undefined);
+    const [religiousActiveInfoCardIndex , setReligiousActiveInfoCardIndex] = useState<number | undefined>(undefined);
   return (
     <>
         <PageTitleBanner title='Historical And Religious Places' />
@@ -16,14 +17,15 @@ const HistoricalAndReligiousPlaces = () => {
                     {
                         HISTORICAL_PLACES_MOCK_DATA.map((place , index)=>{
                             const handleInfoCardClick = () => {
-                                if(activeInfoCardIndex === index){
-                                    setActiveInfoCardIndex(undefined);
+                                if(historicalActiveInfoCardIndex === index){
+                                    setHistoricalActiveInfoCardIndex(undefined);
                                 }else{
-                                    setActiveInfoCardIndex(index);
+                                    setHistoricalActiveInfoCardIndex(index);
                                 }
+                                setReligiousActiveInfoCardIndex(undefined);
                             }
                             return(
-                            <DetailsInfoCard key={index} mainTitle={place.mainTitle} image={place.image} location={place.location} description={place.description} cardClick={handleInfoCardClick} index={index} activeInfoCardIndex={activeInfoCardIndex} />
+                            <DetailsInfoCard key={index} mainTitle={place.mainTitle} image={place.image} location={place.location} description={place.description} cardClick={handleInfoCardClick} index={index} activeInfoCardIndex={historicalActiveInfoCardIndex} />
                             )
                         })
                     }
@@ -36,14 +38,15 @@ const HistoricalAndReligiousPlaces = () => {
                     {
                         RELIGIOUS_PLACES_MOCK_DATA.map((place , index)=>{
                             const handleInfoCardClick = () => {
-                                if(activeInfoCardIndex === index){
-                                    setActiveInfoCardIndex(undefined);
+                                if(religiousActiveInfoCardIndex === index){
+                                    setReligiousActiveInfoCardIndex(undefined);
                                 }else{
-                                    setActiveInfoCardIndex(index);
+                                    setReligiousActiveInfoCardIndex(index);
                                 }
+                                setHistoricalActiveInfoCardIndex(undefined);
                             }
                             return(
-                            <DetailsInfoCard key={index} mainTitle={place.mainTitle} image={place.image} location={place.location} description={place.description} cardClick={handleInfoCardClick} index={index} activeInfoCardIndex={activeInfoCardIndex} />
+                            <DetailsInfoCard key={index} mainTitle={place.mainTitle} image={place.image} location={place.location} description={place.description} cardClick={handleInfoCardClick} index={index} activeInfoCardIndex={religiousActiveInfoCardIndex} />
                             )
                         })
                     }

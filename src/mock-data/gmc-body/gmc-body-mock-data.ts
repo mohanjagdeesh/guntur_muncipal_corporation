@@ -4,7 +4,7 @@ export const CommissionerDetails:IGmcBody = {
     name:'Sri P Sreenivasulu,I.A.S',
     designation:'Commissioner',
     email:'mc.guntur@cdma.gov.in',
-    mobile:'9849908385',
+    mobile:'9440268888',
     description:'It is our unwavering endeavour to bring the highest standard of municipal services directly to the doorsteps of every citizen of Guntur and to serve with 24x7 and 360 degree approach. Under the guidance and leadership of the Commissioner, we are committed to ensuring that civic amenities are accessible, efficient, and delivered with the utmost dedication to the well-being of the community.',
     image:'/assets/gmc-body/comissioner.jpg',
 };
@@ -12,7 +12,6 @@ export const CommissionerDetails:IGmcBody = {
 export const MayorDetails:IGmcBody = {
     name:'Sri Kavati Sivanaga Manohar Naidu',
     designation:'Mayor',
-    email:'manohar.guntur@cdma@gov.in',
     mobile:'9849488999',
     description:'Building a sustainable Guntur in all spheres will need participation and engagement of all stakeholders including the private sector and the civil society especially the poor and marginalized.',
     image:'/assets/gmc-body/mayor.jpg',

@@ -1,9 +1,8 @@
 export const EX_OFFICIO_MEMBERS_MOCK_DATA = [
     {
         name:'Sri. Dr. Pemmasani Chandrasekhar Garu',
-        designation:'MP(Member Of Parliament)',
-        department:'Minister of State in the Ministry of Communications and Minister of State in the Ministry of Rural Development Government of India',
-        image:'/assets/gmc-body/ex_officio_1.png',
+        designation:'Minister of State for Rural Development and Communications, Govt. of India | Member of Parliament, Guntur, Andhra Pradesh',
+        image:'/assets/gmc-body/ex_officio_1.jpg',
     },
     {
         name:'Galla Madhavi Garu',

@@ -37,7 +37,7 @@ export const CONTACT_US_GRID_PROPS:IGridReport ={
       serialNo:1,
       name:'Sri P Sreenivasulu, I.A.S',
       designation:'Commissioner',
-      mobile:9849908385,
+      mobile:9440268888,
       email:'mc.guntur@cdma.gov.in',
     },
     {
@@ -91,9 +91,9 @@ export const CONTACT_US_GRID_PROPS:IGridReport ={
     },
     {
       serialNo:9,
-      name:'Dr Sobha Rani',
+      name:'Dr John Amrutham',
       designation:'EChief Medical of Health',
-      mobile:7799222882,
+      mobile:9491647614,
       email:'cmho.gunturcorporation@gmail.com',
     },
     {

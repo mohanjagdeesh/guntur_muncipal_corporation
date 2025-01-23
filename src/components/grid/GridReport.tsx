@@ -14,7 +14,7 @@ const GridReport = ({columns,data}:IGridReport) => {
         getCoreRowModel: getCoreRowModel(),
       })
     return (
-        <div className="py-4 overflow-x-scroll">
+        <div className="py-4 sm:overflow-x-scroll lg:overflow-hidden">
           <table className=' w-full'>
             <thead className='bg-violet'>
               {table.getHeaderGroups().map(headerGroup => (

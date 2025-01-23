@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
 import { ADMINISTRATION_CONTACTS } from '../../mock-data/departments-contacts-mock-data.ts';
 import GridReport from '../../components/grid/GridReport.tsx';
@@ -6,6 +6,7 @@ import { IGridReport } from '../../interfaces/IGridReport.ts';
 import RenderListItems from '../../global-components/render-list-items/render-list-items.tsx';
 import { ADMINISTRATION_LIST_ITEMS } from '../../mock-data/departments-list-items-mock-data.ts';
 import DepartmentsDataRenderer from '../../global-components/departments-data-renderer/departments-data-renderer.tsx';
+import { getStaffDetails } from '../../services/gmc-staff.tsx';
 
 
 const ADMINISTRATION_AND_EDUCATION_GRID_PROPS:IGridReport ={
@@ -35,8 +36,15 @@ const ADMINISTRATION_AND_EDUCATION_GRID_PROPS:IGridReport ={
     data:ADMINISTRATION_CONTACTS
   };
 
-
 const AdministrationAndEducation = () => {
+  useEffect(()=>{
+    const fetchAdministrationStaffInfo = async () => {
+      const response = await getStaffDetails('Administration');
+      console.log(response);
+    };
+
+    fetchAdministrationStaffInfo();
+  },[]);
   return (
     <div>
         <PageTitleBanner title='ADMINISTRATION' />

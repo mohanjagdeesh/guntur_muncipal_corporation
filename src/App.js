@@ -35,6 +35,12 @@ import Infrastructure from './pages/about-us/Infrastructure.tsx';
 import WaterSupply from './pages/departments/water-supply.tsx';
 import Horticulture from './pages/departments/Horticulture.tsx';
 import ImageAndVideoGallery from './pages/image-and-video-gallery/ImageAndVideoGallery.tsx';
+import RtiAct from './pages/rti-act/rti-act.tsx';
+import Finance from './pages/departments/revenue/finance.tsx';
+import WaterCharges from './pages/departments/revenue/water-charges.tsx';
+import LandTax from './pages/departments/revenue/land-tax.tsx';
+import Leases from './pages/departments/revenue/leases.tsx';
+import TradeLicense from './pages/departments/public-health/trade-license.tsx';
 
 function App() {
   return (
@@ -75,8 +81,13 @@ function App() {
             <Route path='/department/infrastructure' element={<Infrastructure />} />
             <Route path='/department/water-supply' element={<WaterSupply />} />
             <Route path='/department/horticulture' element={< Horticulture/>} />
-            <Route path='/image-and-video-gallery' element={< ImageAndVideoGallery/>} />
+            <Route path='/department/revenue/water-charges' element={< WaterCharges/>} />
+            <Route path='/department/revenue/finance' element={< Finance/>} />
+            <Route path='/department/revenue/land-tax' element={< LandTax/>} />
+            <Route path='/department/revenue/leases' element={< Leases/>} />
+            <Route path='/department/public-health/trade-license' element={<TradeLicense />} />
             {/* <Route path='/department/sanitation' element={<Sanitation />} /> */}
+            <Route path='/rti-act' element={<RtiAct />} />
           </Routes>
         </main>
         <Footer />

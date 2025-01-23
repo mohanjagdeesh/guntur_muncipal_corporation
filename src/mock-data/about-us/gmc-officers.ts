@@ -428,7 +428,7 @@ export const GMC_OFFICERS_MOCK_DATA = [
     title:'Public Health Section',
     gridData:[
       {
-        name:'Dr Amrutha',
+        name:'Dr John Amrutham',
         designation:'Chief Medical of Health',
         phone:'7799222882',
     },

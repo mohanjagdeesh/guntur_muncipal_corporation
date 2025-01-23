@@ -363,6 +363,28 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkHeader: 'Revenue',
                 subLinkTo:'/department/revenue',
                 outOfBrowser:false,
+                associatedSubLinks:[
+                    {
+                        associatedSubLinkHeader:'Water Charges',
+                        associatedSublinkTo:'/department/revenue/water-charges',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Finance',
+                        associatedSublinkTo:'/department/revenue/finance',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Land Tax',
+                        associatedSublinkTo:'/department/revenue/land-tax',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Leases',
+                        associatedSublinkTo:'/department/revenue/leases',
+                        outOfBrowser:false,
+                    },
+                ]
             },
             {
                 subLinkHeader: 'Accounts',
@@ -391,27 +413,34 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                         associatedSublinkTo:'/department/horticulture',
                         outOfBrowser:false,
                     },
+                    {
+                        associatedSubLinkHeader:'GMC Infrastructure',
+                        associatedSublinkTo:'/department/infrastructure',
+                        outOfBrowser:false,
+                    },
+                    {
+                        associatedSubLinkHeader:'Water Supply',
+                        associatedSublinkTo:'/department/water-supply',
+                        outOfBrowser:false,
+                    }
                 ]
             },
             {
                 subLinkHeader:'Public Health',
                 subLinkTo:'/department/public-health',
                 outOfBrowser:false,
+                associatedSubLinks:[
+                    {
+                        associatedSubLinkHeader:'Trade License',
+                        associatedSublinkTo:'/department/public-health/trade-license',
+                        outOfBrowser:false,
+                    }
+                ]
             },
             {
                 subLinkHeader:'UPACell',
                 subLinkTo:'/department/upa-cell',
                 outOfBrowser:false,
-            },
-            {
-                subLinkHeader:'GMC Infrastructure',
-                subLinkTo:'/department/infrastructure',
-                outOfBrowser:false,
-            },
-            {
-                subLinkHeader:'Water Supply',
-                subLinkTo:'/department/water-supply',
-                outOfBrowser:true,
             },
         ]
     },
@@ -453,12 +482,8 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
         linkHeader: 'RTI',
         subLinks: [
             {
-                subLinkHeader: 'RTI ACT',
-                subLinkTo: 'https://cdma.ap.gov.in/sites/default/files/Revised_RTI_ENG.docx'
-            },
-            {
                 subLinkHeader: 'RTI 4(1)(b)',
-                subLinkTo: 'https://cdma.ap.gov.in/sites/default/files/Revised_RTI_4.docx'
+                subLinkTo: '/rti-act'
             },
         ]
     },

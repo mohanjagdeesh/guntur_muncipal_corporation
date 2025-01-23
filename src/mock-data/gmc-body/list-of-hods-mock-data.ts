@@ -3,7 +3,7 @@ export const LIST_OF_HODS_MOCK_DATA = [
       serialNo:1,
       name:'Sri P Sreenivasulu, I.A.S',
       designation:'Commissioner',
-      mobile:9849908385,
+      mobile:9440268888,
       email:'mc.guntur@cdma.gov.in',
       image:'/assets/gmc-body/comissioner.jpg'
     },
@@ -65,9 +65,9 @@ export const LIST_OF_HODS_MOCK_DATA = [
     },
     {
       serialNo:9,
-      name:'Dr Sobha Rani',
+      name:'Dr John Amrutham',
       designation:'EChief Medical of Health',
-      mobile:7799222882,
+      mobile:9491647614,
       email:'cmho.gunturcorporation@gmail.com',
       image:'/assets/gmc-body/chief_medical_of_health.jpg',
     },

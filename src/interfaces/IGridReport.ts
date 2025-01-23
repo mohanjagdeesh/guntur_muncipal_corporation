@@ -3,6 +3,7 @@ interface IGridcolumns{
     accessorKey:string;
     id:string;
     cell?:({row})=>any|undefined;
+    dataType?:'actions'
 };
 
 
