@@ -1,9 +1,10 @@
 import React from 'react';
-import { IDetailsInfoCard } from '../../interfaces/IDetailsInfoCard';
+import { IParksInfoCard } from '../../interfaces/IDetailsInfoCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import CarouselComponent from '../../components/flowBite/CarouselComponent.tsx';
 
-const DetailsInfoCard = ({ mainTitle, location, image, description, cardClick, index, activeInfoCardIndex}: IDetailsInfoCard) => {
+const ParksInfoCard = ({ parkTitle , images , location, wardNumber , extent , activeInfoCardIndex , index , cardClick}: IParksInfoCard) => {
   const isActive = activeInfoCardIndex === index;
 
   return (
@@ -12,7 +13,7 @@ const DetailsInfoCard = ({ mainTitle, location, image, description, cardClick, i
     style={{ maxHeight: isActive ? '500px' : 'fit-content', transition: 'max-height 0.3s ease' }}
     >
       <div onClick={cardClick} className="flex items-center justify-between">
-        <h1 className="text-[1rem] md:text-[1.2rem] font-semibold">{mainTitle}</h1>
+        <h1 className="text-[1rem] md:text-[1.2rem] font-semibold">{parkTitle}</h1>
         <FontAwesomeIcon
           icon={faChevronDown}
           size="lg"
@@ -20,16 +21,20 @@ const DetailsInfoCard = ({ mainTitle, location, image, description, cardClick, i
         />
       </div>
       {isActive && (
-        <div className="flex flex-col items-center justify-center md:flex-row my-4 gap-4">
-          <img className="h-[200px] w-[200px] rounded-lg" src={image} alt="Place-Image" />
+        <div className="flex flex-col md:items-center justify-center md:flex-row my-4 gap-4">
+          <CarouselComponent items={images ?? []} className='h-[200px] w-[350px]' />
           <div>
             <h1 className='text-violet text-justify'>
               <span className='text-orange-peel font-bold'>Location:<br/></span>
               {location}
             </h1>
             <h1 className='text-violet text-justify'>
-              <span className='text-orange-peel font-bold'>Description:<br/></span>
-              {description}
+              <span className='text-orange-peel font-bold'>Extent : </span>
+              {extent}
+            </h1>
+            <h1 className='text-violet text-justify'>
+              <span className='text-orange-peel font-bold'>Ward Number : </span>
+              {wardNumber}
             </h1>
           </div>
         </div>
@@ -38,4 +43,4 @@ const DetailsInfoCard = ({ mainTitle, location, image, description, cardClick, i
   );
 };
 
-export default DetailsInfoCard;
+export default ParksInfoCard;

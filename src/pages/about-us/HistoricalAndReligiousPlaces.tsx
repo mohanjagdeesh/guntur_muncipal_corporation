@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { HISTORICAL_PLACES_MOCK_DATA, RELIGIOUS_PLACES_MOCK_DATA } from '../../mock-data/about-us/historical-and-religious-places-mock-data.ts';
 import DetailsInfoCard from '../../global-components/details-info-card/details-info-card.tsx';
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
+import GmcParks from './GmcParks.tsx';
 
 const HistoricalAndReligiousPlaces = () => {
     const [historicalActiveInfoCardIndex , setHistoricalActiveInfoCardIndex] = useState<number | undefined>(undefined);

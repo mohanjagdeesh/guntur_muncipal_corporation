@@ -19,7 +19,7 @@ const HistoricalAndReligiousPlacesMockup = ({title,data,activeInfoCardIndex , se
                               }
                           }
                           return(
-                          <DetailsInfoCard key={index} mainTitle={place.mainTitle} image={place.image} location={place.location} description={place.description} cardClick={handleInfoCardClick} index={index} activeInfoCardIndex={activeInfoCardIndex} />
+                            <DetailsInfoCard key={index} mainTitle={place.mainTitle} image={place.image} location={place.location} description={place.description} cardClick={handleInfoCardClick} index={index} activeInfoCardIndex={activeInfoCardIndex} />
                           )
                       })
                   }

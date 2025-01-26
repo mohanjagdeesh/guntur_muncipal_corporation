@@ -1,4 +1,4 @@
-import { IDetailsInfoCard } from "../../interfaces/IDetailsInfoCard";
+import { IDetailsInfoCard, IParksInfoCard } from "../../interfaces/IDetailsInfoCard";
 
 export const HISTORICAL_PLACES_MOCK_DATA:IDetailsInfoCard[] =[
     {
@@ -67,3 +67,216 @@ export const RELIGIOUS_PLACES_MOCK_DATA:IDetailsInfoCard[] =[
         description:`A historical and spiritual site, this temple is located on a hill with three peaks, giving it the name "Trikoteswara." It is associated with ancient mythology and local folklore.`,
     },
 ];
+
+
+export const EASTREN_PARKS_MOCK_DATA:IParksInfoCard[] =[
+    {
+        parkTitle:'SHOP EMPLOYEES COLONY PARK (SRI KANTH NAGAR)',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Sri Kanth Nagar',
+        wardNumber:1,
+        extent:0.47
+    },
+    {
+        parkTitle:'SMRUTHI VANAM PARK (RTC COLONY)',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'RTC Colony 4th Line',
+        wardNumber:1,
+        extent:1.06
+    },
+    {
+        parkTitle:'GANDHI PARK',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Opp- GMC Main Office',
+        wardNumber:6,
+        extent:6.35,
+    },
+    {
+        parkTitle:'RTC COLONY (OPP – AYYAPPA SWAMY TEMPLE)',
+        images:['/assets/parks/rtccolonyopp-1.jpg','/assets/parks/rtccolonyopp-2.jpg','/assets/parks/rtccolonyopp-3.jpg','/assets/parks/rtccolonyopp-4.jpg','/assets/parks/rtccolonyopp-5.jpg'],
+        location:'Opp- GMC Main Office',
+        wardNumber:1,
+        extent:0.46,
+    },
+    {
+        parkTitle:'LAL JAAN BASHA PARK',
+        images:['/assets/parks/laljaanbasha-1.jpg','/assets/parks/laljaanbasha-2.jpg','/assets/parks/laljaanbasha-3.jpg','/assets/parks/laljaanbasha-4.jpg'],
+        location:'Ponnuru road ',
+        wardNumber:7,
+        extent:0.25,
+    },
+    {
+        parkTitle:'KRISHNA NAGAR PARK',
+        images:['/assets/parks/krishnanagar-1.jpg','/assets/parks/krishnanagar-2.jpg','/assets/parks/krishnanagar-3.jpg','/assets/parks/krishnanagar-4.jpg','/assets/parks/krishnanagar-5.jpg'],
+        location:'Krishna nagar main road',
+        wardNumber:31,
+        extent:0.20,
+    },
+    {
+        parkTitle:'SRINIVASARAO THOTA PARK',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Srinivas road peta 60 ft road',
+        wardNumber:18,
+        extent:0.30,
+    },
+    {
+        parkTitle:'PLP PARK (OLD GUNTUR)',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Yadava School Road',
+        wardNumber:8,
+        extent:0.25,
+    },
+    {
+        parkTitle:'SAMPATH NAGAR PARK',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Sampathnagar',
+        wardNumber:20,
+        extent:0.29,
+    },
+    {
+        parkTitle:'BALAJI NAGAR PARK (NEAR RAJEEVGRUHAKALPA)',
+        images:['/assets/parks/balajinagar-1.jpg','/assets/parks/balajinagar-2.jpg','/assets/parks/balajinagar-3.jpg','/assets/parks/balajinagar-4.jpg','/assets/parks/balajinagar-5.jpg','/assets/parks/balajinagar-6.jpg','/assets/parks/balajinagar-7.jpg'],
+        location:'Near RajeevgruhaKalpa Amrut 2017-2020',
+        wardNumber:3,
+        extent:0.25,
+    },
+];
+
+export const WESTREN_PARKS_MOCK_DATA:IParksInfoCard[] =[
+    {
+        parkTitle:'KORITIPADU PARK (AMRUTH)',
+        images:['/assets/parks/koritipadu-1.jpg','/assets/parks/koritipadu-2.jpg','/assets/parks/koritipadu-3.jpg'],
+        location:'Koritipadu',
+        wardNumber:41,
+        extent:0.78
+    },
+    {
+        parkTitle:'SANTHI NAGAR PARK',
+        images:['/assets/parks/santhinagar-1.jpg','/assets/parks/santhinagar-2.jpg','/assets/parks/santhinagar-3.jpg','/assets/parks/santhinagar-4.jpg'],
+        location:'Santhi Nagar',
+        wardNumber:30,
+        extent:1.90
+    },
+    {
+        parkTitle:'VIDYA NAGAR PARK',
+        images:['/assets/parks/vidyanagar-1.jpg','/assets/parks/vidyanagar-2.jpg','/assets/parks/vidyanagar-3.jpg','/assets/parks/vidyanagar-4.jpg'],
+        location:'Vidya Nagar',
+        wardNumber:35,
+        extent:0.34,
+    },
+    {
+        parkTitle:'NAVA BHARATH NAGAR',
+        images:['/assets/parks/rtccolonyopp-1.jpg','/assets/parks/rtccolonyopp-2.jpg','/assets/parks/rtccolonyopp-3.jpg','/assets/parks/rtccolonyopp-4.jpg','/assets/parks/rtccolonyopp-5.jpg'],
+        location:'Nava Bharath Nagar',
+        wardNumber:35,
+        extent:0.10,
+    },
+    {
+        parkTitle:'SVN COLONY PARK',
+        images:['/assets/parks/svncolony-1.jpg','/assets/parks/svncolony-2.jpg','/assets/parks/svncolony-3.jpg'],
+        location:'SVN Colony',
+        wardNumber:34,
+        extent:1.08,
+    },
+    {
+        parkTitle:'STAMBALA GARUVU PARK',
+        images:['/assets/parks/stambalagaruvu-1.jpg','/assets/parks/stambalagaruvu-2.jpg','/assets/parks/stambalagaruvu-3.jpg'],
+        location:'StambalaGaruvu',
+        wardNumber:32,
+        extent:0.20,
+    },
+    {
+        parkTitle:'NALANDA NAGAR PARK',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Nalanda Nagar',
+        wardNumber:35,
+        extent:0.10,
+    },
+    {
+        parkTitle:'JKC COLONY PARK',
+        images:['/assets/parks/jkccolony-1.jpg','/assets/parks/jkccolony-2.jpg','/assets/parks/jkccolony-3.jpg'],
+        location:'JKC College Road',
+        wardNumber:35,
+        extent:0.30,
+    },
+    {
+        parkTitle:'SYAMALA NAGAR PARK (Amrut 2017-20)',
+        images:['/assets/parks/syamalanagar-1.jpg','/assets/parks/syamalanagar-2.jpg','/assets/parks/syamalanagar-3.jpg','/assets/parks/syamalanagar-4.jpg'],
+        location:'Syamala Nagar',
+        wardNumber:32,
+        extent:0.97,
+    },
+    {
+        parkTitle:'1ST MAYOR PARK (BRODI PETA)',
+        images:['/assets/parks/housingboardcolony-1.jpg','/assets/parks/housingboardcolony-2.jpg','/assets/parks/housingboardcolony-3.jpg'],
+        location:'Brodipeta',
+        wardNumber:32,
+        extent:0.30,
+    },
+    {
+        parkTitle:'ARUNDAL PETA PARK (4 TH LINE)',
+        images:['/assets/parks/balajinagar-1.jpg','/assets/parks/balajinagar-2.jpg','/assets/parks/balajinagar-3.jpg','/assets/parks/balajinagar-4.jpg','/assets/parks/balajinagar-5.jpg','/assets/parks/balajinagar-6.jpg','/assets/parks/balajinagar-7.jpg'],
+        location:'4th Line',
+        wardNumber:52,
+        extent:0.50,
+    },
+    {
+        parkTitle:'POSTAL COLONY PARK',
+        images:['/assets/parks/balajinagar-1.jpg','/assets/parks/balajinagar-2.jpg','/assets/parks/balajinagar-3.jpg','/assets/parks/balajinagar-4.jpg','/assets/parks/balajinagar-5.jpg','/assets/parks/balajinagar-6.jpg','/assets/parks/balajinagar-7.jpg'],
+        location:'Postal colony',
+        wardNumber:49,
+        extent:0.25,
+    },
+    {
+        parkTitle:'HOUSING BOARD COLONY PARK',
+        images:['/assets/parks/housingboardcolony-1.jpg','/assets/parks/housingboardcolony-2.jpg','/assets/parks/housingboardcolony-3.jpg'],
+        location:'Housing Board',
+        wardNumber:29,
+        extent:0.89,
+    },
+    {
+        parkTitle:'NGO’S COLONY PARK',
+        images:['/assets/parks/ngocolony-1.jpg','/assets/parks/ngocolony-2.jpg','/assets/parks/ngocolony-3.jpg','/assets/parks/ngocolony-4.jpg'],
+        location:'NGO’S COLONY PARK',
+        wardNumber:29,
+        extent:0.20,
+    },
+    {
+        parkTitle:'UDHYOGA NAGAR PARK (Amrut 2017-20)',
+        images:['/assets/parks/udyoganagar-1.jpg','/assets/parks/udyoganagar-2.jpg','/assets/parks/udyoganagar-3.jpg'],
+        location:'Udyoga Nagar',
+        wardNumber:34,
+        extent:1.69,
+    },
+];
+
+export const PATHIPADU_PARKS_MOCK_DATA:IParksInfoCard[] = [
+    {
+        parkTitle:'VYSYABANK COLONY PARK',
+        images:['/assets/parks/vysyabankcolony-1.jpg','/assets/parks/vysyabankcolony-2.jpg','/assets/parks/vysyabankcolony-3.jpg'],
+        location:'Vysya bank colony',
+        wardNumber:46,
+        extent:0.20,
+    },
+    {
+        parkTitle:'GAYATRI NAGAR PARK',
+        images:['/assets/parks/gayatrinagar-1.jpg','/assets/parks/gayatrinagar-2.jpg','/assets/parks/gayatrinagar-3.jpg','/assets/parks/gayatrinagar-4.jpg'],
+        location:'Gayatri Nagar Park ',
+        wardNumber:46,
+        extent:0.50,
+    },
+    {
+        parkTitle:'TEACHERS COLONY PARK',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Teachers colony',
+        wardNumber:57,
+        extent:0.90,
+    },
+    {
+        parkTitle:'Dr.Y.S.RAJA SEKHAR REDDY PARK INNER RING ROAD)',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'MG Inner ring road near YSR Circle',
+        wardNumber:48,
+        extent:1.30,
+    },
+]

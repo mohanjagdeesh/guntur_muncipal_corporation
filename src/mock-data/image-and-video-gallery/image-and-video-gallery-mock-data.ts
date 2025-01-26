@@ -26,3 +26,7 @@ export const VIDEO_GALLERY = [
     'https://www.youtube.com/embed/auHciB2W5eg',
     'https://www.youtube.com/embed/5c_ZYCNOcAA?start=659'
 ];
+
+export const MC_CORNER_MOCK_DATA = [
+    '/assets/latest_news_1.jpeg','/assets/latest_news_2.jpeg','/assets/latest_news_3.jpeg','/assets/latest_news_4.jpeg','/assets/latest_news_4.jpeg'
+]
