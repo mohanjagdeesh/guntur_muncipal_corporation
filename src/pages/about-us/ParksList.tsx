@@ -36,9 +36,9 @@ const ParksList = () => {
     <>
         <PageTitleBanner title='Parks List' />
         <div className='container'>
-            <GridReport {...PARKS_GRID_PROPS} />
+            <GmcParks/>
             <div className='my-4'>
-                <GmcParks/>
+              <GridReport {...PARKS_GRID_PROPS} />
             </div>
         </div>
     </>

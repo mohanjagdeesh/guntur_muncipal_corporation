@@ -23,16 +23,16 @@ const ParksInfoCard = ({ parkTitle , images , location, wardNumber , extent , ac
       {isActive && (
         <div className="flex flex-col md:items-center justify-center md:flex-row my-4 gap-4">
           <CarouselComponent items={images ?? []} className='h-[200px] w-[350px]' />
-          <div>
-            <h1 className='text-violet text-justify'>
+          <div className='flex flex-col gap-2'>
+            <h1 className='text-violet leading-none'>
               <span className='text-orange-peel font-bold'>Location:<br/></span>
               {location}
             </h1>
-            <h1 className='text-violet text-justify'>
+            <h1 className='text-violet leading-none'>
               <span className='text-orange-peel font-bold'>Extent : </span>
               {extent}
             </h1>
-            <h1 className='text-violet text-justify'>
+            <h1 className='text-violet leading-none'>
               <span className='text-orange-peel font-bold'>Ward Number : </span>
               {wardNumber}
             </h1>

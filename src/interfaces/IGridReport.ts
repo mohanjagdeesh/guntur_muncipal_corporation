@@ -1,4 +1,4 @@
-interface IGridcolumns{
+export interface IGridcolumns{
     header:string;
     accessorKey:string;
     id:string;

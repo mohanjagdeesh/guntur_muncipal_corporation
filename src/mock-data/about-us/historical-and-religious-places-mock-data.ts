@@ -106,20 +106,6 @@ export const EASTREN_PARKS_MOCK_DATA:IParksInfoCard[] =[
         extent:0.25,
     },
     {
-        parkTitle:'KRISHNA NAGAR PARK',
-        images:['/assets/parks/krishnanagar-1.jpg','/assets/parks/krishnanagar-2.jpg','/assets/parks/krishnanagar-3.jpg','/assets/parks/krishnanagar-4.jpg','/assets/parks/krishnanagar-5.jpg'],
-        location:'Krishna nagar main road',
-        wardNumber:31,
-        extent:0.20,
-    },
-    {
-        parkTitle:'SRINIVASARAO THOTA PARK',
-        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
-        location:'Srinivas road peta 60 ft road',
-        wardNumber:18,
-        extent:0.30,
-    },
-    {
         parkTitle:'PLP PARK (OLD GUNTUR)',
         images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
         location:'Yadava School Road',
@@ -127,16 +113,16 @@ export const EASTREN_PARKS_MOCK_DATA:IParksInfoCard[] =[
         extent:0.25,
     },
     {
-        parkTitle:'SAMPATH NAGAR PARK',
-        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
-        location:'Sampathnagar',
-        wardNumber:20,
-        extent:0.29,
-    },
-    {
         parkTitle:'BALAJI NAGAR PARK (NEAR RAJEEVGRUHAKALPA)',
         images:['/assets/parks/balajinagar-1.jpg','/assets/parks/balajinagar-2.jpg','/assets/parks/balajinagar-3.jpg','/assets/parks/balajinagar-4.jpg','/assets/parks/balajinagar-5.jpg','/assets/parks/balajinagar-6.jpg','/assets/parks/balajinagar-7.jpg'],
         location:'Near RajeevgruhaKalpa Amrut 2017-2020',
+        wardNumber:3,
+        extent:0.25,
+    },
+    {
+        parkTitle:'MANASA SAROVARAM PARK',
+        images:['/assets/parks/balajinagar-1.jpg','/assets/parks/balajinagar-2.jpg','/assets/parks/balajinagar-3.jpg','/assets/parks/balajinagar-4.jpg','/assets/parks/balajinagar-5.jpg','/assets/parks/balajinagar-6.jpg','/assets/parks/balajinagar-7.jpg'],
+        location:'Beside Head water work Tekkallapadu old Guntur',
         wardNumber:3,
         extent:0.25,
     },
@@ -165,11 +151,46 @@ export const WESTREN_PARKS_MOCK_DATA:IParksInfoCard[] =[
         extent:0.34,
     },
     {
+        parkTitle:'KRISHNA NAGAR PARK',
+        images:['/assets/parks/krishnanagar-1.jpg','/assets/parks/krishnanagar-2.jpg','/assets/parks/krishnanagar-3.jpg','/assets/parks/krishnanagar-4.jpg','/assets/parks/krishnanagar-5.jpg'],
+        location:'Krishna nagar main road',
+        wardNumber:31,
+        extent:0.20,
+    },
+    {
+        parkTitle:'KRISHNA NAGAR (7th LINE)',
+        images:['/assets/parks/krishnanagar-1.jpg','/assets/parks/krishnanagar-2.jpg','/assets/parks/krishnanagar-3.jpg','/assets/parks/krishnanagar-4.jpg','/assets/parks/krishnanagar-5.jpg'],
+        location:'Krishna nagar main road',
+        wardNumber:31,
+        extent:0.20,
+    },
+    {
+        parkTitle:'SRINIVASARAO THOTA PARK',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Srinivas road peta 60 ft road',
+        wardNumber:18,
+        extent:0.30,
+    },
+    {
         parkTitle:'NAVA BHARATH NAGAR',
         images:['/assets/parks/rtccolonyopp-1.jpg','/assets/parks/rtccolonyopp-2.jpg','/assets/parks/rtccolonyopp-3.jpg','/assets/parks/rtccolonyopp-4.jpg','/assets/parks/rtccolonyopp-5.jpg'],
         location:'Nava Bharath Nagar',
         wardNumber:35,
         extent:0.10,
+    },
+    {
+        parkTitle:'NAVA BHARATH NAGAR (4th LINE)',
+        images:['/assets/parks/rtccolonyopp-1.jpg','/assets/parks/rtccolonyopp-2.jpg','/assets/parks/rtccolonyopp-3.jpg','/assets/parks/rtccolonyopp-4.jpg','/assets/parks/rtccolonyopp-5.jpg'],
+        location:'Nava Bharath Nagar',
+        wardNumber:35,
+        extent:0.10,
+    },
+    {
+        parkTitle:'SAMPATH NAGAR PARK',
+        images:['/assets/parks/srinivasaraopeta-1.jpg','/assets/parks/srinivasaraopeta-2.jpg','/assets/parks/srinivasaraopeta-3.jpg'],
+        location:'Sampathnagar',
+        wardNumber:20,
+        extent:0.29,
     },
     {
         parkTitle:'SVN COLONY PARK',
@@ -214,7 +235,7 @@ export const WESTREN_PARKS_MOCK_DATA:IParksInfoCard[] =[
         extent:0.30,
     },
     {
-        parkTitle:'ARUNDAL PETA PARK (4 TH LINE)',
+        parkTitle:'ARUNDAL PETA PARK (4th LINE)',
         images:['/assets/parks/balajinagar-1.jpg','/assets/parks/balajinagar-2.jpg','/assets/parks/balajinagar-3.jpg','/assets/parks/balajinagar-4.jpg','/assets/parks/balajinagar-5.jpg','/assets/parks/balajinagar-6.jpg','/assets/parks/balajinagar-7.jpg'],
         location:'4th Line',
         wardNumber:52,
@@ -248,9 +269,6 @@ export const WESTREN_PARKS_MOCK_DATA:IParksInfoCard[] =[
         wardNumber:34,
         extent:1.69,
     },
-];
-
-export const PATHIPADU_PARKS_MOCK_DATA:IParksInfoCard[] = [
     {
         parkTitle:'VYSYABANK COLONY PARK',
         images:['/assets/parks/vysyabankcolony-1.jpg','/assets/parks/vysyabankcolony-2.jpg','/assets/parks/vysyabankcolony-3.jpg'],
@@ -258,6 +276,9 @@ export const PATHIPADU_PARKS_MOCK_DATA:IParksInfoCard[] = [
         wardNumber:46,
         extent:0.20,
     },
+];
+
+export const PATHIPADU_PARKS_MOCK_DATA:IParksInfoCard[] = [
     {
         parkTitle:'GAYATRI NAGAR PARK',
         images:['/assets/parks/gayatrinagar-1.jpg','/assets/parks/gayatrinagar-2.jpg','/assets/parks/gayatrinagar-3.jpg','/assets/parks/gayatrinagar-4.jpg'],

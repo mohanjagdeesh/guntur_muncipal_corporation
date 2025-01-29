@@ -1,41 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PageTitleBanner from '../../global-components/page-title-banner/page-title-banner.tsx';
 import DepartmentsDataRenderer from '../../global-components/departments-data-renderer/departments-data-renderer.tsx';
 import { TOWN_PLANNING_LIST_ITEMS } from '../../mock-data/departments-list-items-mock-data.ts';
 import RenderListItems from '../../global-components/render-list-items/render-list-items.tsx';
 import GridReport from '../../components/grid/GridReport.tsx';
-import { TOWN_PLANNING_CONTACTS } from '../../mock-data/departments-contacts-mock-data.ts';
 import { IGridReport } from '../../interfaces/IGridReport.ts';
+import { getStaffDetails } from '../../services/gmc-staff.tsx';
+import { STAFF_DETAILS_GRID_COLUMNS } from '../../utils/Constants.tsx';
 
 
 const REVENUE_FM_OF_GRID_PROPS:IGridReport ={
-    columns:[
-      {
-        header:'S.No',
-        accessorKey:'sno',
-        id:'sno',
-        cell:({row})=>row.index + 1,
-      },
-      {
-        header:'Name(Sri/Smt)',
-        accessorKey:'name',
-        id:'name',
-      },
-      {
-        header:'Designation',
-        accessorKey:'designation',
-        id:'designation',
-      },
-      {
-        header:'Mobile',
-        accessorKey:'mobile',
-        id:'mobile',
-      },
-    ],
-    data:TOWN_PLANNING_CONTACTS
+    columns:STAFF_DETAILS_GRID_COLUMNS,
+    data:[]
   };
 
 const TownPlanning = () => {
+  const [townPlanningStaffGridProps , setTownPlanningGridProps] = useState<IGridReport>(REVENUE_FM_OF_GRID_PROPS);
+  useEffect(()=>{
+    const fetchAdministrationStaffInfo = async () => {
+      const response = await getStaffDetails('Town Planning');
+      setTownPlanningGridProps((prev)=> ({...prev , data:response}))
+    };
+    fetchAdministrationStaffInfo();
+  },[]);
   return (
     <div>
         <PageTitleBanner title='TOWN PLANNING' />
@@ -45,7 +32,7 @@ const TownPlanning = () => {
             liRenderer={TOWN_PLANNING_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} 
             departmentImage='/assets/town-planning.jpg'
            />
-          <GridReport {...REVENUE_FM_OF_GRID_PROPS} />
+          <GridReport {...townPlanningStaffGridProps} />
           <p>By effectively performing these functions, the Town Planning Department contributes to the sustainable development of the city, ensuring a livable and aesthetically pleasing environment for its residents.</p>
         </div>
     </div>

@@ -44,7 +44,7 @@ import TradeLicense from './pages/departments/public-health/trade-license.tsx';
 
 function App() {
   return (
-    <div className="bg-white min-h-screen flex flex-col">
+    <div className="bg-white min-h-fit flex flex-col">
       <BrowserRouter>
         <Header />
         <main id='main-content' className="flex-grow overflow-y-auto no-scrollbar">

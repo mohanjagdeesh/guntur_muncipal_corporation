@@ -9,9 +9,7 @@ const GmcParks = () => {
 
   return (
     <>
-        <h1 className='text-center text-orange-peel text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold'>GMC Parks</h1>
-        <hr className='my-4'/>
-        <h1 className='text-center text-violet text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold mb-4'>Eastren Parks</h1>
+        <h1 className='text-center text-violet text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold my-4'>Eastren Parks</h1>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                     {
                         EASTREN_PARKS_MOCK_DATA.map((place , index)=>{
