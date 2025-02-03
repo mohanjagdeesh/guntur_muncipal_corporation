@@ -363,28 +363,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkHeader: 'Revenue',
                 subLinkTo:'/department/revenue',
                 outOfBrowser:false,
-                associatedSubLinks:[
-                    {
-                        associatedSubLinkHeader:'Water Charges',
-                        associatedSublinkTo:'/department/revenue/water-charges',
-                        outOfBrowser:false,
-                    },
-                    {
-                        associatedSubLinkHeader:'Finance',
-                        associatedSublinkTo:'/department/revenue/finance',
-                        outOfBrowser:false,
-                    },
-                    {
-                        associatedSubLinkHeader:'Land Tax',
-                        associatedSublinkTo:'/department/revenue/land-tax',
-                        outOfBrowser:false,
-                    },
-                    {
-                        associatedSubLinkHeader:'Leases',
-                        associatedSublinkTo:'/department/revenue/leases',
-                        outOfBrowser:false,
-                    },
-                ]
             },
             {
                 subLinkHeader: 'Accounts',
@@ -397,10 +375,10 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 outOfBrowser:false,
                 associatedSubLinks:[
                     {
-                        associatedSubLinkHeader:'Complaints',
+                        associatedSubLinkHeader:'Directorate of Town and Country Planning',
                         associatedSublinkTo:'https://dtcp.ap.gov.in/',
                         outOfBrowser:true,
-                    }
+                    },
                 ]
             },
             {
@@ -429,13 +407,6 @@ export const MOBILE_MENU_OPTIONS: IMobleOptions[] = [
                 subLinkHeader:'Public Health',
                 subLinkTo:'/department/public-health',
                 outOfBrowser:false,
-                associatedSubLinks:[
-                    {
-                        associatedSubLinkHeader:'Trade License',
-                        associatedSublinkTo:'/department/public-health/trade-license',
-                        outOfBrowser:false,
-                    }
-                ]
             },
             {
                 subLinkHeader:'UPACell',

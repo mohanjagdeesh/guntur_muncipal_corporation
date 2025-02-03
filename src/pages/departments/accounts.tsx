@@ -18,7 +18,7 @@ const Accounts = () => {
   const [accountsDeptGridProps , setAccountsDeptGridProps] = useState<IGridReport>(REVENUE_FM_OF_GRID_PROPS);
   useEffect(()=>{
     const fetchAdministrationStaffInfo = async () => {
-      const response = await getStaffDetails('Public Health');
+      const response = await getStaffDetails('Accounts');
       setAccountsDeptGridProps((prev)=> ({...prev , data:response}))
     };
     fetchAdministrationStaffInfo();

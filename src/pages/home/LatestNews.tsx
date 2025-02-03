@@ -27,7 +27,7 @@ const LatestNews = () => {
                         <Tabs.Item key={index} title={tab.tabTitle} active={tab?.tabActiveStatus} icon={ICONS_MAP[tab?.tabIcon]}>
                             <div className=' flex flex-col'>
                                 <div className=' flex flex-col gap-4'>
-                                    {tab?.tabContent.slice(0,(tab?.tabContent.length > 3 ? 3 : tab?.tabContent.length)).map((each,index)=> (
+                                    {tab?.tabContent.slice(0,(tab?.tabContent?.length > 3 ? 3 : tab?.tabContent?.length)).map((each,index)=> (
                                         <RenderLatestNews key={index} {...each}/>
                                     ))};
                                 </div>

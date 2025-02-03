@@ -23,7 +23,7 @@ export const STAFF_DETAILS_GRID_COLUMNS:IGridcolumns[] = [
       },
       {
         header:'Mobile',
-        accessorKey:'mobile',
-        id:'mobile',
+        accessorKey:'phoneNumber',
+        id:'phoneNumber',
       },
 ]

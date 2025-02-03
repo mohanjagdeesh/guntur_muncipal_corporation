@@ -31,6 +31,7 @@ const TownPlanning = () => {
             description={`The Town Planning Department in a Municipal Corporation plays a crucial role in shaping the physical development of a city.`} 
             liRenderer={TOWN_PLANNING_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} 
             departmentImage='/assets/town-planning.jpg'
+            additionalInPageNavLinks={[{navTitle:'Directorate of Town and Country Planning',navLink:'https://dtcp.ap.gov.in/'}]}
            />
           <GridReport {...townPlanningStaffGridProps} />
           <p>By effectively performing these functions, the Town Planning Department contributes to the sustainable development of the city, ensuring a livable and aesthetically pleasing environment for its residents.</p>

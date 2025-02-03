@@ -21,11 +21,11 @@ const ParksInfoCard = ({ parkTitle , images , location, wardNumber , extent , ac
         />
       </div>
       {isActive && (
-        <div className="flex flex-col md:items-center justify-center md:flex-row my-4 gap-4">
-          <CarouselComponent items={images ?? []} className='h-[200px] w-[350px]' />
+        <div className="flex flex-col justify-center md:flex-row md:items-center md:justify-between lg:justify-normal my-4 gap-4">
+          <CarouselComponent items={images ?? []} className='h-[200px] w-[240px] md:w-[500px] md:h-[250px] lg:w-[540px] lg:h-[300px]' />
           <div className='flex flex-col gap-2'>
             <h1 className='text-violet leading-none'>
-              <span className='text-orange-peel font-bold'>Location:<br/></span>
+              <span className='text-orange-peel font-bold'>Location:</span>
               {location}
             </h1>
             <h1 className='text-violet leading-none'>

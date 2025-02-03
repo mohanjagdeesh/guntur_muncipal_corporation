@@ -54,8 +54,8 @@ const GmcOfficers = () => {
         <PageTitleBanner title='GMC Officers' tabsList={departmentTabs} selectBoxTitle={selectBoxTitle} setSelectBoxTitle={setSelectBoxTitle} />
         <div className='container'>
           <div>
-              <h1 className='text-sm md:text-lg lg:text-2xl font-bold text-center mt-4'>{selectedDepartmentOfficers && selectedDepartmentOfficers.length>0 ? selectedDepartmentOfficers[0].title : 'Administration Section'}:-</h1>
-              <GridReport {...GMC_OFFICERS_GRID_PROPS} data={selectedDepartmentOfficers && selectedDepartmentOfficers.length>0 ? selectedDepartmentOfficers[0].gridData : []} />
+              <h1 className='text-sm md:text-lg lg:text-2xl font-bold text-center mt-4'>{selectedDepartmentOfficers && selectedDepartmentOfficers?.length>0 ? selectedDepartmentOfficers[0].title : 'Administration Section'}:-</h1>
+              <GridReport {...GMC_OFFICERS_GRID_PROPS} data={selectedDepartmentOfficers && selectedDepartmentOfficers?.length>0 ? selectedDepartmentOfficers[0].gridData : []} />
           </div>
         </div>
     </>

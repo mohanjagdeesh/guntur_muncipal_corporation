@@ -3,51 +3,42 @@ export const ORGANIZATION_STRUCTURE = [
                 name: "Commissioner",
                 children: [
                   {
-                    name: "Add. Commissioner-I",
+                    name: "Addl. Commissioner",
                     children: [
-                      { name: "Deputy Commissioner (Projects)" },
-                      { name: "Deputy Commissioner (Land)" },
-                      { name: "Asst. Commissioner (Revenue)" },
+                      { name: "Deputy Commissioner - II" },
+                      { name: "Manager" },
+                      { name: "Superintendent" },
                     ],
                   },
                   {
-                    name: "City Engineer",
+                    name: "Superintending Engineer",
                     children: [
-                      { name: "Executive Engineer - I", children: [
-                        { name: "Asst. Engineer Civil" },
-                        { name: "Asst. Engineer Electrical" },
-                      ] },
-                      { name: "Executive Engineer - II", children: [
-                        { name: "Asst. Engineer Civil" },
-                        { name: "Asst. Engineer Electrical" },
-                      ] },
+                      { name: "Executive Engineers"},
+                      { name: "Deputy Executive Engineers"},
                     ],
                   },
                   {
-                    name: "Sr. Municipal Planner",
-                    children: [{ name: "Associate Town Planner" }],
+                    name: "City Planner",
+                    children: [{ name: "Assistant City Planner" }],
                   },
                   {
-                    name: "Add. Commissioner-II",
+                    name: "Add. Commissioner-(UPA Cell)",
                     children: [
-                      { name: "Deputy Commissioner (Estt.)" },
-                      { name: "Secretary" },
-                      { name: "Asst. Commissioner (Enforcement)" },
-                      { name: "Asst. Commissioner (Procurement)" },
-                      { name: "Asst. Commissioner (ODA Court)" },
+                      { name: "Deputy Commissioner - I" },
+                      { name: "Project Officer" },
                     ],
                   },
                   {
-                    name: "Chief Finance Officer",
+                    name: "Examiner of Accounts",
                     children: [
-                      { name: "Law Officer" },
-                      { name: "Chief Auditor" },
-                      { name: "Chief Municipal Medical Officer" },
+                      { name: "Assistant Examiner of Accounts" },
+                      { name: "Auditors" },
+                      { name: "Accountant" },
                     ],
                   },
                   {
-                    name: "City Health Officer",
-                    children: [{ name: "Asst. Health Officer" }],
+                    name: "Chief Medical Of Health",
+                    children: [{ name: "Municipal Health Officer" }],
                   },
                 ],
               },

@@ -38,3 +38,34 @@ export const INPAGE_NAVIGATIN_PROPS:InpageNavigationProps[] =[
         navLink:'/about-us/gmc-officers',
     },
 ];
+
+export const DEPARTMENTS_INPAGE_NAV_LINKS:InpageNavigationProps[] = [
+    {
+        navTitle:'Administration',
+        navLink:'/department/administration',
+    },
+    {
+        navTitle:'Revenue',
+        navLink:'/department/revenue',
+    },
+    {
+        navTitle:'Accounts',
+        navLink:'/department/accounts',
+    },
+    {
+        navTitle:'Town Planning',
+        navLink:'/department/town-planning',
+    },
+    {
+        navTitle:'Engineering',
+        navLink:'/department/engineering',
+    },
+    {
+        navTitle:'Public Health',
+        navLink:'/department/public-health',
+    },
+    {
+        navTitle:'UPA Cell',
+        navLink:'/department/upa-cell',
+    },
+];

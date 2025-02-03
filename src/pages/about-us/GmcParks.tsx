@@ -10,9 +10,9 @@ const GmcParks = () => {
   return (
     <>
         <h1 className='text-center text-violet text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold my-4'>Eastren Parks</h1>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div className='grid grid-cols-1 gap-4'>
                     {
-                        EASTREN_PARKS_MOCK_DATA.map((place , index)=>{
+                        EASTREN_PARKS_MOCK_DATA.sort((a,b)=> a.parkTitle < b.parkTitle ? -1 : 1).map((place , index)=>{
                             const handleInfoCardClick = () => {
                                 if(eastrenParksActiveInfoCardIndex === index){
                                     setEasternParksActiveInfoCardIndex(undefined);
@@ -30,9 +30,9 @@ const GmcParks = () => {
         </div>
         <hr className='my-4'/>
         <h1 className='text-center text-violet text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold mb-4'>Westren Parks</h1>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div className='grid grid-cols-1 gap-4'>
                     {
-                        WESTREN_PARKS_MOCK_DATA.map((place , index)=>{
+                        WESTREN_PARKS_MOCK_DATA.sort((a,b)=> a.parkTitle < b.parkTitle ? -1 : 1).map((place , index)=>{
                             const handleInfoCardClick = () => {
                                 if(westernParksActiveInfoCardIndex === index){
                                     setWesternParksActiveInfoCardIndex(undefined);
@@ -50,9 +50,9 @@ const GmcParks = () => {
         </div>
         <hr className='my-4'/>
         <h1 className='text-center text-violet text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold mb-4'>Prathipadu Parks</h1>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div className='grid grid-cols-1 gap-4'>
                     {
-                        PATHIPADU_PARKS_MOCK_DATA.map((place , index)=>{
+                        PATHIPADU_PARKS_MOCK_DATA.sort((a,b)=> a.parkTitle < b.parkTitle ? -1 : 1).map((place , index)=>{
                             const handleInfoCardClick = () => {
                                 if(prathipaduParksActiveInfoCardIndex === index){
                                     setPrathipaduParksActiveInfoCardIndex(undefined);

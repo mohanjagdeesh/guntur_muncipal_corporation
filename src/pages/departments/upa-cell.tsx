@@ -19,6 +19,8 @@ const UPACell = () => {
       useEffect(()=>{
         const fetchAdministrationStaffInfo = async () => {
           const response = await getStaffDetails('UPA Cell');
+          console.log(response);
+          
           setUpaCellGridProps((prev)=> ({...prev , data:response}))
         };
         fetchAdministrationStaffInfo();
@@ -27,7 +29,7 @@ const UPACell = () => {
     <>
         <PageTitleBanner title='UPA Cell' />
         <div className='container'>
-          <DepartmentsDataRenderer description={`The UPA Cell of the Guntur Municipal Corporation (GMC) provides welfare services`} liRenderer={<RenderListItems {...UPA_CELL_LIST_ITEMS} />} dataGrid={<GridReport {...upaCellGridProps}  />} departmentImage='/assets/administration_education.jpg' />
+          <DepartmentsDataRenderer description={`The Urban Poverty Alleviation (UPA) Cell in a Municipal Corporation has a significant role in addressing the challenges faced by urban poor communities, focusing on improving their living conditions, and promoting social and economic inclusion. Its main objective is to reduce poverty in urban areas through a variety of programs, projects, and initiatives.`} liRenderer={UPA_CELL_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} dataGrid={<GridReport {...upaCellGridProps}  />} departmentImage='/assets/administration_education.jpg' />
         </div>
     </>
   )
