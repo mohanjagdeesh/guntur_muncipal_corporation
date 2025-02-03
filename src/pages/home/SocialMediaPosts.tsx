@@ -35,7 +35,7 @@ const SocialMediaPosts = () => {
             </div>
             <div className='flex flex-col items-center justify-start'>
               <h1 className='text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] font-semibold'>Twitter</h1>
-              <div>
+              {/* <div>
                 <a
                   className="twitter-timeline"
                   data-width="328"
@@ -45,8 +45,8 @@ const SocialMediaPosts = () => {
                   Tweets by GCorporati20083
                 </a>
                 <script async src="https://platform.x.com/widgets.js" charSet="utf-8"></script>
-              </div>
-              {/* <XEmbed url="https://x.com/GCorporati20083/status/1862825392845004989?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1862825392845004989%7Ctwgr%5E686740da0212408d9654d126275773fceb1fcc81%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2FGCorporati20083%2Fstatus%2F1862825392845004989" width={328} /> */}
+              </div> */}
+              <XEmbed url="https://x.com/GCorporati20083/status/1862825392845004989?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1862825392845004989%7Ctwgr%5E686740da0212408d9654d126275773fceb1fcc81%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2FGCorporati20083%2Fstatus%2F1862825392845004989" width={328} />
               {/* {tweets.map((tweet) => (
                 <div key={tweet.id} className="mb-4">
                   <p>{tweet.text}</p>
