@@ -7,6 +7,8 @@ import GridReport from '../../components/grid/GridReport.tsx';
 import { IGridReport } from '../../interfaces/IGridReport.ts';
 import { getStaffDetails } from '../../services/gmc-staff.tsx';
 import { STAFF_DETAILS_GRID_COLUMNS } from '../../utils/Constants.tsx';
+import TitleGridRenderer from '../../global-components/title-grid-renderer/title-grid-renderer.tsx';
+import { REVENUE_GRIDS_MOCK_DATA } from './revenue/revenue-department-mock-data.tsx';
 
 
 const REVENUE_FM_OF_GRID_PROPS:IGridReport ={
@@ -27,9 +29,14 @@ const Revenue = () => {
     <div>
         <PageTitleBanner title='REVENUE' />
         <div className='container'>
-          <DepartmentsDataRenderer description={`The Revenue Department in a Municipal Corporation plays a crucial role in generating revenue for the corporation and managing its financial resources.`} liRenderer={REVENUE_FM_OF_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/revenue.jpg' />
+          <DepartmentsDataRenderer liRenderer={REVENUE_FM_OF_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/revenue.jpg' />
+          <hr className=' border-[1px] border-violet my-3'/>
+          <div className=' flex flex-col gap-4'>
+            {
+            REVENUE_GRIDS_MOCK_DATA.map((eachGrid) => <TitleGridRenderer {...eachGrid} />)
+            }
+          </div>
           <GridReport {...revenueDeptStaffGridProps} />
-          <p>By effectively performing these functions, the Revenue Department contributes to the financial sustainability of the Municipal Corporation and helps in providing essential services to the citizens.</p>
         </div>
     </div>
   )

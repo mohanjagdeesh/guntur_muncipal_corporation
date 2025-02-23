@@ -1,51 +1,102 @@
-import React from 'react';
+import React from "react";
 import {
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-  } from '@tanstack/react-table';
-import { IGridReport } from '../../interfaces/IGridReport';
+  flexRender,
+  getCoreRowModel,
+  useReactTable,
+  createColumnHelper,
+} from "@tanstack/react-table";
+import { IGridReport } from "../../interfaces/IGridReport";
 
+const GridReport = ({ columns, data, columnGroups = [] }: IGridReport) => {
+  const columnHelper = createColumnHelper();
 
-const GridReport = ({columns,data}:IGridReport) => {
-    const table = useReactTable({
-        data,
-        columns,
-        getCoreRowModel: getCoreRowModel(),
+  // Function to create grouped columns
+  const renderColumnGroups = (groups) => {
+    return groups.map((group) =>
+      columnHelper.group({
+        id: group.id,
+        header: () => <span>{group.header}</span>,
+        columns: group.columns
+          .map((colId) => {
+            const columnDef = columns.find((col) => col.id === colId);
+            return columnDef
+              ? columnHelper.accessor(columnDef.accessorKey, {
+                  id: columnDef.id,
+                  cell: columnDef.cell || ((info) => info.getValue()),
+                  header: () => <span>{columnDef.header}</span>,
+                })
+              : null;
+          })
+          .filter(Boolean),
       })
-    return (
-        <div className="py-4 sm:overflow-x-scroll lg:overflow-hidden">
-          <table className=' w-full'>
-            <thead className='bg-violet'>
-              {table.getHeaderGroups().map(headerGroup => (
-                <tr key={headerGroup.id}>
-                  {headerGroup.headers.map(header => (
-                    <th key={header.id} className=' text-left text-white p-1 md:p-2.5 lg:p-4 text-[12px] md:text-[14px] lg:text-[18px] border-1 border-white'>
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </th>
-                  ))}
-                </tr>
+    );
+  };
+
+  // Find standalone columns (not in columnGroups)
+  const groupedColumnIds = columnGroups.flatMap((group) => group.columns);
+  const standaloneColumns = columns.filter((col) => !groupedColumnIds.includes(col.id));
+
+  // Generate the final column structure (standalone + groups)
+  const gridColumns = [
+    ...standaloneColumns.map((col) =>
+      columnHelper.accessor(col.accessorKey, {
+        id: col.id,
+        cell: col.cell || ((info) => info.getValue()),
+        header: () => <span>{col.header}</span>,
+      })
+    ),
+    ...renderColumnGroups(columnGroups),
+  ];
+
+  // Initialize the table with structured columns
+  const table = useReactTable({
+    data,
+    columns: gridColumns,
+    getCoreRowModel: getCoreRowModel(),
+  });
+
+  return (
+    <div className="py-4 w-full overflow-x-scroll">
+      <table className="w-full border border-gray-300">
+        {/* Table Header */}
+        <thead className="bg-violet">
+          {table.getHeaderGroups().map((headerGroup) => (
+            <tr key={headerGroup.id}>
+              {headerGroup.headers.map((header) => (
+                <th
+                  key={header.id}
+                  colSpan={header.colSpan}
+                  className="text-white p-2 md:p-3 lg:p-4 text-[12px] md:text-[14px] lg:text-[18px]
+                             border border-white text-center"
+                >
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(header.column.columnDef.header, header.getContext())}
+                </th>
               ))}
-            </thead>
-            <tbody className='divide-y-[0.5px] divide-violet'>
-              {table.getRowModel().rows.map(row => (
-                <tr key={row.id} className='even:bg-gray-100 odd:bg-gray-300'>
-                  {row.getVisibleCells().map(cell => (
-                    <td key={cell.id} className='p-1 md:p-2.5 lg:p-4 text-[12px] md:text-[14px] lg:text-[18px]'>
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </td>
-                  ))}
-                </tr>
+            </tr>
+          ))}
+        </thead>
+
+        {/* Table Body */}
+        <tbody className="divide-y-[0.5px] divide-violet">
+          {table.getRowModel().rows.map((row) => (
+            <tr key={row.id} className="even:bg-gray-100 odd:bg-gray-300">
+              {row.getVisibleCells().map((cell) => (
+                <td
+                  key={cell.id}
+                  className="p-2 md:p-3 lg:p-4 text-[12px] md:text-[14px] lg:text-[18px] 
+                             border border-gray-300"
+                >
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </td>
               ))}
-            </tbody>
-          </table>
-        </div>
-      )
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 };
 
 export default GridReport;

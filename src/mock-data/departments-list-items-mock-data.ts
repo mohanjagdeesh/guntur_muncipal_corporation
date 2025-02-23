@@ -1,4 +1,6 @@
+import { IGridReport } from "../interfaces/IGridReport.ts";
 import { IRenderListItems } from "../interfaces/IRenderListItems";
+import { currencyConvertor } from "../utils/Constants.tsx";
 
 export const ADMINISTRATION_LIST_ITEMS:IRenderListItems ={
     title:'Administration',
@@ -344,4 +346,184 @@ export const SANITATION_LIST_ITEMS:IRenderListItems[]= [
             }
         ]
     }
-]
+];
+
+
+export const WATER_SUPPLY_DETAILD_INFORMATION:IRenderListItems[] = [
+    {
+        title:'Water treatment facilities',
+        liData:[
+            {
+                title:'Filtration Plants',
+                subTitle:'4 No.s',
+            },
+            {
+                title:'Installed capacity',
+                subTitle:'157.20 MLD',
+            },
+            {
+                title:'Net Present supply',
+                subTitle:'149.50 MLD @ 135 LPCD',
+            },
+        ],
+    },
+    {
+        title:'Distribution Network',
+        liData:[
+            {
+                title:'Total Road Network',
+                subTitle:'1350 Kms (including NH & SH)',
+            },
+            {
+                title:'Length of Pumping Main',
+                subTitle:'96 Kms',
+            },
+            {
+                title:'Length of Distribution Network',
+                subTitle:'1013 Kms'
+            },
+        ],
+    },
+    {
+        title:'Service Reservoirs (AVAILABLE)',
+        liData:[
+            {
+                title:'No. of ELSRs / GLSRs',
+                subTitle:'41',
+            },
+            {
+                title:'Total ELSRs / GLSRs Capacity',
+                subTitle:`${currencyConvertor('52058')}`,
+            },
+        ],
+    },
+    {
+        title:'House Service Connections',
+        liData:[
+            {
+                title:'Total Assessments',
+                subTitle:`${currencyConvertor('213270')} Nos.`,
+            },
+            {
+                title:'Assessments with HSCs',
+                subTitle:`${currencyConvertor('154825')} Nos.`,
+            },
+            {
+                title:'HSCs',
+                subTitle:`${currencyConvertor('150857')}`,
+            },
+            {
+                title:'Metered HSCs',
+                subTitle:`${currencyConvertor('3968')}`,
+            },
+        ],
+    },
+    {
+        title:'Water Quality Testing Labs',
+        liData:[
+            {
+                title:'RC Testing',
+                subTitle:'10 No.s samples are being taken per each ward secretariat.',
+            },
+            {
+                title:'H2S strips testing',
+                subTitle:'Weekly 21 No.s samples are being conducted at HWW.'
+            },
+            {
+                title:'Maintaining chlorination in water works',
+                subTitle:'@ 2 ppm and up to 0.2 ppm till tail end of GMC',
+            },
+            {
+                title:'Pipeline Leaks',
+                subTitle:'Pipeline Leaks are being rectified immediately',
+            },
+        ],
+    },
+    {
+        title:'Water Distribution Within the Town',
+        liData:[
+            {
+                title:'Total No. of Elevated Level Reservoirs',
+                subTitle:'25 No.s Existing + 16 No.s APMDP',
+            },
+            {
+                title:'Total capacity of all Reservoirs 29.51ML + 20.75ML (APMDP) = 50.26ML',
+                subTitle:'',
+            },
+            {
+                title:'Total No.of Borewells in the city',
+                subTitle:`${currencyConvertor('1665')}`,
+            },
+            {
+                title:'Total No.of Borewells working',
+                subTitle:`${currencyConvertor('1589')}`,
+            },
+            {
+                title:'Total No.of open Wells',
+                subTitle:'97',
+            },
+            {
+                title:'Total No.of Public stand posts',
+                subTitle:`${currencyConvertor('2945')}`,
+            },
+            {
+                title:'Total No.of House Hold',
+                subTitle:`${currencyConvertor('178372')} Nos.`,
+            },
+            {
+                title:'No.of HS Connections',
+                subTitle:`${currencyConvertor('107893')} Nos.`,
+                subListItems:[
+                    {
+                        title:'Tap Rate',
+                        subTitle:`${currencyConvertor('104221')} Nos.`,
+                    },
+                    {
+                        title:'Meter Rate',
+                        subTitle:`${currencyConvertor('3672')} Nos.`
+                    }
+                ]
+            },
+        ],
+    }
+];
+
+export const WATER_QUALITY_TESTING_LABS_INFO:IGridReport =
+    {
+        columns:[
+            {
+                header:'S.No',
+                accessorKey:'sno',
+                id:'sno',
+                cell:({row})=>row.index + 1,
+              },
+              {
+                header:'Location',
+                accessorKey:'location',
+                id:'location',
+              },
+              {
+                header:'List of tests conducted',
+                accessorKey:'listOfTestsConducted',
+                id:'listOfTestsConducted'
+              },
+              {
+                header:'No. of labs',
+                accessorKey:'noOfLabs',
+                id:'noOfLabs',
+              },
+              {
+                header:'List of tests conducted (ULBS OWN LAB)',
+                accessorKey:'listOfTestesConductedUlb',
+                id:'listOfTestesConductedUlb'
+              }
+        ],
+        data:[
+            {
+                location:'Narasaraopet Road, Guntur',
+                listOfTestsConducted:'Residual Chlorine, Turbidity, PH, Electrical conductivity, TDS, Ammoniacal Nitrogen, Nitrate, Hardness, Alkalinity',
+                noOfLabs:'1',
+                listOfTestesConductedUlb:'Residual Chlorine, Turbidity, PH, Electrical conductivity, TDS, Ammoniacal Nitrogen',
+            },
+        ],
+    }

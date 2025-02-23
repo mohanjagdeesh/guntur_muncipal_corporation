@@ -43,7 +43,7 @@ const Engineering = () => {
     <div>
         <PageTitleBanner title='ENGINEERING' />
         <div className='container'>
-          <DepartmentsDataRenderer description={`The Engineering Department in a Municipal Corporation plays a crucial role in the development and maintenance of the city's infrastructure.`} liRenderer={ENGINEERING_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/engineering.jpg' additionalInPageNavLinks={additionalInpageNavLinks} />
+          <DepartmentsDataRenderer liRenderer={ENGINEERING_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} departmentImage='/assets/engineering.jpg' additionalInPageNavLinks={additionalInpageNavLinks} />
           <GridReport {...engineeringStaffGridProps} />
           <p>By effectively performing these functions, the Revenue Department contributes to the financial sustainability of the Municipal Corporation and helps in providing essential services to the citizens.</p>
         </div>

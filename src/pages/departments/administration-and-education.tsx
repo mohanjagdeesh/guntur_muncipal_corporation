@@ -27,7 +27,7 @@ const AdministrationAndEducation = () => {
     <div>
         <PageTitleBanner title='ADMINISTRATION' />
         <div className='container'>
-          <DepartmentsDataRenderer description={`The Administration department in a Municipal Corporation plays a crucial role in overseeing various administrative functions within the city.`} liRenderer={<RenderListItems {...ADMINISTRATION_LIST_ITEMS} />} dataGrid={<GridReport {...administrationStaffGridProps}  />} departmentImage='/assets/administration_education.jpg' />
+          <DepartmentsDataRenderer liRenderer={<RenderListItems {...ADMINISTRATION_LIST_ITEMS} />} dataGrid={<GridReport {...administrationStaffGridProps}  />} departmentImage='/assets/administration_education.jpg' />
         </div>
     </div>
   )

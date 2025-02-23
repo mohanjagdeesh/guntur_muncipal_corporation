@@ -28,7 +28,6 @@ const TownPlanning = () => {
         <PageTitleBanner title='TOWN PLANNING' />
         <div className='container'>
           <DepartmentsDataRenderer 
-            description={`The Town Planning Department in a Municipal Corporation plays a crucial role in shaping the physical development of a city.`} 
             liRenderer={TOWN_PLANNING_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} 
             departmentImage='/assets/town-planning.jpg'
             additionalInPageNavLinks={[{navTitle:'Directorate of Town and Country Planning',navLink:'https://dtcp.ap.gov.in/'}]}

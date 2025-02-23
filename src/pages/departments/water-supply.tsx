@@ -1,11 +1,21 @@
 import React from "react";
 import PageTitleBanner from "../../global-components/page-title-banner/page-title-banner.tsx";
 import GridReport from "../../components/grid/GridReport.tsx";
+import RenderListItems from "../../global-components/render-list-items/render-list-items.tsx";
+import { WATER_QUALITY_TESTING_LABS_INFO, WATER_SUPPLY_DETAILD_INFORMATION } from "../../mock-data/departments-list-items-mock-data.ts";
 
 const WaterSupply = () => (
   <div>
     <PageTitleBanner title="WATER SUPPLY" />
     <div className="container">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 mt-2 md:mt-4">
+          {WATER_SUPPLY_DETAILD_INFORMATION.slice(0,4).map((each , index)=>(<RenderListItems key={index} {...each} addClass='bg-violet rounded-md p-3' liClass="text-white" titleClass="text-white no-underline my-0" />))}
+        </div>
+        <h1 className="font-bold text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] text-center">WATER QUALITY TESTING LABS</h1>
+        <GridReport {...WATER_QUALITY_TESTING_LABS_INFO} />
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
+          {WATER_SUPPLY_DETAILD_INFORMATION.slice(4).map((each , index)=>(<RenderListItems key={index} {...each} addClass='bg-violet rounded-md p-3' liClass="text-white" titleClass="text-white no-underline my-0" />))}
+        </div>
         <h1 className="font-bold text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] text-center">Existing ELSRs Details</h1>
         <GridReport columns={[
             {

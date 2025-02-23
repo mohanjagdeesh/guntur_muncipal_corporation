@@ -10,7 +10,7 @@ const Horticulture = () => {
     <>
         <PageTitleBanner title='HORTICULTURE'/>
         <div className='container'>
-        <DepartmentsDataRenderer description={`Horticulture is the science and art of growing plants for human consumption, medical purposes, or aesthetic pleasure. It involves the cultivation of fruits, vegetables, flowers, and ornamental plants. Horticulture is often more technical and professional than agronomy, and is usually done on a smaller and more controlled scale.`}  departmentImage='/assets/horticulture.jpg' />
+        <DepartmentsDataRenderer  departmentImage='/assets/horticulture.jpg' />
         <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
         {
                     HORTICULTURE_MOCK_DATA.map((data,index)=> (

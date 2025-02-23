@@ -28,7 +28,6 @@ const Accounts = () => {
         <PageTitleBanner title='ACCOUNTS' />
         <div className='container'>
           <DepartmentsDataRenderer 
-            description={`The Accounts Department in a Municipal Corporation plays a crucial role in managing the financial health of the corporation.`} 
             liRenderer={ACCOUNTS_LIST_ITEMS.map((each)=>(<RenderListItems {...each} />))} 
             departmentImage='/assets/accounts.jpg' 
           />
